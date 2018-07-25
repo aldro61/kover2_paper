@@ -1,7 +1,7 @@
 # Interpretable genotype-to-phenotype models with performance guarantees
 By: Alexandre Drouin, Gaël Letarte, Frédéric Raymond, Mario Marchand, Jacques Corbeil, François Laviolette
 
-Powered by 
+**Powered by**
 
 <a href="https://github.com/aldro61/kover"><img src="http://graal.ift.ulaval.ca/adrouin/kover.png" height="50" /></a>
 
