@@ -5,7 +5,7 @@ Species: *Acinetobacter baumannii*
 
 Antibiotic: Meropenem
 
-<a href="./model.pdf"><img src="./model.png" /></a>
+The algorithm found that it was not useful to partition the data using rules. The resulting tree is a single leaf containing all training examples.
 
-For details, please refer to the [results directory](../../../../../results/cart_b/acinetobacter%20baumannii/meropenem/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/cart_b/acinetobacter%20baumannii/meropenem/repeat_6/).
 

@@ -5,7 +5,7 @@ Species: *Mycobacterium tuberculosis*
 
 Antibiotic: Cycloserine
 
-<a href="./model.pdf"><img src="./model.png" /></a>
+The algorithm found that it was not useful to partition the data using rules. The resulting tree is a single leaf containing all training examples.
 
-For details, please refer to the [results directory](../../../../../results/cart_b/mycobacterium%20tuberculosis/cycloserine/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/cart_b/mycobacterium%20tuberculosis/cycloserine/repeat_2/).
 

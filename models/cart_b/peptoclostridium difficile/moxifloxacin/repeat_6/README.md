@@ -7,5 +7,5 @@ Antibiotic: Moxifloxacin
 
 <a href="./model.pdf"><img src="./model.png" /></a>
 
-For details, please refer to the [results directory](../../../../../results/cart_b/peptoclostridium%20difficile/moxifloxacin/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/cart_b/peptoclostridium%20difficile/moxifloxacin/repeat_6/).
 
