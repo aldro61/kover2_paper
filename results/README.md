@@ -1,6 +1,6 @@
 # Results
 
-This directory contains results for all methods across all datasets.
+This directory contains detailed results for all methods across all datasets.
 
 * [CART (bound selection)](./cart_b)
 * [CART (cross-validation)](./cart_cv)
