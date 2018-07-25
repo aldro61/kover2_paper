@@ -1,6 +1,0 @@
->rule_id: 0___ex_278___eq_19, left_child: leaf___ex_199___sensitive_4_0.02010050__resistant_195_0.97989950, right_child: 2___ex_79___eq_31, importance: 0.76
-AACGCGTACAGCAGCGTGCGCTCGGGCGCGT
-
->rule_id: 2___ex_79___eq_31, left_child: leaf___ex_65___sensitive_48_0.73846154__resistant_17_0.26153846, right_child: leaf___ex_14___sensitive_0_0.00000000__resistant_14_1.00000000, importance: 0.24
-ACTCCCCGGCCTCCACGGTGAACGACAGCCC
-

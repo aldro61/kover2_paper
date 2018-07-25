@@ -1,9 +1,0 @@
->rule-1 presence, importance: 0.95
-AAAACAATAGCTTGCGCTAAATTACTATATG
-
->rule-2 absence, importance: 0.06
-AACGAATGGTTCAGGTAACTTGGGAACCAGG
-
->rule-3 presence, importance: 0.03
-AAAAAAGGGAATAAGGGCGACACGAAAATGT
-
