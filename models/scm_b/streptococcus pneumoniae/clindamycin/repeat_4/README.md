@@ -12,3 +12,5 @@ Presence(AAAAAGTACTCAACCAAATAATAAAACAATT) [Importance: 1.00, 893 equivalent rule
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus pneumoniae/clindamycin/repeat_3/).
+

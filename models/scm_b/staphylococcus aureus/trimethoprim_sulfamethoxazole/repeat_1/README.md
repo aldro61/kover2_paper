@@ -12,3 +12,5 @@ Presence(AAAAAACCTTTTCTCATTATCCTGCCCGTTA) [Importance: 1.00, 3060 equivalent rul
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus aureus/trimethoprim_sulfamethoxazole/repeat_0/).
+

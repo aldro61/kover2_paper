@@ -12,3 +12,5 @@ Presence(ACTATGCGCCCGAAAGCGAAATCAAGGTAGA) [Importance: 1.00, 28 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/neisseria gonorrhoeae/tetracycline/repeat_8/).
+

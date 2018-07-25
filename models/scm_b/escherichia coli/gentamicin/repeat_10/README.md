@@ -14,3 +14,5 @@ Presence(AAATGCTCGGCGGGCGCGTCATGGAGGAGTT) [Importance: 0.17, 558 equivalent rule
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/gentamicin/repeat_9/).
+

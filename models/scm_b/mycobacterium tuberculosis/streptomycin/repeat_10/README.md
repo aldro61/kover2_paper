@@ -22,3 +22,5 @@ Presence(AACCGCGTCGGCTACCATCGAGCCTCGTGCC) [Importance: 0.03, 31 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/streptomycin/repeat_9/).
+

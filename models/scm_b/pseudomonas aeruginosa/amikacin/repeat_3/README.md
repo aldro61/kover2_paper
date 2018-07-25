@@ -18,3 +18,5 @@ Presence(ACGAGATTCCCACGCACTCTCTAGAAGGACT) [Importance: 0.32, 9 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas aeruginosa/amikacin/repeat_2/).
+

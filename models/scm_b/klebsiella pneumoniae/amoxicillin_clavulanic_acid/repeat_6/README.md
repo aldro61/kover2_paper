@@ -14,3 +14,5 @@ Absence(ACCACCCGCACGGCGACTCCGCGGTATACGA) [Importance: 0.66, 5 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/amoxicillin_clavulanic_acid/repeat_5/).
+

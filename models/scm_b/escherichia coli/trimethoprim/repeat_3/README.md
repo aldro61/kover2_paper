@@ -14,3 +14,5 @@ Presence(AACAAATTCTTCCAACTGATCTGCGCGCGAG) [Importance: 0.21, 4 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/trimethoprim/repeat_2/).
+

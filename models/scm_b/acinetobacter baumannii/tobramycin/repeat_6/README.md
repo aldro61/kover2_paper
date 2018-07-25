@@ -14,3 +14,5 @@ Presence(ATCCTACCGCCTCATCTGTAGTAAACATTGA) [Importance: 0.30, 18 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/tobramycin/repeat_5/).
+

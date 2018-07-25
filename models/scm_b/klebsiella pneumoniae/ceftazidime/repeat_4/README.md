@@ -24,3 +24,5 @@ Presence(ATCTTGTGTTGCCGGGCCGCTGCGCGCCGGA) [Importance: 0.03, 2 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ceftazidime/repeat_3/).
+

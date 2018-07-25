@@ -16,3 +16,5 @@ Absence(AAATAGCGTAAGCTGGCGGTTTATCCCCGCT) [Importance: 0.12, 14 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella enterica/sulphonamides/repeat_2/).
+

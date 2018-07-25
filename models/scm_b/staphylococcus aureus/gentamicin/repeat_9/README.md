@@ -12,3 +12,5 @@ Presence(AAACAATAGTTTCAATAGGATAATATTCTTC) [Importance: 1.00, 462 equivalent rule
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus aureus/gentamicin/repeat_8/).
+

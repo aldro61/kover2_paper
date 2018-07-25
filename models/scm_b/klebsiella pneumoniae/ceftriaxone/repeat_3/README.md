@@ -20,3 +20,5 @@ Presence(ACGGCTCTGCCGCGCAGACTCCTAGCCTAAA) [Importance: 0.31, 187 equivalent rule
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ceftriaxone/repeat_2/).
+

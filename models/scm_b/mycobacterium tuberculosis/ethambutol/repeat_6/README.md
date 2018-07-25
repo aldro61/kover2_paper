@@ -18,3 +18,5 @@ Presence(ACACCGTTGACAGGGTCCGGTCGGCGAACAC) [Importance: 0.16, 31 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/ethambutol/repeat_5/).
+

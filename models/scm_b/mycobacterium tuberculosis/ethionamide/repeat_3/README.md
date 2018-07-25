@@ -16,3 +16,5 @@ Presence(AAGTCCACCACTTCGATAATCCTTCCGCTCG) [Importance: 0.12, 30 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/ethionamide/repeat_2/).
+

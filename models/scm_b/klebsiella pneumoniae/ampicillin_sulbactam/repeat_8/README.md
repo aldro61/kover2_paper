@@ -16,3 +16,5 @@ Presence(AATCGGTAAAAATCAAATTTAACTCATTTAA) [Importance: 0.30, 5 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ampicillin_sulbactam/repeat_7/).
+

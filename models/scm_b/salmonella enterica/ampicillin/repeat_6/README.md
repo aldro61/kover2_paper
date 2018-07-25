@@ -14,3 +14,5 @@ Absence(AACGAATGGTTCAGGTAACTTGGGAACCAGG) [Importance: 0.06, 72 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella enterica/ampicillin/repeat_5/).
+

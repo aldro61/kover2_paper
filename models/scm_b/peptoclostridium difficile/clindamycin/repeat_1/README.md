@@ -14,3 +14,5 @@ Presence(AAATCCCGTACTGCATAATAGGCACGTTCAT) [Importance: 0.68, 39 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/peptoclostridium difficile/clindamycin/repeat_0/).
+

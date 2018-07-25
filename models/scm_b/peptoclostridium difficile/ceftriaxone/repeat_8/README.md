@@ -14,3 +14,5 @@ Presence(ATATATTTTTATATATTCTATATTTTATAAG) [Importance: 0.09, 24 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/peptoclostridium difficile/ceftriaxone/repeat_7/).
+

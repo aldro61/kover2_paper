@@ -14,3 +14,5 @@ Absence(AATCCAGCCTGAGCCCGGTGACGATACGGGC) [Importance: 0.18, 16 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/ethionamide/repeat_5/).
+

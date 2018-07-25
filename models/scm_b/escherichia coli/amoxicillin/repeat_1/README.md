@@ -18,3 +18,5 @@ Presence(AATAAGTGTGCCTAATTGTTTAACCGCCTGT) [Importance: 0.04, 17 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/amoxicillin/repeat_0/).
+

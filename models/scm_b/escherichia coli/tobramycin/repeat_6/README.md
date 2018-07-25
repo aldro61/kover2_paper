@@ -14,3 +14,5 @@ Presence(ATATCGCGATGCATACGCGGAAGGCAATAAC) [Importance: 0.51, 143 equivalent rule
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/tobramycin/repeat_5/).
+

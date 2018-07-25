@@ -14,3 +14,5 @@ Presence(AAAAGGGCATAAAAATCCCAGTGATAAATAC) [Importance: 0.70, 5 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus aureus/tetracycline/repeat_9/).
+

@@ -16,3 +16,5 @@ Presence(ACATACTCGAAACATCGAGCCGGATCCGCCG) [Importance: 0.11, 62 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/rifampin/repeat_9/).
+

@@ -14,3 +14,5 @@ Absence(ACGTGTTTTGTTGATAAATCCAGCCCGTGAA) [Importance: 0.08, 45 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella enterica/tetracycline/repeat_7/).
+

@@ -20,3 +20,5 @@ Absence(AATCAAGCTACCGGAGTGCTTTAGCCGATAT) [Importance: 0.13, 6 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/amikacin/repeat_7/).
+

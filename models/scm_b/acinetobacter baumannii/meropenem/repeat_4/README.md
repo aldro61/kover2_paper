@@ -14,3 +14,5 @@ Presence(AAATTGTGCGTAAAGGTTCATCAATAGGCAT) [Importance: 0.48, 22 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/meropenem/repeat_3/).
+

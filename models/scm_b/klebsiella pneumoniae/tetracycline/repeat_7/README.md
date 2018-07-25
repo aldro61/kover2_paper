@@ -18,3 +18,5 @@ Presence(AATCCAATAACTTCATCGTGCTGGATAAATA) [Importance: 0.03, 26 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/tetracycline/repeat_6/).
+

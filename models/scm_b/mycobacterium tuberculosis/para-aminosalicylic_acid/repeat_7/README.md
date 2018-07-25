@@ -14,3 +14,5 @@ Presence(AAGCCGTCGCCGTCGCCGCCGTTGCCGCCGG) [Importance: 0.39, 7 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/para-aminosalicylic_acid/repeat_6/).
+

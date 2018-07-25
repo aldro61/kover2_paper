@@ -14,3 +14,5 @@ Absence(AATCATTTCCTTTGCTAGCAACATATTCGCC) [Importance: 0.32, 1 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/amikacin/repeat_7/).
+

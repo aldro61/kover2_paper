@@ -14,3 +14,5 @@ Absence(ATGGCTGCGCCATACGGACGATCGTGTCATA) [Importance: 0.95, 10 equivalent rules]
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/ciprofloxacin/repeat_4/).
+

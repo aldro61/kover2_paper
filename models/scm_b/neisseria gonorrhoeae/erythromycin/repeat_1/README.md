@@ -12,3 +12,5 @@ Presence(AAAATCATCCTGACTACTTCTATGTCGGTTC) [Importance: 1.00, 15 equivalent rules
 
 ```
 
+For details, please refer to the [results directory](../../../../../results/scm_b/neisseria gonorrhoeae/erythromycin/repeat_0/).
+
