@@ -1,5 +1,5 @@
 """
-A L2-regularized logistic regression with chi-square feature selection for kover datasets
+A naive Bayes learner for kover datasets
 
 """
 import argparse
