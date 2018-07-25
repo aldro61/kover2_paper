@@ -1,5 +1,5 @@
 """
-A linear kernel support vector machine for kover datasets (uses the whole feature space)
+A dummy predictor that predicts the majority class in the training data
 
 """
 import argparse
