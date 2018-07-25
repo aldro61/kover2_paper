@@ -1,5 +1,5 @@
 """
-Runs kover CART on all the datasets in some directory structure
+Runs kover CART (bound selection) on all the datasets in some directory structure
 
 """
 import json
