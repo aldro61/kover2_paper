@@ -1,0 +1,17 @@
+
+# Model
+
+Species: escherichia coli
+Antibiotic: cefotaxime
+
+```
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AAATACTTTATCGTGCTGATGAGCGCTTTGC) [Importance: 0.85, 188 equivalent rules]
+OR
+Presence(AGCTAATAAAAAACACACGTGGAATTTAGGA) [Importance: 0.11, 1 equivalent rules]
+OR
+Presence(AATACCGCCATGAACAAATTGATTGCCCAGC) [Importance: 0.08, 31 equivalent rules]
+
+```
+

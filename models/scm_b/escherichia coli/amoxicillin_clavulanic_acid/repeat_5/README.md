@@ -1,0 +1,23 @@
+
+# Model
+
+Species: escherichia coli
+Antibiotic: amoxicillin_clavulanic_acid
+
+```
+Model (Disjunction - 6 rules):
+------------------------------
+Presence(AAGTATTGGTTTGGTAAAGGGCTTAATTTTA) [Importance: 0.48, 58 equivalent rules]
+OR
+Presence(AGCGTATCACGAGGCCCTTTCGTCTTCAAGA) [Importance: 0.19, 1 equivalent rules]
+OR
+Presence(AGAAGGGGTCTGACGCTCAGTGGAACGAAAA) [Importance: 0.14, 16 equivalent rules]
+OR
+Presence(ATATGTATCCGCTCATGATACAATAACCCTG) [Importance: 0.06, 8 equivalent rules]
+OR
+Presence(AATGGCACTGTTGCAAATAGTCGGTGGTGAT) [Importance: 0.11, 1 equivalent rules]
+OR
+Presence(ACGGTGCGCAGGGGGTCAAAGTGTCACTGAA) [Importance: 0.10, 53 equivalent rules]
+
+```
+

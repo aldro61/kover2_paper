@@ -1,0 +1,19 @@
+
+# Model
+
+Species: peptoclostridium difficile
+Antibiotic: azithromycin
+
+```
+Model (Disjunction - 4 rules):
+------------------------------
+Presence(AAATTAAATTTTAGCACATTTATAAAGATTA) [Importance: 0.75, 17 equivalent rules]
+OR
+Presence(AAAATAAGTAAACAGGTAACGTCTATTGAAT) [Importance: 0.22, 616 equivalent rules]
+OR
+Presence(AAAAATTCTCCTCTCCAAACTGTCGGGTAGC) [Importance: 0.07, 329 equivalent rules]
+OR
+Presence(AAAAAGGTAAGCGACGAGTTATATATTTCCC) [Importance: 0.74, 216 equivalent rules]
+
+```
+

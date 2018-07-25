@@ -1,0 +1,15 @@
+
+# Model
+
+Species: staphylococcus aureus
+Antibiotic: penicillin
+
+```
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AACTATTACTTGTTCAAGATTAGATATTTTC) [Importance: 0.99, 5 equivalent rules]
+OR
+Absence(AATTGTTCACGTGAATCTTTATACTTATGCA) [Importance: 0.02, 4 equivalent rules]
+
+```
+

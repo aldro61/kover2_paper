@@ -1,0 +1,15 @@
+
+# Model
+
+Species: acinetobacter baumannii
+Antibiotic: tobramycin
+
+```
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(ATATCATGGCTTCAATTTGGGTATATCCGGG) [Importance: 0.37, 3 equivalent rules]
+AND
+Absence(ATTCCATGTGGATAGATCAACCATTTACAGA) [Importance: 0.66, 31 equivalent rules]
+
+```
+

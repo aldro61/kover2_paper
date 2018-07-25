@@ -1,0 +1,15 @@
+
+# Model
+
+Species: staphylococcus aureus
+Antibiotic: tetracycline
+
+```
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAGAGTTTCTAACCCTTTTATTAATCCTAAA) [Importance: 0.90, 11 equivalent rules]
+OR
+Presence(CCCAAAAGGGCATAAAAATCCCAGTGATAAA) [Importance: 0.70, 1 equivalent rules]
+
+```
+

@@ -1,0 +1,15 @@
+
+# Model
+
+Species: acinetobacter baumannii
+Antibiotic: carbapenem
+
+```
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAAAATCATTCTCATTAATGTTCGTATTTGG) [Importance: 0.86, 2 equivalent rules]
+OR
+Presence(ACCGGATGTCTGTAGCAACTCGTGCACTAGC) [Importance: 0.53, 11 equivalent rules]
+
+```
+

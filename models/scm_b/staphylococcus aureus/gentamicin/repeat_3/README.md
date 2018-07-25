@@ -1,0 +1,13 @@
+
+# Model
+
+Species: staphylococcus aureus
+Antibiotic: gentamicin
+
+```
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAACAATAGTTTCAATAGGATAATATTCTTC) [Importance: 1.00, 462 equivalent rules]
+
+```
+
