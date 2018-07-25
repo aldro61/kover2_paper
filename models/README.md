@@ -11,15 +11,6 @@ The models are organized by algorithm, species, and antimicrobial agent.
 
 All models are provided in FASTA format to facilitate their annotation using tools such as [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). Equivalent rules are also given in separate FASTA files.
 
-The headers in the `model.fasta` files specifies the structure of the model.
-
-### CART
-
-bla
-
-### SCM
-
-bla
 
 ## Visualization
 
