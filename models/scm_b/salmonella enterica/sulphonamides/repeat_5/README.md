@@ -12,5 +12,5 @@ Presence(AACCGGCCGTTCGATGCGGCACCGATGGCCT) [Importance: 1.00, 907 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/salmonella enterica/sulphonamides/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella+enterica/sulphonamides/repeat_4/).
 

@@ -12,5 +12,5 @@ Presence(AATCACTACAGAGATGGTGGAGCTATGCGGG) [Importance: 1.00, 76 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/cefoxitin/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/cefoxitin/repeat_1/).
 

@@ -16,5 +16,5 @@ Absence(AAAGGTTCACGGGGTCTTTCCGTCTAGCCGC) [Importance: 0.21, 30 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas aeruginosa/amikacin/repeat_6/).
+For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas+aeruginosa/amikacin/repeat_6/).
 

@@ -20,5 +20,5 @@ Absence(AGTACAATGCGCTGATTGGGCCGCTGGCGGC) [Importance: 0.01, 3 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ceftriaxone/repeat_8/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/ceftriaxone/repeat_8/).
 

@@ -14,5 +14,5 @@ Absence(AGAAGCAGCCACTCTGCGAGTTTCACCTCAG) [Importance: 0.07, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/cefuroxime_sodium/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/cefuroxime_sodium/repeat_9/).
 

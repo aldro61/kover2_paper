@@ -26,5 +26,5 @@ Presence(AACAGGGTAATCTCATTAATATACAGCGTAT) [Importance: 0.01, 31 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/cefazolin/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/cefazolin/repeat_0/).
 

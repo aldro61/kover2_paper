@@ -12,5 +12,5 @@ Presence(AAATCAGTAGAATTGCCCCATCTAAAACTGA) [Importance: 1.00, 126 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus pneumoniae/tetracycline/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus+pneumoniae/tetracycline/repeat_1/).
 

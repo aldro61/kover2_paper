@@ -16,5 +16,5 @@ Presence(AAATTCTGTTTTATCAACACGTCTCACCAAC) [Importance: 0.17, 25 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ertapenem/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/ertapenem/repeat_3/).
 

@@ -12,5 +12,5 @@ Presence(ATTGCAGCTGCTGGTATTGCGATTCAGCAAA) [Importance: 1.00, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/ampicillin_sulbactam/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter+baumannii/ampicillin_sulbactam/repeat_5/).
 

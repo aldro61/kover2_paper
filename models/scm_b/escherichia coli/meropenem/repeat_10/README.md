@@ -14,5 +14,5 @@ Absence(AATGTCACGCAGCATAACGGCGAATGGAAGA) [Importance: 0.17, 12 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/meropenem/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/meropenem/repeat_9/).
 

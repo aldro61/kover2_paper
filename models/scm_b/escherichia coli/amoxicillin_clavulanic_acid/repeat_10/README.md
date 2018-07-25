@@ -18,5 +18,5 @@ Presence(ATATGTATCCGCTCATGATACAATAACCCTG) [Importance: 0.06, 8 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/amoxicillin_clavulanic_acid/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/amoxicillin_clavulanic_acid/repeat_9/).
 

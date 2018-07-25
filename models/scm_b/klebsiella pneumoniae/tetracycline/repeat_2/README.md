@@ -18,5 +18,5 @@ Absence(CGATATTGTGTACGTCCATCAGCGTCCACAA) [Importance: 0.03, 2 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/tetracycline/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/tetracycline/repeat_1/).
 

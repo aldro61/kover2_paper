@@ -18,5 +18,5 @@ Presence(GCCTTTGTCCTTGCATGGGAAACGCTGGCGC) [Importance: 0.33, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/amikacin/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/amikacin/repeat_4/).
 

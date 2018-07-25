@@ -16,5 +16,5 @@ Presence(ACGCAGGGCACGCTGATCCGCAAGCTGTGCA) [Importance: 0.36, 17 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/cefepime/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/cefepime/repeat_2/).
 

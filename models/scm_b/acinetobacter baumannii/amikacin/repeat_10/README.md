@@ -14,5 +14,5 @@ Presence(AAGCTCCACTTGGCGGTGGATGCCACAACCC) [Importance: 0.65, 224 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/amikacin/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter+baumannii/amikacin/repeat_9/).
 

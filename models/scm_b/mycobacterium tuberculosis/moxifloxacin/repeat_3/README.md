@@ -14,5 +14,5 @@ Presence(ACCGCCGGCTTGCCCGGTCCCGTCGATCCCG) [Importance: 0.31, 4 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/moxifloxacin/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/moxifloxacin/repeat_2/).
 

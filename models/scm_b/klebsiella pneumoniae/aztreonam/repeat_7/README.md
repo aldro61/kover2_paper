@@ -28,5 +28,5 @@ Absence(CTTTCAGCGTCATCGCGCTGTAGGCTGGCGC) [Importance: 0.11, 4 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/aztreonam/repeat_6/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/aztreonam/repeat_6/).
 

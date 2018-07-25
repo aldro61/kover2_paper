@@ -12,5 +12,5 @@ Absence(AAACCTTGTTTCAACCATTGGTTTATGATGC) [Importance: 1.00, 128 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/ampicillin_sulbactam/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter+baumannii/ampicillin_sulbactam/repeat_7/).
 

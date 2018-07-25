@@ -12,5 +12,5 @@ Presence(AAAACAATAGCTTGCGCTAAATTACTATATG) [Importance: 1.00, 1061 equivalent rul
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/salmonella enterica/ampicillin/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella+enterica/ampicillin/repeat_1/).
 

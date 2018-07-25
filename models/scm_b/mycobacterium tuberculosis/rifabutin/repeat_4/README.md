@@ -12,5 +12,5 @@ Absence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC) [Importance: 1.00, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium tuberculosis/rifabutin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/rifabutin/repeat_3/).
 

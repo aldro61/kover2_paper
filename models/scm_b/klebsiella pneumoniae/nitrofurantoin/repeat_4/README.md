@@ -14,5 +14,5 @@ Presence(AAATCACGGCGATATTGCGCTGCGTCCGCGC) [Importance: 0.83, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/nitrofurantoin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/nitrofurantoin/repeat_3/).
 

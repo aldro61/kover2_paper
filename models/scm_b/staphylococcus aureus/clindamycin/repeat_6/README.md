@@ -14,5 +14,5 @@ Presence(AATAAGTAAGTTAAGGGATGCATAAACTGCA) [Importance: 0.43, 30 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus aureus/clindamycin/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus+aureus/clindamycin/repeat_5/).
 

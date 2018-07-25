@@ -12,5 +12,5 @@ Presence(CGCGCTCGGCAGCGCAGAAGAGACCGGGCTC) [Importance: 1.00, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ticarcillin_clavulanic_acid/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/ticarcillin_clavulanic_acid/repeat_7/).
 

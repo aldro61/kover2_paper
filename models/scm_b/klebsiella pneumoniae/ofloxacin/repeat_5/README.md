@@ -14,5 +14,5 @@ Presence(AAGGGCGGGCATTATCAGTGAAGTGGTCAAC) [Importance: 0.23, 41 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/ofloxacin/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/ofloxacin/repeat_4/).
 

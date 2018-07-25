@@ -14,5 +14,5 @@ Absence(ATTCCATGTGGATAGATCAACCATTTACAGA) [Importance: 0.59, 31 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter baumannii/tobramycin/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter+baumannii/tobramycin/repeat_9/).
 

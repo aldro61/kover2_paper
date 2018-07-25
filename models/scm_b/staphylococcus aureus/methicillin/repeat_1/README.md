@@ -12,5 +12,5 @@ Presence(AAAAAATAAAAATGCAAGGAGAGGTAATATG) [Importance: 1.00, 690 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus aureus/methicillin/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus+aureus/methicillin/repeat_0/).
 

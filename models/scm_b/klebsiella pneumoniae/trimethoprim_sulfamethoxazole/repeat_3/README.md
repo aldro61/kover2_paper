@@ -16,5 +16,5 @@ Presence(CAGGATTTCGTCCCAATGGGCGCGGACGTGC) [Importance: 0.63, 13 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella pneumoniae/trimethoprim_sulfamethoxazole/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/trimethoprim_sulfamethoxazole/repeat_2/).
 

@@ -12,5 +12,5 @@ Presence(CTTTGAAGTGCTCACACAGATTGTCTGATGA) [Importance: 1.00, 6 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia coli/piperacillin_tazobactam/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/piperacillin_tazobactam/repeat_7/).
 
