@@ -14,5 +14,5 @@ Absence(CCAGCCCGGCCAGCAGCCCACCGGCTCCGCC) [Importance: 0.04, 14 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/capreomycin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/capreomycin/repeat_3/).
 

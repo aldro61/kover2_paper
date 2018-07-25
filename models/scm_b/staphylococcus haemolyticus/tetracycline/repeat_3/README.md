@@ -12,5 +12,5 @@ Presence(AAGAAGAGCAACAATCTTTCAAACAATATGA) [Importance: 1.00, 106 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus+haemolyticus/tetracycline/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20haemolyticus/tetracycline/repeat_2/).
 

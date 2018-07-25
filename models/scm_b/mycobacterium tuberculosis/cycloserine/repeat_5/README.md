@@ -14,5 +14,5 @@ Absence(TTGTGAACCGCCCCGGCATGTCCGGAGACTC) [Importance: 0.14, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/cycloserine/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/cycloserine/repeat_4/).
 

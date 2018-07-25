@@ -14,5 +14,5 @@ Absence(AAAAAATACAGGGTGCTGGTAAACCGGGTGG) [Importance: 0.10, 10 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/salmonella+enterica/tetracycline/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella%20enterica/tetracycline/repeat_1/).
 

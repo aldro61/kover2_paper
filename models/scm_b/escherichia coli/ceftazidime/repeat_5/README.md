@@ -18,5 +18,5 @@ Presence(AAAAAATTCCACAATGCGGAATGGCGGAATT) [Importance: 0.09, 9785 equivalent rul
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/ceftazidime/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/ceftazidime/repeat_4/).
 

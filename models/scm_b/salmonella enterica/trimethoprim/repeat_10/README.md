@@ -12,5 +12,5 @@ Presence(ACTTTCCGCTAAGCGATAGACTGTATGTAAA) [Importance: 1.00, 161 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/salmonella+enterica/trimethoprim/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella%20enterica/trimethoprim/repeat_9/).
 

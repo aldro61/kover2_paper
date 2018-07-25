@@ -18,5 +18,5 @@ Absence(ACAGCCGTATCGACCGTTTCTCAAAAGTGCT) [Importance: 0.03, 15 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/amoxicillin/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/amoxicillin/repeat_4/).
 

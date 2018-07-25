@@ -18,5 +18,5 @@ Presence(ACGCTGATGAATCCCCTAATGATTTTGGTAA) [Importance: 0.03, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/tobramycin/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/tobramycin/repeat_5/).
 

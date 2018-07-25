@@ -16,5 +16,5 @@ Presence(AAATAGTGATTTTTGAAGCTAATAAAAAACA) [Importance: 0.58, 16 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/cefuroxime/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/cefuroxime/repeat_1/).
 

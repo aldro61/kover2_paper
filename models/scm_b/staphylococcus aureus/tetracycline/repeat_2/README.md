@@ -14,5 +14,5 @@ Presence(ATTTTCCTCCATTCAAAAACCCAAAAGGGCA) [Importance: 0.71, 18 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus+aureus/tetracycline/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/tetracycline/repeat_1/).
 

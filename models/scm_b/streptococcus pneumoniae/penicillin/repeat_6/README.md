@@ -12,5 +12,5 @@ Presence(ACAAGGTTTCGCTCACTCCAGTAATGTTGGA) [Importance: 1.00, 417 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus+pneumoniae/penicillin/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/penicillin/repeat_5/).
 

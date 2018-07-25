@@ -16,5 +16,5 @@ Presence(AAGACCCAACGTTTGGAAATGTCTATCTTAC) [Importance: 0.34, 4 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus+pneumoniae/trimethoprim_sulfamethoxazole/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/trimethoprim_sulfamethoxazole/repeat_5/).
 

@@ -12,5 +12,5 @@ Presence(AAAGCACGTCCTGAATCGGTTCGGTCAGAAC) [Importance: 1.00, 155 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/cycloserine/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/cycloserine/repeat_0/).
 

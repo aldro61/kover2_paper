@@ -22,5 +22,5 @@ Presence(AGCAGGGCAGTCGCCCTAAAACAAAGTTAGG) [Importance: 0.04, 2 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/aztreonam/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/aztreonam/repeat_0/).
 

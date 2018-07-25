@@ -20,5 +20,5 @@ Absence(AATAGTCCGGTGTGCCGGAGAAGTGGTCACC) [Importance: 0.16, 2 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/pyrazinamide/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/pyrazinamide/repeat_3/).
 

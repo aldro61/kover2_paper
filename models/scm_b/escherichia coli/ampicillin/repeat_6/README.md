@@ -14,5 +14,5 @@ Presence(AAGTCTGCTTTTATTATTTTTAAGCGTGCAT) [Importance: 0.51, 12 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/ampicillin/repeat_5/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/ampicillin/repeat_5/).
 

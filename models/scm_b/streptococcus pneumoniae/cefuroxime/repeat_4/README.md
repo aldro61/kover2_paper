@@ -12,5 +12,5 @@ Presence(AAAATGTAGCAGTTAAATCCGGTACGGCTCA) [Importance: 1.00, 503 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus+pneumoniae/cefuroxime/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/cefuroxime/repeat_3/).
 

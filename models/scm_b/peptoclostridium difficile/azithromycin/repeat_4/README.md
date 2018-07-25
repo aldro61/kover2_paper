@@ -16,5 +16,5 @@ Presence(AGTCGCCCTTTTTTAAGGATACGGCGGTATC) [Importance: 0.78, 2 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/peptoclostridium+difficile/azithromycin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/peptoclostridium%20difficile/azithromycin/repeat_3/).
 

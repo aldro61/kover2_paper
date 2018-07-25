@@ -18,5 +18,5 @@ Absence(CACCGCCCTGGACATCATGACCGAAGGCCCG) [Importance: 0.02, 3 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/ertapenem/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/ertapenem/repeat_7/).
 

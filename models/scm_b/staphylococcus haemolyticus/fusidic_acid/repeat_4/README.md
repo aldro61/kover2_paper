@@ -12,5 +12,5 @@ Absence(AAGCGGACCATTATAAAGGTGGGAAACTACA) [Importance: 1.00, 14 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus+haemolyticus/fusidic_acid/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20haemolyticus/fusidic_acid/repeat_3/).
 

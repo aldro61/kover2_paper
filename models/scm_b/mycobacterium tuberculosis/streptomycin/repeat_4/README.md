@@ -26,5 +26,5 @@ Absence(AGCCGCTGCAAGTGGGGCACACTGCGACGGC) [Importance: 0.02, 9 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium+tuberculosis/streptomycin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/streptomycin/repeat_3/).
 

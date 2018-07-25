@@ -16,5 +16,5 @@ Presence(AGTCGCCCTTTTTTAAGGATACGGCGGTATC) [Importance: 0.78, 2 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/peptoclostridium+difficile/clarithromycin/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/peptoclostridium%20difficile/clarithromycin/repeat_0/).
 

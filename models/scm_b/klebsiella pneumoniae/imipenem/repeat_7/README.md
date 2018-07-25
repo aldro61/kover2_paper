@@ -14,5 +14,5 @@ Presence(AAAAAAGCACCGGCTGGCCGCGCTTCAAAGC) [Importance: 0.05, 1686 equivalent rul
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella+pneumoniae/imipenem/repeat_6/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/imipenem/repeat_6/).
 

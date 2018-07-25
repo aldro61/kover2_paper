@@ -14,5 +14,5 @@ Presence(AAAAAAGCCTATCATCGGGTATAGATTCTGC) [Importance: 0.47, 1096 equivalent rul
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus+pneumoniae/erythromycin/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/erythromycin/repeat_7/).
 

@@ -16,5 +16,5 @@ Presence(AAAAGTAATATCGGACTATAATTTGATATGA) [Importance: 0.08, 785 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus+aureus/erythromycin/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/erythromycin/repeat_1/).
 

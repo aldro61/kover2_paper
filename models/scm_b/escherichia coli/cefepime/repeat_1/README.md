@@ -14,5 +14,5 @@ Presence(AATAAAAAACACACGTGGAATTTAGGGACTA) [Importance: 0.43, 4 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia+coli/cefepime/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/cefepime/repeat_0/).
 
