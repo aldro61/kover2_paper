@@ -1,5 +1,5 @@
 """
-Runs kover SCM on all the datasets in some directory structure
+Runs kover SCM (cross-validation) on all the datasets in some directory structure
 
 """
 import json
