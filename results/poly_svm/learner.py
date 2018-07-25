@@ -1,5 +1,5 @@
 """
-A linear kernel support vector machine for kover datasets (uses the whole feature space)
+A polynomial kernel support vector machine for kover datasets (uses the whole feature space)
 
 """
 import argparse
