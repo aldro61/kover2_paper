@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:35:05.689598
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefalotin___7053822222416630118/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+Dataset UUID: 05673cc6-0588-11e8-9abe-001b2193b764
+Phenotype: Cefalotin___Escherichia_Coli___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 200 (Group sensitive: 155, Group resistant: 45)
+Number of genomes used for testing: 50 (Group sensitive: 36, Group resistant: 14)
+Number of k-mers: 29677326
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.13500)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.09
+Sensitivity: 0.75556
+Specificity: 0.95484
+Precision: 0.82927
+Recall: 0.75556
+F1 Score: 0.7907
+True Positives: 34.0
+True Negatives: 148.0
+False Positives: 7.0
+False Negatives: 11.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.2
+Sensitivity: 0.5
+Specificity: 0.91667
+Precision: 0.7
+Recall: 0.5
+F1 Score: 0.58333
+True Positives: 7.0
+True Negatives: 33.0
+False Positives: 3.0
+False Negatives: 7.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Absence(ACTAAATTCATGGTTAAGGTTGCATAATGAT) [Importance: 0.90, 2 equivalent rules]
+OR
+Presence(TGTCTGTGGATGTGGTGCACACATCCAGCCA) [Importance: 0.10, 1 equivalent rules]

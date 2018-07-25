@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:09.827052
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___6654735289702248879/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ciprofloxacin___6654735289702248879/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___6654735289702248879/dataset.kover
+Dataset UUID: e5c365b4-0804-11e8-8eca-001b2193b764
+Phenotype: Ciprofloxacin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 984 (Group sensitive: 617, Group resistant: 367)
+Number of genomes used for testing: 245 (Group sensitive: 145, Group resistant: 100)
+Number of k-mers: 12277245
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.09672)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01321
+Sensitivity: 0.97275
+Specificity: 0.99514
+Precision: 0.99167
+Recall: 0.97275
+F1 Score: 0.98212
+True Positives: 357.0
+True Negatives: 614.0
+False Positives: 3.0
+False Negatives: 10.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02449
+Sensitivity: 0.95
+Specificity: 0.9931
+Precision: 0.98958
+Recall: 0.95
+F1 Score: 0.96939
+True Positives: 95.0
+True Negatives: 144.0
+False Positives: 1.0
+False Negatives: 5.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAGTCTCCATGTGGATGATATTGACCAATAA) [Importance: 1.00, 2 equivalent rules]

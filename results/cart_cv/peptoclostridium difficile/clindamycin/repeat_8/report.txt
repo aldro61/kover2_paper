@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:27:06.476264
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/clindamycin___-8916328542551230855/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/clindamycin___-8916328542551230855/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/clindamycin___-8916328542551230855/dataset.kover
+Dataset UUID: 6c54415e-07b8-11e8-8a66-001b2193b764
+Phenotype: Clindamycin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 212 (Group sensitive: 181, Group resistant: 31)
+Number of genomes used for testing: 53 (Group sensitive: 50, Group resistant: 3)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.02381)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.05378186
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02358
+Sensitivity: 0.83871
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.83871
+F1 Score: 0.91228
+True Positives: 26.0
+True Negatives: 181.0
+False Positives: 0.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 3.0
+True Negatives: 50.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAAAAGTACTCAACCAAATAATAAAACAATT)
+   \
+    resistant
+

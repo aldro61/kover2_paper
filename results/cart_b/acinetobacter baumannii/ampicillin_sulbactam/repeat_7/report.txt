@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:54.809509
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ampicillin_sulbactam___-3225223558739261696/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/ampicillin_sulbactam___-3225223558739261696/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ampicillin_sulbactam___-3225223558739261696/dataset.kover
+Dataset UUID: b4df14cc-0578-11e8-aea5-001b2193b764
+Phenotype: Ampicillin_Sulbactam___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 124 (Group sensitive: 37, Group resistant: 87)
+Number of genomes used for testing: 31 (Group sensitive: 7, Group resistant: 24)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.54579)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.04739336
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.14516
+Sensitivity: 0.91954
+Specificity: 0.7027
+Precision: 0.87912
+Recall: 0.91954
+F1 Score: 0.89888
+True Positives: 80.0
+True Negatives: 26.0
+False Positives: 11.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.19355
+Sensitivity: 0.91667
+Specificity: 0.42857
+Precision: 0.84615
+Recall: 0.91667
+F1 Score: 0.88
+True Positives: 22.0
+True Negatives: 3.0
+False Positives: 4.0
+False Negatives: 2.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(GATAAAAATATATCATCATGAACAATAAAAC)
+   \
+    resistant
+

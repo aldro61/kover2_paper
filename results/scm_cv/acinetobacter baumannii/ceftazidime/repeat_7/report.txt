@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:07:03.888356
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ceftazidime___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ceftazidime___-3225223558739261696/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ceftazidime___-3225223558739261696/dataset.kover
+Dataset UUID: 9991fcb4-095d-11e8-81b5-001b2193b764
+Phenotype: Ceftazidime___Acinetobacter_Baumannii___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 222 (Group sensitive: 23, Group resistant: 199)
+Number of genomes used for testing: 55 (Group sensitive: 5, Group resistant: 50)
+Number of k-mers: 14381774
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03182)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02252
+Sensitivity: 0.9799
+Specificity: 0.95652
+Precision: 0.9949
+Recall: 0.9799
+F1 Score: 0.98734
+True Positives: 195.0
+True Negatives: 22.0
+False Positives: 1.0
+False Negatives: 4.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.09091
+Sensitivity: 0.98
+Specificity: 0.2
+Precision: 0.92453
+Recall: 0.98
+F1 Score: 0.95146
+True Positives: 49.0
+True Negatives: 1.0
+False Positives: 4.0
+False Negatives: 1.0
+
+Model (Disjunction - 1 rules):
+------------------------------
+Presence(ACCCACCTGCTACAGGTATTTATGATCAACC) [Importance: 1.00, 3 equivalent rules]

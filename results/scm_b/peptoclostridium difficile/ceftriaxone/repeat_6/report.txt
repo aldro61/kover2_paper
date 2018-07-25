@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:48.491813
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ceftriaxone___-8916328542551230855/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/scm_bound/ceftriaxone___-8916328542551230855/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ceftriaxone___-8916328542551230855/dataset.kover
+Dataset UUID: 91d498f2-07a9-11e8-bb75-001b2193b764
+Phenotype: Ceftriaxone___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 170 (Group sensitive: 51, Group resistant: 119)
+Number of genomes used for testing: 42 (Group sensitive: 11, Group resistant: 31)
+Number of k-mers: 11108007
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.35601)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06471
+Sensitivity: 0.98319
+Specificity: 0.82353
+Precision: 0.92857
+Recall: 0.98319
+F1 Score: 0.9551
+True Positives: 117.0
+True Negatives: 42.0
+False Positives: 9.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.14286
+Sensitivity: 0.90323
+Specificity: 0.72727
+Precision: 0.90323
+Recall: 0.90323
+F1 Score: 0.90323
+True Positives: 28.0
+True Negatives: 8.0
+False Positives: 3.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAGCAATGATAACCTATGAAATAAATGTATC) [Importance: 1.00, 21 equivalent rules]

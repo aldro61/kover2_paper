@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 12:27:48.394176
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/imipenem___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/imipenem___2202579077548954665/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/imipenem___2202579077548954665/dataset.kover
+Dataset UUID: dde33834-06a0-11e8-9c43-001b2193b764
+Phenotype: Imipenem___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 1513 (Group sensitive: 979, Group resistant: 534)
+Number of genomes used for testing: 378 (Group sensitive: 252, Group resistant: 126)
+Number of k-mers: 62221807
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.04099)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03966
+Sensitivity: 0.94757
+Specificity: 0.96731
+Precision: 0.94052
+Recall: 0.94757
+F1 Score: 0.94403
+True Positives: 506.0
+True Negatives: 947.0
+False Positives: 32.0
+False Negatives: 28.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03439
+Sensitivity: 0.95238
+Specificity: 0.97222
+Precision: 0.94488
+Recall: 0.95238
+F1 Score: 0.94862
+True Positives: 120.0
+True Negatives: 245.0
+False Positives: 7.0
+False Negatives: 6.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(ACCTGCGGAGTGTATGGCACGGCAAATGACT) [Importance: 0.96, 29 equivalent rules]
+OR
+Presence(AAAAAAGCACCGGCTGGCCGCGCTTCAAAGC) [Importance: 0.04, 1661 equivalent rules]

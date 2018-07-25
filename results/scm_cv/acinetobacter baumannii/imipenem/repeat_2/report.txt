@@ -1,0 +1,83 @@
+Kover Learning Report
+=====================
+
+Running time: 2:40:26.454140
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/imipenem___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/imipenem___-3225223558739261696/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/imipenem___-3225223558739261696/dataset.kover
+Dataset UUID: b4e39f74-0578-11e8-932f-001b2193b764
+Phenotype: Imipenem___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 400 (Group sensitive: 138, Group resistant: 262)
+Number of genomes used for testing: 99 (Group sensitive: 36, Group resistant: 63)
+Number of k-mers: 42406238
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.12250)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 7
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.075
+Sensitivity: 0.93511
+Specificity: 0.9058
+Precision: 0.94961
+Recall: 0.93511
+F1 Score: 0.94231
+True Positives: 245.0
+True Negatives: 125.0
+False Positives: 13.0
+False Negatives: 17.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.16162
+Sensitivity: 0.90476
+Specificity: 0.72222
+Precision: 0.85075
+Recall: 0.90476
+F1 Score: 0.87692
+True Positives: 57.0
+True Negatives: 26.0
+False Positives: 10.0
+False Negatives: 6.0
+
+Model (Conjunction - 7 rules):
+------------------------------
+Presence(AAGTTGCTGAGAAAATAAAGATAGGCTGTTC) [Importance: 0.73, 6 equivalent rules]
+AND
+Presence(AAAGAACATTATAAACAGGACTTAAAGCTTC) [Importance: 0.44, 8 equivalent rules]
+AND
+Absence(ATAGTTTTTGCGATAAATTGCTTTGGCCACA) [Importance: 0.16, 3 equivalent rules]
+AND
+Presence(AAGATCTTTTGAAATTTTATCTAAACGGTTG) [Importance: 0.51, 4 equivalent rules]
+AND
+Presence(ATATTAAAGCTCCAGTTTATTCAGTTCCAGG) [Importance: 0.51, 3 equivalent rules]
+AND
+Presence(CTAGTTCTTTAATCCCTGTTTTTTTTGCGAA) [Importance: 0.37, 4 equivalent rules]
+AND
+Presence(ATGGAGCGATATTTTAATCCACCTTTCGGGC) [Importance: 0.46, 1 equivalent rules]

@@ -1,0 +1,33 @@
+>rule_id: 0___ex_278___eq_67, left_child: 1___ex_204___eq_12, right_child: 8___ex_74___eq_13, importance: 0.29
+AACTCTGCCAAAGCGCCGTTCGCGGTAACGG
+
+>rule_id: 1___ex_204___eq_12, left_child: 2___ex_202___eq_59, right_child: leaf___ex_2___sensitive_2_1.00000000__resistant_0_0.00000000, importance: 0.04
+AAATAAAAAATAGTCATCAGCAAATTAAAAC
+
+>rule_id: 2___ex_202___eq_59, left_child: leaf___ex_2___sensitive_2_1.00000000__resistant_0_0.00000000, right_child: 4___ex_200___eq_28, importance: 0.04
+AAATACTGCCCCGGCAGCCGCAGCGGCTGGG
+
+>rule_id: 4___ex_200___eq_28, left_child: leaf___ex_2___sensitive_2_1.00000000__resistant_0_0.00000000, right_child: leaf___ex_198___sensitive_2_0.00338983__resistant_196_0.99661017, importance: 0.04
+ACCGGGGGCGCACTTTGACGTGGAACCCCGA
+
+>rule_id: 8___ex_74___eq_13, left_child: 9___ex_44___eq_31, right_child: 20___ex_30___eq_146, importance: 0.19
+AGCAGCAGCCACCAGAGCAGAAGATGCCGCA
+
+>rule_id: 9___ex_44___eq_31, left_child: 10___ex_11___eq_100, right_child: 13___ex_33___eq_38, importance: 0.10
+AACGGTGAGGTGACTCTTGCTGGCGGTGCGA
+
+>rule_id: 10___ex_11___eq_100, left_child: leaf___ex_10___sensitive_10_1.00000000__resistant_0_0.00000000, right_child: leaf___ex_1___sensitive_0_0.00000000__resistant_1_1.00000000, importance: 0.05
+AATACGCGGCATAGCCAAAGAATATCCCCAG
+
+>rule_id: 13___ex_33___eq_38, left_child: 14___ex_30___eq_20, right_child: leaf___ex_3___sensitive_3_1.00000000__resistant_0_0.00000000, importance: 0.05
+AAAATTATCGCCGCCGAGAATATCCAGCACC
+
+>rule_id: 14___ex_30___eq_20, left_child: 15___ex_27___eq_11, right_child: leaf___ex_3___sensitive_3_1.00000000__resistant_0_0.00000000, importance: 0.05
+ACGATGTTATGGCTGATGTGGCAGGTAAAGA
+
+>rule_id: 15___ex_27___eq_11, left_child: leaf___ex_25___sensitive_2_0.02816901__resistant_23_0.97183099, right_child: leaf___ex_2___sensitive_2_1.00000000__resistant_0_0.00000000, importance: 0.04
+AATGGCTGCGCCATACGAACGATGGTGTCAT
+
+>rule_id: 20___ex_30___eq_146, left_child: leaf___ex_28___sensitive_28_1.00000000__resistant_0_0.00000000, right_child: leaf___ex_2___sensitive_0_0.00000000__resistant_2_1.00000000, importance: 0.10
+AACTGGCCGTTGCGGCTATAGAACACGGAAC
+

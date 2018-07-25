@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:12:23.650242
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ampicillin___-736338835843459561/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ampicillin___-736338835843459561/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ampicillin___-736338835843459561/dataset.kover
+Dataset UUID: df5b8ec2-07cd-11e8-a4fc-001b2193b764
+Phenotype: Ampicillin___Salmonella_Enterica___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 278 (Group sensitive: 53, Group resistant: 225)
+Number of genomes used for testing: 69 (Group sensitive: 15, Group resistant: 54)
+Number of k-mers: 6864155
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05066)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03957
+Sensitivity: 0.96889
+Specificity: 0.92453
+Precision: 0.98198
+Recall: 0.96889
+F1 Score: 0.97539
+True Positives: 218.0
+True Negatives: 49.0
+False Positives: 4.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.10145
+Sensitivity: 0.88889
+Specificity: 0.93333
+Precision: 0.97959
+Recall: 0.88889
+F1 Score: 0.93204
+True Positives: 48.0
+True Negatives: 14.0
+False Positives: 1.0
+False Negatives: 6.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AAAACAATAGCTTGCGCTAAATTACTATATG) [Importance: 0.95, 982 equivalent rules]
+OR
+Absence(AACGAATGGTTCAGGTAACTTGGGAACCAGG) [Importance: 0.06, 66 equivalent rules]
+OR
+Presence(AAAAAAGGGAATAAGGGCGACACGAAAATGT) [Importance: 0.03, 1014 equivalent rules]

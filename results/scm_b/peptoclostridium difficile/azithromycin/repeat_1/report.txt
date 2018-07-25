@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:15.213906
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/patric_data/single_species_datasets/azithromycin___-8916328542551230855/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/scm_bound/azithromycin___-8916328542551230855/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/azithromycin___-8916328542551230855/dataset.kover
+Dataset UUID: 1873357e-547d-11e8-9998-f0921c053df8
+Phenotype: Azithromycin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 369 (Group sensitive: 200, Group resistant: 169)
+Number of genomes used for testing: 92 (Group sensitive: 48, Group resistant: 44)
+Number of k-mers: 19753177
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.23595)
+Model type: disjunction
+p: 10.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0271
+Sensitivity: 0.95266
+Specificity: 0.99
+Precision: 0.98773
+Recall: 0.95266
+F1 Score: 0.96988
+True Positives: 161.0
+True Negatives: 198.0
+False Positives: 2.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04348
+Sensitivity: 0.90909
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.90909
+F1 Score: 0.95238
+True Positives: 40.0
+True Negatives: 48.0
+False Positives: 0.0
+False Negatives: 4.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAATTAAATTTTAGCACATTTATAAAGATTA) [Importance: 0.77, 17 equivalent rules]
+OR
+Presence(AAAATAAGTAAACAGGTAACGTCTATTGAAT) [Importance: 0.26, 616 equivalent rules]

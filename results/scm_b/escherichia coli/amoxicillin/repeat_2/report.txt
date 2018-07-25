@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 0:39:37.238430
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin___7053822222416630118/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/amoxicillin___7053822222416630118/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin___7053822222416630118/dataset.kover
+Dataset UUID: 992eb23a-095d-11e8-8ab5-001b2193b764
+Phenotype: Amoxicillin___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 876 (Group sensitive: 354, Group resistant: 522)
+Number of genomes used for testing: 219 (Group sensitive: 80, Group resistant: 139)
+Number of k-mers: 39738802
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.30171)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0605
+Sensitivity: 0.91379
+Specificity: 0.9774
+Precision: 0.98351
+Recall: 0.91379
+F1 Score: 0.94737
+True Positives: 477.0
+True Negatives: 346.0
+False Positives: 8.0
+False Negatives: 45.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.10046
+Sensitivity: 0.8777
+Specificity: 0.9375
+Precision: 0.96063
+Recall: 0.8777
+F1 Score: 0.91729
+True Positives: 122.0
+True Negatives: 75.0
+False Positives: 5.0
+False Negatives: 17.0
+
+Model (Disjunction - 4 rules):
+------------------------------
+Presence(AACCAAGTCATTCTGAGAATAGTGTATGCGG) [Importance: 0.84, 41 equivalent rules]
+OR
+Presence(AAAAACATATTTATGTCCTGATTTGCTTATA) [Importance: 0.15, 853 equivalent rules]
+OR
+Presence(AAAAACACCTTGCCGACGGCATGACGGTCGG) [Importance: 0.05, 1237 equivalent rules]
+OR
+Absence(CGTACCAGGCGACCGTTTTCACCAGTTGTAA) [Importance: 0.04, 1 equivalent rules]

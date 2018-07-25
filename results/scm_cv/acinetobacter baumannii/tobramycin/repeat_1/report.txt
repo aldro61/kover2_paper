@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 0:20:47.776061
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tobramycin___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/tobramycin___-3225223558739261696/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tobramycin___-3225223558739261696/dataset.kover
+Dataset UUID: b4e09d2e-0578-11e8-b4cb-001b2193b764
+Phenotype: Tobramycin___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 200 (Group sensitive: 39, Group resistant: 161)
+Number of genomes used for testing: 49 (Group sensitive: 7, Group resistant: 42)
+Number of k-mers: 15168183
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.12000)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.045
+Sensitivity: 0.98758
+Specificity: 0.82051
+Precision: 0.95783
+Recall: 0.98758
+F1 Score: 0.97248
+True Positives: 159.0
+True Negatives: 32.0
+False Positives: 7.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.16327
+Sensitivity: 0.83333
+Specificity: 0.85714
+Precision: 0.97222
+Recall: 0.83333
+F1 Score: 0.89744
+True Positives: 35.0
+True Negatives: 6.0
+False Positives: 1.0
+False Negatives: 7.0
+
+Model (Conjunction - 4 rules):
+------------------------------
+Presence(AAAATTCAAAGATGCTGAAAATGATGCAGAT) [Importance: 0.26, 10 equivalent rules]
+AND
+Absence(ATTCCATGTGGATAGATCAACCATTTACAGA) [Importance: 0.47, 31 equivalent rules]
+AND
+Absence(AGGTGCATTAGAGACATCTTGAATACGTGCG) [Importance: 0.21, 24 equivalent rules]
+AND
+Absence(AGTTGGGCAGTCAGCCACGACCATAAATCGC) [Importance: 0.12, 62 equivalent rules]

@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:56.220948
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/spectinomycin___-736338835843459561/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/spectinomycin___-736338835843459561/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/spectinomycin___-736338835843459561/dataset.kover
+Dataset UUID: e8e8b8ee-07ef-11e8-8609-001b2193b764
+Phenotype: Spectinomycin___Salmonella_Enterica___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 232 (Group sensitive: 45, Group resistant: 187)
+Number of genomes used for testing: 58 (Group sensitive: 12, Group resistant: 46)
+Number of k-mers: 5629043
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.35475)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07759
+Sensitivity: 0.99465
+Specificity: 0.62222
+Precision: 0.91626
+Recall: 0.99465
+F1 Score: 0.95385
+True Positives: 186.0
+True Negatives: 28.0
+False Positives: 17.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.06897
+Sensitivity: 1.0
+Specificity: 0.66667
+Precision: 0.92
+Recall: 1.0
+F1 Score: 0.95833
+True Positives: 46.0
+True Negatives: 8.0
+False Positives: 4.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAGAAGATCACTTGGCCTCACGCGCAGA) [Importance: 1.00, 783 equivalent rules]

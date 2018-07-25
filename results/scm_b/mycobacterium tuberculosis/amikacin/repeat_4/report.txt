@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:38.034793
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amikacin___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/amikacin___260162261243005161/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amikacin___260162261243005161/dataset.kover
+Dataset UUID: 989a20e6-0707-11e8-823c-001b2193b764
+Phenotype: Amikacin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 916 (Group sensitive: 757, Group resistant: 159)
+Number of genomes used for testing: 229 (Group sensitive: 180, Group resistant: 49)
+Number of k-mers: 7589671
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.16184)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03057
+Sensitivity: 0.85535
+Specificity: 0.99339
+Precision: 0.96454
+Recall: 0.85535
+F1 Score: 0.90667
+True Positives: 136.0
+True Negatives: 752.0
+False Positives: 5.0
+False Negatives: 23.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05677
+Sensitivity: 0.73469
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.73469
+F1 Score: 0.84706
+True Positives: 36.0
+True Negatives: 180.0
+False Positives: 0.0
+False Negatives: 13.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(ACTTTCATGACGCGACGGGCGGTGTGTACAA) [Importance: 1.00, 31 equivalent rules]

@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:44.461773
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/meropenem___49420779660966717/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/meropenem___49420779660966717/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/meropenem___49420779660966717/dataset.kover
+Dataset UUID: 0badefa6-0873-11e8-80e1-001b2193b764
+Phenotype: Meropenem___Streptococcus_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 92 (Group sensitive: 69, Group resistant: 23)
+Number of genomes used for testing: 22 (Group sensitive: 13, Group resistant: 9)
+Number of k-mers: 5765350
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.09667)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07609
+Sensitivity: 1.0
+Specificity: 0.89855
+Precision: 0.76667
+Recall: 1.0
+F1 Score: 0.86792
+True Positives: 23.0
+True Negatives: 62.0
+False Positives: 7.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.22727
+Sensitivity: 1.0
+Specificity: 0.61538
+Precision: 0.64286
+Recall: 1.0
+F1 Score: 0.78261
+True Positives: 9.0
+True Negatives: 8.0
+False Positives: 5.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ACTACTCAAATGCCATTTCAAGTAACACAAC) [Importance: 1.00, 59 equivalent rules]

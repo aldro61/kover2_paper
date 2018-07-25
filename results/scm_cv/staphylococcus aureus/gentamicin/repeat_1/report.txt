@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:31:31.118672
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/gentamicin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/gentamicin___6654735289702248879/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/gentamicin___6654735289702248879/dataset.kover
+Dataset UUID: 33326bca-081d-11e8-8ed0-001b2193b764
+Phenotype: Gentamicin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 1045 (Group sensitive: 915, Group resistant: 130)
+Number of genomes used for testing: 261 (Group sensitive: 229, Group resistant: 32)
+Number of k-mers: 12409196
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.00671)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00478
+Sensitivity: 0.97692
+Specificity: 0.99781
+Precision: 0.9845
+Recall: 0.97692
+F1 Score: 0.98069
+True Positives: 127.0
+True Negatives: 913.0
+False Positives: 2.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 32.0
+True Negatives: 229.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAACAATAGTTTCAATAGGATAATATTCTTC) [Importance: 1.00, 462 equivalent rules]

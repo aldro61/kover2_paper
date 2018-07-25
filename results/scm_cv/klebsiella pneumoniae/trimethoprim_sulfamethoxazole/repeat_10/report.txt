@@ -1,0 +1,87 @@
+Kover Learning Report
+=====================
+
+Running time: 19:31:12.236990
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/trimethoprim_sulfamethoxazole___2202579077548954665/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___2202579077548954665/dataset.kover
+Dataset UUID: 5b65fcca-06fa-11e8-9f9f-001b2193b764
+Phenotype: Trimethoprim_Sulfamethoxazole___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 1704 (Group sensitive: 434, Group resistant: 1270)
+Number of genomes used for testing: 425 (Group sensitive: 108, Group resistant: 317)
+Number of k-mers: 71296467
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.06865)
+Model type: disjunction
+p: 5.623000
+Maximum number of rules: 9
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05047
+Sensitivity: 0.97244
+Specificity: 0.88249
+Precision: 0.96034
+Recall: 0.97244
+F1 Score: 0.96635
+True Positives: 1235.0
+True Negatives: 383.0
+False Positives: 51.0
+False Negatives: 35.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05882
+Sensitivity: 0.96845
+Specificity: 0.86111
+Precision: 0.95342
+Recall: 0.96845
+F1 Score: 0.96088
+True Positives: 307.0
+True Negatives: 93.0
+False Positives: 15.0
+False Negatives: 10.0
+
+Model (Disjunction - 9 rules):
+------------------------------
+Presence(AACTGGTGCAGTCGTCTTCTGAAAATGACAA) [Importance: 0.84, 2 equivalent rules]
+OR
+Presence(AGCAGGGCAGTCGCCCTAAAACAAAGTTAGC) [Importance: 0.41, 1 equivalent rules]
+OR
+Presence(CAGGGCAGTCGCCCTAAAACAAAGTTAACCC) [Importance: 0.53, 1 equivalent rules]
+OR
+Presence(AAAACTCCGTACCGCAATGGCACCACCCATG) [Importance: 0.08, 386 equivalent rules]
+OR
+Presence(CAGGATTTCGTCCCAATGGGCGCGGACGTGC) [Importance: 0.63, 8 equivalent rules]
+OR
+Presence(AAACCGTTCGACCAGATTGAGGAGTGGTAGC) [Importance: 0.03, 43 equivalent rules]
+OR
+Presence(AAATCGTCGTGTTCGGGAAACATTAAACACA) [Importance: 0.39, 42 equivalent rules]
+OR
+Presence(CTCGCCGACGCTATGCACAGCTAATCGACAA) [Importance: 0.02, 74 equivalent rules]
+OR
+Absence(AGAGGATTCGAACCTCCGACCCCTTCGTCCC) [Importance: 0.01, 34 equivalent rules]

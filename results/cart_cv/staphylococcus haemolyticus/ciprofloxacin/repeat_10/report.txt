@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:13:05.692946
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___946434054234721145/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/ciprofloxacin___946434054234721145/train_0.800_seed_9_10_folds
+progress: False
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___946434054234721145/dataset.kover
+Dataset UUID: 8b1fb550-0867-11e8-b4d8-001b2193b764
+Phenotype: Ciprofloxacin___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 96 (Group sensitive: 40, Group resistant: 56)
+Number of genomes used for testing: 24 (Group sensitive: 6, Group resistant: 18)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.07222)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.08057532
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07292
+Sensitivity: 0.94643
+Specificity: 0.9
+Precision: 0.92982
+Recall: 0.94643
+F1 Score: 0.93805
+True Positives: 53.0
+True Negatives: 36.0
+False Positives: 4.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 18.0
+True Negatives: 6.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    resistant
+   /
+Presence(ACCATGGCATCATAGATTGATGAGTCTCCGT)
+   \
+    sensitive
+

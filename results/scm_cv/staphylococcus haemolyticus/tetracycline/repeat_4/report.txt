@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:50.911341
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___946434054234721145/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/tetracycline___946434054234721145/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___946434054234721145/dataset.kover
+Dataset UUID: 5d974b6a-086d-11e8-aaed-001b2193b764
+Phenotype: Tetracycline___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 80 (Group sensitive: 48, Group resistant: 32)
+Number of genomes used for testing: 20 (Group sensitive: 15, Group resistant: 5)
+Number of k-mers: 5087064
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.22500)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 5
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0875
+Sensitivity: 0.78125
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.78125
+F1 Score: 0.87719
+True Positives: 25.0
+True Negatives: 48.0
+False Positives: 0.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.2
+Sensitivity: 0.6
+Specificity: 0.86667
+Precision: 0.6
+Recall: 0.6
+F1 Score: 0.6
+True Positives: 3.0
+True Negatives: 13.0
+False Positives: 2.0
+False Negatives: 2.0
+
+Model (Conjunction - 3 rules):
+------------------------------
+Absence(AAAACAAAGCTTTTTGAATAAATATGGCTAC) [Importance: 0.87, 31 equivalent rules]
+AND
+Presence(ATCTTTCTTATTCACACTAAATAAAAAGATA) [Importance: 0.71, 29 equivalent rules]
+AND
+Absence(ATCTACCGTTGGGTTCAAGAATATGCCCCAA) [Importance: 0.11, 1 equivalent rules]

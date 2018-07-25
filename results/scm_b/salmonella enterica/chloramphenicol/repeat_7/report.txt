@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:55.942533
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/chloramphenicol___-736338835843459561/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/chloramphenicol___-736338835843459561/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/chloramphenicol___-736338835843459561/dataset.kover
+Dataset UUID: 8798bc00-07d2-11e8-9853-001b2193b764
+Phenotype: Chloramphenicol___Salmonella_Enterica___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 278 (Group sensitive: 73, Group resistant: 205)
+Number of genomes used for testing: 69 (Group sensitive: 23, Group resistant: 46)
+Number of k-mers: 6864155
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.36614)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08993
+Sensitivity: 0.93659
+Specificity: 0.83562
+Precision: 0.94118
+Recall: 0.93659
+F1 Score: 0.93888
+True Positives: 192.0
+True Negatives: 61.0
+False Positives: 12.0
+False Negatives: 13.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08696
+Sensitivity: 0.95652
+Specificity: 0.82609
+Precision: 0.91667
+Recall: 0.95652
+F1 Score: 0.93617
+True Positives: 44.0
+True Negatives: 19.0
+False Positives: 4.0
+False Negatives: 2.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(ACACCGTGAAGACAATACCGACCGCGACAAC) [Importance: 1.00, 7 equivalent rules]

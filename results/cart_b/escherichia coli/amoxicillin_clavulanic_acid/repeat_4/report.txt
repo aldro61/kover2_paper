@@ -1,0 +1,98 @@
+Kover Learning Report
+=====================
+
+Running time: 6:26:19.961474
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin_clavulanic_acid___7053822222416630118/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/amoxicillin_clavulanic_acid___7053822222416630118/train_0.800_seed_3_10_folds
+progress: False
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin_clavulanic_acid___7053822222416630118/dataset.kover
+Dataset UUID: 994e9942-095d-11e8-9d2b-001b2193b764
+Phenotype: Amoxicillin_Clavulanic_Acid___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 1220 (Group sensitive: 846, Group resistant: 374)
+Number of genomes used for testing: 304 (Group sensitive: 214, Group resistant: 90)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.47384)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.750
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00466045
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.14508
+Sensitivity: 0.62032
+Specificity: 0.95863
+Precision: 0.86891
+Recall: 0.62032
+F1 Score: 0.72387
+True Positives: 232.0
+True Negatives: 811.0
+False Positives: 35.0
+False Negatives: 142.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.17763
+Sensitivity: 0.53333
+Specificity: 0.94393
+Precision: 0.8
+Recall: 0.53333
+F1 Score: 0.64
+True Positives: 48.0
+True Negatives: 202.0
+False Positives: 12.0
+False Negatives: 42.0
+
+Model (7 rules, depth = 6):
+
+        sensitive
+       /
+    Presence(AAATGTTGAATACTCATACTCTTCCTTTTTC)
+       \
+                    sensitive
+                   /
+                Presence(ACTGCATAGCTATGCATGAAAGTGAATGGCG)
+                   \
+                    resistant
+               /
+            Presence(CCCTTCAAAACCCATACCGTGGCGTTTTAGC)
+               \
+                    resistant
+                   /
+                Presence(AGCAGGCGAGGGAGGCAGAGCAGAAAGCCCG)
+                   \
+                        sensitive
+                       /
+                    Presence(AACGACTGGCTAATCGCATACTTTGCTCCTT)
+                       \
+                        resistant
+           /
+        Presence(AGCGTATCACGAGGCCCTTTCGTCTTCAAGA)
+           \
+            resistant
+   /
+Presence(AAGTATTGGTTTGGTAAAGGGCTTAATTTTA)
+   \
+    resistant
+

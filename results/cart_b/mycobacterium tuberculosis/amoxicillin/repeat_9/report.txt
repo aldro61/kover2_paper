@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:10.448643
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/amoxicillin___260162261243005161/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+Dataset UUID: b2cb882e-070c-11e8-9183-001b2193b764
+Phenotype: Amoxicillin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 613 (Group sensitive: 590, Group resistant: 23)
+Number of genomes used for testing: 153 (Group sensitive: 151, Group resistant: 2)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.13949)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00326264
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01794
+Sensitivity: 0.65217
+Specificity: 0.99492
+Precision: 0.83333
+Recall: 0.65217
+F1 Score: 0.73171
+True Positives: 15.0
+True Negatives: 587.0
+False Positives: 3.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01307
+Sensitivity: 1.0
+Specificity: 0.98675
+Precision: 0.5
+Recall: 1.0
+F1 Score: 0.66667
+True Positives: 2.0
+True Negatives: 149.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    resistant
+   /
+Presence(ACCACCCGCACGGCGACGCGTCGATCTACGA)
+   \
+    sensitive
+

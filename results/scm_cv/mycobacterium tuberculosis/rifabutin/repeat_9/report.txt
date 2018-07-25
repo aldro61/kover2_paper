@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:56.844818
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/rifabutin___260162261243005161/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+Dataset UUID: 0c0af0ac-077e-11e8-81c0-001b2193b764
+Phenotype: Rifabutin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 129 (Group sensitive: 74, Group resistant: 55)
+Number of genomes used for testing: 32 (Group sensitive: 15, Group resistant: 17)
+Number of k-mers: 4672403
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.15513)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.13953
+Sensitivity: 0.85455
+Specificity: 0.86486
+Precision: 0.82456
+Recall: 0.85455
+F1 Score: 0.83929
+True Positives: 47.0
+True Negatives: 64.0
+False Positives: 10.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.15625
+Sensitivity: 0.88235
+Specificity: 0.8
+Precision: 0.83333
+Recall: 0.88235
+F1 Score: 0.85714
+True Positives: 15.0
+True Negatives: 12.0
+False Positives: 3.0
+False Negatives: 2.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC) [Importance: 1.00, 5 equivalent rules]

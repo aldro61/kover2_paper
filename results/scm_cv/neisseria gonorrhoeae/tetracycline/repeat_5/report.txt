@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:35.928191
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___672792900560953954/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/tetracycline___672792900560953954/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___672792900560953954/dataset.kover
+Dataset UUID: 16eacfd6-07a3-11e8-ba8f-001b2193b764
+Phenotype: Tetracycline___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 114 (Group sensitive: 30, Group resistant: 84)
+Number of genomes used for testing: 28 (Group sensitive: 3, Group resistant: 25)
+Number of k-mers: 2918765
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05076)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01754
+Sensitivity: 1.0
+Specificity: 0.93333
+Precision: 0.97674
+Recall: 1.0
+F1 Score: 0.98824
+True Positives: 84.0
+True Negatives: 28.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07143
+Sensitivity: 0.96
+Specificity: 0.66667
+Precision: 0.96
+Recall: 0.96
+F1 Score: 0.96
+True Positives: 24.0
+True Negatives: 2.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(AAAATAGAAGGATTTACCGAACCTAATAGAA) [Importance: 0.89, 568 equivalent rules]
+AND
+Absence(CCCCCCCCCGGAATTTCATTTCCGGAAAACC) [Importance: 0.79, 1 equivalent rules]

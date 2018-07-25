@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:50:47.996314
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/aztreonam___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/aztreonam___7053822222416630118/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/aztreonam___7053822222416630118/dataset.kover
+Dataset UUID: 99159066-095d-11e8-a809-001b2193b764
+Phenotype: Aztreonam___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 336 (Group sensitive: 306, Group resistant: 30)
+Number of genomes used for testing: 83 (Group sensitive: 74, Group resistant: 9)
+Number of k-mers: 35209798
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03565)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02679
+Sensitivity: 0.9
+Specificity: 0.98039
+Precision: 0.81818
+Recall: 0.9
+F1 Score: 0.85714
+True Positives: 27.0
+True Negatives: 300.0
+False Positives: 6.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04819
+Sensitivity: 0.77778
+Specificity: 0.97297
+Precision: 0.77778
+Recall: 0.77778
+F1 Score: 0.77778
+True Positives: 7.0
+True Negatives: 72.0
+False Positives: 2.0
+False Negatives: 2.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAATTCCACGTGTGTTTTTTATTAGCTTCAA) [Importance: 0.76, 16 equivalent rules]
+OR
+Presence(AAAGGTTCACTGCGAAGTTTTGCTCTTTAAA) [Importance: 0.55, 34 equivalent rules]

@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:36.847410
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/fusidic_acid___946434054234721145/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+Dataset UUID: 8b1fcb44-0867-11e8-8137-001b2193b764
+Phenotype: Fusidic_Acid___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 92 (Group sensitive: 64, Group resistant: 28)
+Number of genomes used for testing: 22 (Group sensitive: 11, Group resistant: 11)
+Number of k-mers: 5195418
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.19444)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.13043
+Sensitivity: 0.71429
+Specificity: 0.9375
+Precision: 0.83333
+Recall: 0.71429
+F1 Score: 0.76923
+True Positives: 20.0
+True Negatives: 60.0
+False Positives: 4.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.27273
+Sensitivity: 0.63636
+Specificity: 0.81818
+Precision: 0.77778
+Recall: 0.63636
+F1 Score: 0.7
+True Positives: 7.0
+True Negatives: 9.0
+False Positives: 2.0
+False Negatives: 4.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(AGTCATCAGTCCAATTTATTATAGAGCCAAC) [Importance: 0.93, 1 equivalent rules]
+AND
+Absence(ACCATTTAAAGCTAGATTCAGAATATGCGTC) [Importance: 0.16, 13 equivalent rules]

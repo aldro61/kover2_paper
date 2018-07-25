@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 2:58:05.560532
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/meropenem___-9072632565547958275/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+Dataset UUID: b1f77c1e-07ca-11e8-b57b-001b2193b764
+Phenotype: Meropenem___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 304 (Group sensitive: 172, Group resistant: 132)
+Number of genomes used for testing: 76 (Group sensitive: 45, Group resistant: 31)
+Number of k-mers: 39041770
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.23624)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.23684
+Sensitivity: 0.73485
+Specificity: 0.78488
+Precision: 0.72388
+Recall: 0.73485
+F1 Score: 0.72932
+True Positives: 97.0
+True Negatives: 135.0
+False Positives: 37.0
+False Negatives: 35.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.28947
+Sensitivity: 0.67742
+Specificity: 0.73333
+Precision: 0.63636
+Recall: 0.67742
+F1 Score: 0.65625
+True Positives: 21.0
+True Negatives: 33.0
+False Positives: 12.0
+False Negatives: 10.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ATCGGTAAGTACCACCCGCACGGCGACACCG) [Importance: 1.00, 4 equivalent rules]

@@ -1,0 +1,81 @@
+Kover Learning Report
+=====================
+
+Running time: 0:10:46.277270
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ampicillin_sulbactam___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ampicillin_sulbactam___-3225223558739261696/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ampicillin_sulbactam___-3225223558739261696/dataset.kover
+Dataset UUID: b4df14cc-0578-11e8-aea5-001b2193b764
+Phenotype: Ampicillin_Sulbactam___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 124 (Group sensitive: 36, Group resistant: 88)
+Number of genomes used for testing: 31 (Group sensitive: 8, Group resistant: 23)
+Number of k-mers: 11112937
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.19038)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 8
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03226
+Sensitivity: 1.0
+Specificity: 0.88889
+Precision: 0.95652
+Recall: 1.0
+F1 Score: 0.97778
+True Positives: 88.0
+True Negatives: 32.0
+False Positives: 4.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.16129
+Sensitivity: 0.91304
+Specificity: 0.625
+Precision: 0.875
+Recall: 0.91304
+F1 Score: 0.89362
+True Positives: 21.0
+True Negatives: 5.0
+False Positives: 3.0
+False Negatives: 2.0
+
+Model (Disjunction - 6 rules):
+------------------------------
+Presence(AAAATTTTTGTACCAATAATCAGAAAATCAG) [Importance: 0.82, 25 equivalent rules]
+OR
+Absence(ACCGCGATCATCATCTTCGTCGTCATCATCA) [Importance: 0.34, 3 equivalent rules]
+OR
+Presence(CCGGATTTGATAACGTCATGCGATCATCAGC) [Importance: 0.05, 2 equivalent rules]
+OR
+Presence(ATTACAGCTAGACTGTCAGGATTCTACTTCT) [Importance: 0.27, 1 equivalent rules]
+OR
+Absence(AAAAAAGTGGCTTCAATGTCAGAAAAAGTAC) [Importance: 0.03, 41 equivalent rules]
+OR
+Presence(CATTTCAAATCTTTGTGCAACAAAGCCTATC) [Importance: 0.03, 1 equivalent rules]

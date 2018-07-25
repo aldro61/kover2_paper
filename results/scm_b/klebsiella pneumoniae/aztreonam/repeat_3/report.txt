@@ -1,0 +1,79 @@
+Kover Learning Report
+=====================
+
+Running time: 1:10:31.653708
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/aztreonam___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/aztreonam___2202579077548954665/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/aztreonam___2202579077548954665/dataset.kover
+Dataset UUID: e36d884c-05f4-11e8-b78b-001b2193b764
+Phenotype: Aztreonam___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 1444 (Group sensitive: 180, Group resistant: 1264)
+Number of genomes used for testing: 361 (Group sensitive: 43, Group resistant: 318)
+Number of k-mers: 61111555
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.28925)
+Model type: disjunction
+p: 5.623000
+Maximum number of rules: 5
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06648
+Sensitivity: 0.97864
+Specificity: 0.61667
+Precision: 0.94717
+Recall: 0.97864
+F1 Score: 0.96265
+True Positives: 1237.0
+True Negatives: 111.0
+False Positives: 69.0
+False Negatives: 27.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07479
+Sensitivity: 0.9717
+Specificity: 0.5814
+Precision: 0.94495
+Recall: 0.9717
+F1 Score: 0.95814
+True Positives: 309.0
+True Negatives: 25.0
+False Positives: 18.0
+False Negatives: 9.0
+
+Model (Disjunction - 5 rules):
+------------------------------
+Presence(ACTCTGAACGATTTTGGCCTGCATGCTGAAA) [Importance: 0.81, 14 equivalent rules]
+OR
+Presence(ATAAACGTAGGTCGGGTAAGGCGTTAGCCGC) [Importance: 0.69, 1 equivalent rules]
+OR
+Presence(TTGCTAGCTCCGGTCTTATCGGCGATAAACC) [Importance: 0.27, 2 equivalent rules]
+OR
+Presence(TTCCTTTTGAATGCTGTAACTAATGTGGTTC) [Importance: 0.37, 1 equivalent rules]
+OR
+Presence(AAAGTAACGCGGTGGTTAATATCCTGTACCC) [Importance: 0.12, 31 equivalent rules]

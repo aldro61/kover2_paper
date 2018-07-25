@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:50.028362
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___-736338835843459561/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/tetracycline___-736338835843459561/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___-736338835843459561/dataset.kover
+Dataset UUID: 9aaa5c84-07f7-11e8-bc88-001b2193b764
+Phenotype: Tetracycline___Salmonella_Enterica___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 278 (Group sensitive: 53, Group resistant: 225)
+Number of genomes used for testing: 69 (Group sensitive: 14, Group resistant: 55)
+Number of k-mers: 6864155
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.40195)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08633
+Sensitivity: 0.92889
+Specificity: 0.84906
+Precision: 0.96313
+Recall: 0.92889
+F1 Score: 0.9457
+True Positives: 209.0
+True Negatives: 45.0
+False Positives: 8.0
+False Negatives: 16.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05797
+Sensitivity: 0.94545
+Specificity: 0.92857
+Precision: 0.98113
+Recall: 0.94545
+F1 Score: 0.96296
+True Positives: 52.0
+True Negatives: 13.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AACTCTGCCAAAGCGCCGTTCGCGGTAACGG) [Importance: 0.94, 74 equivalent rules]
+OR
+Absence(ACGTGTTTTGTTGATAAATCCAGCCCGTGAA) [Importance: 0.08, 45 equivalent rules]

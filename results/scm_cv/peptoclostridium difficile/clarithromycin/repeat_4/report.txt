@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:29:55.226719
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/patric_data/single_species_datasets/clarithromycin___-8916328542551230855/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/scm_cv/clarithromycin___-8916328542551230855/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/clarithromycin___-8916328542551230855/dataset.kover
+Dataset UUID: 187d642c-547d-11e8-8d70-f0921c053df8
+Phenotype: Clarithromycin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 369 (Group sensitive: 200, Group resistant: 169)
+Number of genomes used for testing: 92 (Group sensitive: 48, Group resistant: 44)
+Number of k-mers: 19753177
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01359)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01355
+Sensitivity: 0.98817
+Specificity: 0.985
+Precision: 0.98235
+Recall: 0.98817
+F1 Score: 0.98525
+True Positives: 167.0
+True Negatives: 197.0
+False Positives: 3.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02174
+Sensitivity: 0.97727
+Specificity: 0.97917
+Precision: 0.97727
+Recall: 0.97727
+F1 Score: 0.97727
+True Positives: 43.0
+True Negatives: 47.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(ATTGAAGTTAGCATCTTAAATGAAGAACCTG) [Importance: 0.80, 17 equivalent rules]
+OR
+Presence(AAAACTTACCCGCCATACCACAGATGTTCCA) [Importance: 0.23, 616 equivalent rules]
+OR
+Presence(AGTCGCCCTTTTTTAAGGATACGGCGGTATC) [Importance: 0.79, 2 equivalent rules]

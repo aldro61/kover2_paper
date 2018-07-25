@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:09:06.940043
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/tobramycin___-3225223558739261696/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/tobramycin___-3225223558739261696/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/tobramycin___-3225223558739261696/dataset.kover
+Dataset UUID: b4e09d2e-0578-11e8-b4cb-001b2193b764
+Phenotype: Tobramycin___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 200 (Group sensitive: 36, Group resistant: 164)
+Number of genomes used for testing: 49 (Group sensitive: 10, Group resistant: 39)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.46192)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.03500000
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.125
+Sensitivity: 0.97561
+Specificity: 0.41667
+Precision: 0.88398
+Recall: 0.97561
+F1 Score: 0.92754
+True Positives: 160.0
+True Negatives: 15.0
+False Positives: 21.0
+False Negatives: 4.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.18367
+Sensitivity: 0.97436
+Specificity: 0.2
+Precision: 0.82609
+Recall: 0.97436
+F1 Score: 0.89412
+True Positives: 38.0
+True Negatives: 2.0
+False Positives: 8.0
+False Negatives: 1.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AACTTTTGTAAATGAGCACGGGCTTCTTGCT)
+   \
+    resistant
+

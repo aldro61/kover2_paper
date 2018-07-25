@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:43:29.969019
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/ciprofloxacin___6654735289702248879/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___6654735289702248879/dataset.kover
+Dataset UUID: e5c365b4-0804-11e8-8eca-001b2193b764
+Phenotype: Ciprofloxacin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 984 (Group sensitive: 615, Group resistant: 369)
+Number of genomes used for testing: 245 (Group sensitive: 147, Group resistant: 98)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01627)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.02700270
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01626
+Sensitivity: 0.96748
+Specificity: 0.9935
+Precision: 0.98892
+Recall: 0.96748
+F1 Score: 0.97808
+True Positives: 357.0
+True Negatives: 611.0
+False Positives: 4.0
+False Negatives: 12.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01224
+Sensitivity: 0.96939
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.96939
+F1 Score: 0.98446
+True Positives: 95.0
+True Negatives: 147.0
+False Positives: 0.0
+False Negatives: 3.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAGTCTCCATGTGGATGATATTGACCAATAA)
+   \
+    resistant
+

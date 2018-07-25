@@ -1,0 +1,162 @@
+Kover Learning Report
+=====================
+
+Running time: 1 day, 0:45:52.120974
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/piperacillin_tazobactam___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/piperacillin_tazobactam___2202579077548954665/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/piperacillin_tazobactam___2202579077548954665/dataset.kover
+Dataset UUID: d33bccd4-06be-11e8-af1a-001b2193b764
+Phenotype: Piperacillin_Tazobactam___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 1388 (Group sensitive: 436, Group resistant: 952)
+Number of genomes used for testing: 346 (Group sensitive: 114, Group resistant: 232)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.15422)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00264174
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07493
+Sensitivity: 0.92437
+Specificity: 0.92661
+Precision: 0.96491
+Recall: 0.92437
+F1 Score: 0.94421
+True Positives: 880.0
+True Negatives: 404.0
+False Positives: 32.0
+False Negatives: 72.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.1763
+Sensitivity: 0.84914
+Specificity: 0.77193
+Precision: 0.88341
+Recall: 0.84914
+F1 Score: 0.86593
+True Positives: 197.0
+True Negatives: 88.0
+False Positives: 26.0
+False Negatives: 35.0
+
+Model (23 rules, depth = 10):
+
+                    sensitive
+                   /
+                Presence(CTGCCTCATCGCTAACTTTGCAACAGTGCCG)
+                   \
+                            resistant
+                           /
+                        Presence(CGATCTGACGGAAAACCAGTTGACGCTGGCG)
+                           \
+                                        sensitive
+                                       /
+                                    Presence(AACGGAGACGTTTTGATGAATACGGAAATAT)
+                                       \
+                                        resistant
+                                   /
+                                Presence(AAATAAAGCCCTGGGAGGGATTCAGAGGAGG)
+                                   \
+                                    resistant
+                               /
+                            Presence(ACATCACTTTCACCAAAGAAACGGCGAACGT)
+                               \
+                                    resistant
+                                   /
+                                Presence(AGGTCGTGCAGGATGACTCGACTTCGCCTCG)
+                                   \
+                                    sensitive
+                       /
+                    Presence(ATAGCTCGCTCCTGAAATTTGGTTGTGAAAC)
+                       \
+                            resistant
+                           /
+                        Presence(AAACCCTACAGTGAAATTAAAAGCTATGTCA)
+                           \
+                            sensitive
+               /
+            Presence(ACATTGCTGTTAATACGGGTGGTGTCAGCCT)
+               \
+                    sensitive
+                   /
+                Presence(ACAGGAACAGATAGCCGTTGACCCGTGGGCC)
+                   \
+                        resistant
+                       /
+                    Presence(ACACTGGGTTTCCCCATTCGGACATCGCCGG)
+                       \
+                        sensitive
+           /
+        Presence(ACACTCTGCCCCGGGCAGTCGCGGGTGCCGA)
+           \
+            resistant
+       /
+    Presence(ACTACCTTGGTGATCTCGCCTTTCACGTAGT)
+       \
+            resistant
+           /
+        Presence(AATTATCCCACGCTAAGACTGTTTTTTGTAC)
+           \
+            sensitive
+   /
+Presence(AAAAAGTTTGCGGATATGACCAATGTCCGTA)
+   \
+                sensitive
+               /
+            Presence(CTGCCTCATCGCTAACTTTGCAACAGTGCCC)
+               \
+                    resistant
+                   /
+                Presence(CTGCTGATGAAGCAGAACAACTTTAACGCCG)
+                   \
+                            resistant
+                           /
+                        Presence(CGCTTTAGCGCCGAGTAATCCTTCCCCCACC)
+                           \
+                            sensitive
+                       /
+                    Presence(GAATAATGGTGGTGGGGGAAGGATTCGAACC)
+                       \
+                            resistant
+                           /
+                        Presence(AGTACCGGAGATTCCCCGCGGATCCCAGAGC)
+                           \
+                            sensitive
+           /
+        Presence(AATTACTCGCAGGACATCATCATCCCAATGA)
+           \
+                resistant
+               /
+            Presence(AAATCTGCTGATGGTTCCGTTACTCATACCG)
+               \
+                sensitive
+       /
+    Presence(AAAAGCCAGCCAGCGGCCATGAGAGACAAGA)
+       \
+        resistant
+

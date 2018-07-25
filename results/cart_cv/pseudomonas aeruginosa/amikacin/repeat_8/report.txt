@@ -1,0 +1,86 @@
+Kover Learning Report
+=====================
+
+Running time: 10:16:26.374142
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/amikacin___-9072632565547958275/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/amikacin___-9072632565547958275/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/amikacin___-9072632565547958275/dataset.kover
+Dataset UUID: af064fce-07bd-11e8-810d-001b2193b764
+Phenotype: Amikacin___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 399 (Group sensitive: 328, Group resistant: 71)
+Number of genomes used for testing: 99 (Group sensitive: 80, Group resistant: 19)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.12038)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00354228
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0802
+Sensitivity: 0.5493
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.5493
+F1 Score: 0.70909
+True Positives: 39.0
+True Negatives: 328.0
+False Positives: 0.0
+False Negatives: 32.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.15152
+Sensitivity: 0.36842
+Specificity: 0.9625
+Precision: 0.7
+Recall: 0.36842
+F1 Score: 0.48276
+True Positives: 7.0
+True Negatives: 77.0
+False Positives: 3.0
+False Negatives: 12.0
+
+Model (4 rules, depth = 4):
+
+                sensitive
+               /
+            Presence(AAGGCGCCGGACTTCCCCGATATGGAGGACA)
+               \
+                resistant
+           /
+        Presence(ACATGCTCGGCGAGGCGGCCCTGGCCCTGGC)
+           \
+            resistant
+       /
+    Presence(AAAAATATTACTATCCGTGATATCGCCATGA)
+       \
+        resistant
+   /
+Presence(ACGAGATTCCCACGCACTCTCTAGAAGGACT)
+   \
+    resistant
+

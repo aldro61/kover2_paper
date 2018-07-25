@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 0:09:09.903538
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/clarithromycin___-8916328542551230855/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/clarithromycin___-8916328542551230855/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/clarithromycin___-8916328542551230855/dataset.kover
+Dataset UUID: 187d642c-547d-11e8-8d70-f0921c053df8
+Phenotype: Clarithromycin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 369 (Group sensitive: 200, Group resistant: 169)
+Number of genomes used for testing: 92 (Group sensitive: 48, Group resistant: 44)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.22480)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01084011
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02168
+Sensitivity: 0.97041
+Specificity: 0.985
+Precision: 0.98204
+Recall: 0.97041
+F1 Score: 0.97619
+True Positives: 164.0
+True Negatives: 197.0
+False Positives: 3.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08696
+Sensitivity: 0.84091
+Specificity: 0.97917
+Precision: 0.97368
+Recall: 0.84091
+F1 Score: 0.90244
+True Positives: 37.0
+True Negatives: 47.0
+False Positives: 1.0
+False Negatives: 7.0
+
+Model (2 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(AAAACTTACCCGCCATACCACAGATGTTCCA)
+       \
+        resistant
+   /
+Presence(ATTGAAGTTAGCATCTTAAATGAAGAACCTG)
+   \
+    resistant
+

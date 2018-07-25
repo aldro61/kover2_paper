@@ -1,0 +1,79 @@
+Kover Learning Report
+=====================
+
+Running time: 0:20:10.323956
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/moxifloxacin___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/moxifloxacin___260162261243005161/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/moxifloxacin___260162261243005161/dataset.kover
+Dataset UUID: f1efab30-0765-11e8-ac0b-001b2193b764
+Phenotype: Moxifloxacin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 560 (Group sensitive: 515, Group resistant: 45)
+Number of genomes used for testing: 139 (Group sensitive: 127, Group resistant: 12)
+Number of k-mers: 7176022
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03036)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 5
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0125
+Sensitivity: 0.88889
+Specificity: 0.99612
+Precision: 0.95238
+Recall: 0.88889
+F1 Score: 0.91954
+True Positives: 40.0
+True Negatives: 513.0
+False Positives: 2.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04317
+Sensitivity: 0.58333
+Specificity: 0.99213
+Precision: 0.875
+Recall: 0.58333
+F1 Score: 0.7
+True Positives: 7.0
+True Negatives: 126.0
+False Positives: 1.0
+False Negatives: 5.0
+
+Model (Conjunction - 5 rules):
+------------------------------
+Absence(ACCACCCGCACGGCGACGCGTCGATCTACGA) [Importance: 0.97, 3 equivalent rules]
+AND
+Presence(AACCGGGCAATCAGACGACGCCCGGTGACGA) [Importance: 0.09, 27 equivalent rules]
+AND
+Absence(ACGATCCCGCGAGCCGGGCAGCCACGTCGGG) [Importance: 0.11, 14 equivalent rules]
+AND
+Presence(ACCGGTGCCGCCGTCGCCGATCAGCCCGCCG) [Importance: 0.21, 1 equivalent rules]
+AND
+Presence(CCGGCGCCCAGACCGCCGTTGCCGCCGTCGC) [Importance: 0.12, 6 equivalent rules]

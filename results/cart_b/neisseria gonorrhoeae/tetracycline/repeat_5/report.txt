@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:43.273673
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/tetracycline___672792900560953954/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/tetracycline___672792900560953954/train_0.800_seed_4_10_folds
+progress: False
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/tetracycline___672792900560953954/dataset.kover
+Dataset UUID: 16eacfd6-07a3-11e8-ba8f-001b2193b764
+Phenotype: Tetracycline___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 114 (Group sensitive: 30, Group resistant: 84)
+Number of genomes used for testing: 28 (Group sensitive: 3, Group resistant: 25)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.36525)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.02631579
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04386
+Sensitivity: 1.0
+Specificity: 0.83333
+Precision: 0.94382
+Recall: 1.0
+F1 Score: 0.9711
+True Positives: 84.0
+True Negatives: 25.0
+False Positives: 5.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07143
+Sensitivity: 0.96
+Specificity: 0.66667
+Precision: 0.96
+Recall: 0.96
+F1 Score: 0.96
+True Positives: 24.0
+True Negatives: 2.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAAATAGAAGGATTTACCGAACCTAATAGAA)
+   \
+    resistant
+

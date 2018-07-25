@@ -1,0 +1,99 @@
+Kover Learning Report
+=====================
+
+Running time: 3:47:57.707701
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/nitrofurantoin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/nitrofurantoin___2202579077548954665/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/nitrofurantoin___2202579077548954665/dataset.kover
+Dataset UUID: 501b1cea-06b6-11e8-ac25-001b2193b764
+Phenotype: Nitrofurantoin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 704 (Group sensitive: 70, Group resistant: 634)
+Number of genomes used for testing: 176 (Group sensitive: 20, Group resistant: 156)
+Number of k-mers: 40393866
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.07247)
+Model type: disjunction
+p: 10.000000
+Maximum number of rules: 15
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01278
+Sensitivity: 0.99842
+Specificity: 0.88571
+Precision: 0.98752
+Recall: 0.99842
+F1 Score: 0.99294
+True Positives: 633.0
+True Negatives: 62.0
+False Positives: 8.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07955
+Sensitivity: 0.95513
+Specificity: 0.65
+Precision: 0.95513
+Recall: 0.95513
+F1 Score: 0.95513
+True Positives: 149.0
+True Negatives: 13.0
+False Positives: 7.0
+False Negatives: 7.0
+
+Model (Disjunction - 15 rules):
+-------------------------------
+Presence(AACGTATTGTTACAAAAGGGGGAGGCGGCGA) [Importance: 0.84, 30 equivalent rules]
+OR
+Presence(ATCGCCACGCTGCTAGCGCCCGAACCGAGCG) [Importance: 0.05, 17 equivalent rules]
+OR
+Presence(ACCTGCCGGATGACTATATTCCTTCGCTCCT) [Importance: 0.05, 6 equivalent rules]
+OR
+Presence(AGTCCCAAAAGAGGCAAACTTAAAATCACCC) [Importance: 0.32, 31 equivalent rules]
+OR
+Presence(CCGGTGGCGGGGTCGTATTCGAACCAGCCGC) [Importance: 0.32, 4 equivalent rules]
+OR
+Presence(AAACTGGGGTGGATCTCCTCGCTCAGATAAG) [Importance: 0.08, 19 equivalent rules]
+OR
+Presence(CAGGCACTGTTGCAAAGTTAGCGATGAGGCA) [Importance: 0.05, 1 equivalent rules]
+OR
+Presence(ACCCTCGCCTTCCACTACGGACATCGGAGCC) [Importance: 0.02, 20 equivalent rules]
+OR
+Presence(CAGGGCGTTCAGCAGCAGACGCTGCATTTCG) [Importance: 0.37, 1 equivalent rules]
+OR
+Presence(CACGGGCACTGTTGCAAAGTTAGCGATGAGG) [Importance: 0.07, 1 equivalent rules]
+OR
+Presence(AAAATGCCGGACGCCGGAAGGAATATGATTC) [Importance: 0.37, 3 equivalent rules]
+OR
+Presence(AGCTGGCTGCGGAGAATGTGGCGCTGAAGTC) [Importance: 0.01, 1 equivalent rules]
+OR
+Presence(CGGTGGATTTTTGATGGCGGAAAAGATTGCC) [Importance: 0.32, 1 equivalent rules]
+OR
+Presence(ACGTCATTCCTGAATCGCTGGCCCGGAAAGC) [Importance: 0.46, 9 equivalent rules]
+OR
+Presence(AAAGTCAAAAAACACGGCCAGGAACGCCGTC) [Importance: 0.24, 17 equivalent rules]

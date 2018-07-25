@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:07:41.736490
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/spectinomycin___-736338835843459561/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/spectinomycin___-736338835843459561/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/spectinomycin___-736338835843459561/dataset.kover
+Dataset UUID: e8e8b8ee-07ef-11e8-8609-001b2193b764
+Phenotype: Spectinomycin___Salmonella_Enterica___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 232 (Group sensitive: 42, Group resistant: 190)
+Number of genomes used for testing: 58 (Group sensitive: 15, Group resistant: 43)
+Number of k-mers: 5629043
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.07355)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07328
+Sensitivity: 0.99474
+Specificity: 0.61905
+Precision: 0.92195
+Recall: 0.99474
+F1 Score: 0.95696
+True Positives: 189.0
+True Negatives: 26.0
+False Positives: 16.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08621
+Sensitivity: 1.0
+Specificity: 0.66667
+Precision: 0.89583
+Recall: 1.0
+F1 Score: 0.94505
+True Positives: 43.0
+True Negatives: 10.0
+False Positives: 5.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAGAAGATCACTTGGCCTCACGCGCAGA) [Importance: 1.00, 783 equivalent rules]

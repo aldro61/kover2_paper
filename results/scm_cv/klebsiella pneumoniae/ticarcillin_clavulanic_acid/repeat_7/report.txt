@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:10:39.218190
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ticarcillin_clavulanic_acid___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ticarcillin_clavulanic_acid___2202579077548954665/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ticarcillin_clavulanic_acid___2202579077548954665/dataset.kover
+Dataset UUID: f15e3612-06d1-11e8-9a0b-001b2193b764
+Phenotype: Ticarcillin_Clavulanic_Acid___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 136 (Group sensitive: 76, Group resistant: 60)
+Number of genomes used for testing: 34 (Group sensitive: 19, Group resistant: 15)
+Number of k-mers: 26053723
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03626)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01471
+Sensitivity: 0.98333
+Specificity: 0.98684
+Precision: 0.98333
+Recall: 0.98333
+F1 Score: 0.98333
+True Positives: 59.0
+True Negatives: 75.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08824
+Sensitivity: 0.86667
+Specificity: 0.94737
+Precision: 0.92857
+Recall: 0.86667
+F1 Score: 0.89655
+True Positives: 13.0
+True Negatives: 18.0
+False Positives: 1.0
+False Negatives: 2.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(CGCGCTCGGCAGCGCAGAAGAGACCGGGCTC) [Importance: 0.96, 1 equivalent rules]
+AND
+Presence(ATCGCCTCGGTCAACGGCTACGCGCTCGGCG) [Importance: 0.89, 6 equivalent rules]

@@ -1,0 +1,85 @@
+Kover Learning Report
+=====================
+
+Running time: 16:13:55.764295
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/piperacillin_tazobactam___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/piperacillin_tazobactam___2202579077548954665/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/piperacillin_tazobactam___2202579077548954665/dataset.kover
+Dataset UUID: d33bccd4-06be-11e8-af1a-001b2193b764
+Phenotype: Piperacillin_Tazobactam___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 1388 (Group sensitive: 443, Group resistant: 945)
+Number of genomes used for testing: 346 (Group sensitive: 107, Group resistant: 239)
+Number of k-mers: 63630552
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.16928)
+Model type: disjunction
+p: 5.623000
+Maximum number of rules: 8
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1549
+Sensitivity: 0.79048
+Specificity: 0.96163
+Precision: 0.97775
+Recall: 0.79048
+F1 Score: 0.8742
+True Positives: 747.0
+True Negatives: 426.0
+False Positives: 17.0
+False Negatives: 198.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.16474
+Sensitivity: 0.78243
+Specificity: 0.95327
+Precision: 0.97396
+Recall: 0.78243
+F1 Score: 0.86775
+True Positives: 187.0
+True Negatives: 102.0
+False Positives: 5.0
+False Negatives: 52.0
+
+Model (Disjunction - 8 rules):
+------------------------------
+Presence(AAGCCAGCCAGCGGCCATGAGAGACAAGACA) [Importance: 0.57, 24 equivalent rules]
+OR
+Presence(ATGGTGTGCCCGGAGTTCAGGGCGGGCATGG) [Importance: 0.40, 3 equivalent rules]
+OR
+Presence(ACTATCTCATGATTGAATTTGAATCGTAACA) [Importance: 0.09, 2 equivalent rules]
+OR
+Presence(AAAAAAAAAAATCATTATTCTGATTGCGAGG) [Importance: 0.12, 2 equivalent rules]
+OR
+Presence(ACATGGATTCTTAACGTCCTAGGACGAAAAA) [Importance: 0.04, 9 equivalent rules]
+OR
+Presence(CCTCATCGCTAACTTTGCAACAGTGCCGGCG) [Importance: 0.03, 1 equivalent rules]
+OR
+Presence(CTTCGCAAAGCGGCGCGCGGCCGCGAATGTA) [Importance: 0.15, 18 equivalent rules]
+OR
+Presence(AGGGTTGACTTGCCCGATCCCGTCTCGCCGC) [Importance: 0.03, 21 equivalent rules]

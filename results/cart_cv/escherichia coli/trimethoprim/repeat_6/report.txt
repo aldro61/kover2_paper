@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 4:41:44.398850
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/trimethoprim___7053822222416630118/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/trimethoprim___7053822222416630118/train_0.800_seed_5_10_folds
+progress: False
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/trimethoprim___7053822222416630118/dataset.kover
+Dataset UUID: deaf402a-05d1-11e8-8bfc-001b2193b764
+Phenotype: Trimethoprim___Escherichia_Coli___Metadata_Date_2018-01-29
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 329 (Group sensitive: 206, Group resistant: 123)
+Number of genomes used for testing: 82 (Group sensitive: 58, Group resistant: 24)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05795)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.02038968
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05471
+Sensitivity: 0.9187
+Specificity: 0.96117
+Precision: 0.93388
+Recall: 0.9187
+F1 Score: 0.92623
+True Positives: 113.0
+True Negatives: 198.0
+False Positives: 8.0
+False Negatives: 10.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.06098
+Sensitivity: 0.79167
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.79167
+F1 Score: 0.88372
+True Positives: 19.0
+True Negatives: 58.0
+False Positives: 0.0
+False Negatives: 5.0
+
+Model (2 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(AAACAGGAGCTGTTCACCTTTGGCACTCCAT)
+       \
+        resistant
+   /
+Presence(CCGAGGCATAGACTGTACAAAAAAACAGTCA)
+   \
+    resistant
+

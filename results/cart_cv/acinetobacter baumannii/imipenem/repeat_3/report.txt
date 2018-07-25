@@ -1,0 +1,126 @@
+Kover Learning Report
+=====================
+
+Running time: 10:36:14.981952
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/imipenem___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/imipenem___-3225223558739261696/train_0.800_seed_2_10_folds
+progress: False
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/imipenem___-3225223558739261696/dataset.kover
+Dataset UUID: b4e39f74-0578-11e8-932f-001b2193b764
+Phenotype: Imipenem___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 400 (Group sensitive: 133, Group resistant: 267)
+Number of genomes used for testing: 99 (Group sensitive: 41, Group resistant: 58)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.10250)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00176998
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01
+Sensitivity: 0.98502
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.98502
+F1 Score: 0.99245
+True Positives: 263.0
+True Negatives: 133.0
+False Positives: 0.0
+False Negatives: 4.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.18182
+Sensitivity: 0.87931
+Specificity: 0.73171
+Precision: 0.82258
+Recall: 0.87931
+F1 Score: 0.85
+True Positives: 51.0
+True Negatives: 30.0
+False Positives: 11.0
+False Negatives: 7.0
+
+Model (14 rules, depth = 7):
+
+                            sensitive
+                           /
+                        Presence(CTATAATGATGTAGTTGATTATTTTGGTACA)
+                           \
+                            resistant
+                       /
+                    Presence(AAACAGTAGTGTGAACACTCAAGAACAGTTG)
+                       \
+                        resistant
+                   /
+                Presence(AAATATGACTGGAATTGTTAAAAATGCAGCA)
+                   \
+                    resistant
+               /
+            Presence(ACCCCCTTCAACCTCAACTAAAATCTTTGTA)
+               \
+                resistant
+           /
+        Presence(AAATCATGGCGGTCGTCAGTTAGATGGTGTG)
+           \
+            resistant
+       /
+    Presence(AATGCCGCGCTTTGAGTTTTATGGCATGACA)
+       \
+                sensitive
+               /
+            Presence(CATACGCAATGCGTATCTGGCTTGATCCAGC)
+               \
+                resistant
+           /
+        Presence(AAGAGTTAGATGTAACTTTGCCGTCGATTAG)
+           \
+                resistant
+               /
+            Presence(ACTTGAGCACCTTCAACTGCGGCAGCCATAA)
+               \
+                    resistant
+                   /
+                Presence(AATATGCAGGTCCATGACTACCCACCTGATG)
+                   \
+                    sensitive
+   /
+Presence(AAGCTTTCTGCAGTCCCAGTCTATCAGGAAC)
+   \
+        sensitive
+       /
+    Presence(AAACCATTGGCGGAGCGTGGTTAATGAACAC)
+       \
+            sensitive
+           /
+        Presence(AATAACCTAAACGTTGCATTTCTTCTGTAAA)
+           \
+                sensitive
+               /
+            Presence(AAGGGCAATACGTAACGCATCACTCATGCGG)
+               \
+                resistant
+

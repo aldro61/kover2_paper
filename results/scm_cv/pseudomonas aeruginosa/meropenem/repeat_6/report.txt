@@ -1,0 +1,109 @@
+Kover Learning Report
+=====================
+
+Running time: 2:51:07.355694
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/meropenem___-9072632565547958275/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+Dataset UUID: b1f77c1e-07ca-11e8-b57b-001b2193b764
+Phenotype: Meropenem___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 304 (Group sensitive: 168, Group resistant: 136)
+Number of genomes used for testing: 76 (Group sensitive: 49, Group resistant: 27)
+Number of k-mers: 39041770
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.27914)
+Model type: conjunction
+p: 5.623000
+Maximum number of rules: 20
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04605
+Sensitivity: 0.99265
+Specificity: 0.92262
+Precision: 0.91216
+Recall: 0.99265
+F1 Score: 0.9507
+True Positives: 135.0
+True Negatives: 155.0
+False Positives: 13.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.34211
+Sensitivity: 0.55556
+Specificity: 0.71429
+Precision: 0.51724
+Recall: 0.55556
+F1 Score: 0.53571
+True Positives: 15.0
+True Negatives: 35.0
+False Positives: 14.0
+False Negatives: 12.0
+
+Model (Conjunction - 20 rules):
+-------------------------------
+Presence(AGCGCTTCGCCCCCGATCTGCGCGTGCTGGC) [Importance: 0.16, 16 equivalent rules]
+AND
+Absence(AACGTCGACCAGATGAAGGGCGCCTTCGACC) [Importance: 0.19, 12 equivalent rules]
+AND
+Absence(ACCCGGTCATCACCCTGAAGAAACCCAAGCA) [Importance: 0.16, 30 equivalent rules]
+AND
+Presence(AGCTCCGGTGCCGGTCGGTGGTACTCGGGAC) [Importance: 0.12, 6 equivalent rules]
+AND
+Absence(ACAGAAAGTCGGGTGAGCAACATCAACAGCA) [Importance: 0.08, 105 equivalent rules]
+AND
+Absence(AAGGACAACAAGTGCGGTCACGGCCTGCATG) [Importance: 0.07, 2 equivalent rules]
+AND
+Absence(ACACTCGCCAGCGCCTCTGCGACGGCTGGCG) [Importance: 0.08, 31 equivalent rules]
+AND
+Absence(CGAGCAAGGTGATTTTCCCTTGGGGCGGCGC) [Importance: 0.07, 2 equivalent rules]
+AND
+Absence(AACCGAGCTGTCCAACCGAGCCATGATCCAG) [Importance: 0.06, 14 equivalent rules]
+AND
+Absence(CTTATTCCTAACCTCAATACGAGAATAACCA) [Importance: 0.04, 11 equivalent rules]
+AND
+Absence(AGGCTGTAGCCGTCCAGGGCGAGGTCGAACA) [Importance: 0.13, 26 equivalent rules]
+AND
+Presence(ACGTCGCGGGTGGCGCTGTAGTAGCGCACGT) [Importance: 0.05, 2 equivalent rules]
+AND
+Absence(AACGCCATGCCCTCGCGATCCGAGGCGCTGG) [Importance: 0.09, 16 equivalent rules]
+AND
+Absence(CCGGAGCGCGCGGAGCAGATCGTGCTCCACC) [Importance: 0.08, 2 equivalent rules]
+AND
+Absence(ACCAGCCGTCCGAGTTCATCAAGAGGGTGCG) [Importance: 0.04, 5 equivalent rules]
+AND
+Presence(CCGTGGCCACGGCGGTCGTCGAGGGCGCTCC) [Importance: 0.06, 24 equivalent rules]
+AND
+Absence(AGCCTCTACCGAGACGCGGCTTTCTGTCTGC) [Importance: 0.06, 21 equivalent rules]
+AND
+Absence(AAAGCAGCCCGGATCGAGGCTCAAGCTGCGA) [Importance: 0.06, 18 equivalent rules]
+AND
+Presence(AGCCCAAGGTCAACCTGATCGGCCACAGCCA) [Importance: 0.06, 4 equivalent rules]
+AND
+Presence(CGTTGTCCGCCAACGGCGCCAGCACCTGCTC) [Importance: 0.06, 2 equivalent rules]

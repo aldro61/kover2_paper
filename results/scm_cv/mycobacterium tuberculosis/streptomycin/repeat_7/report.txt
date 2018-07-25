@@ -1,0 +1,89 @@
+Kover Learning Report
+=====================
+
+Running time: 5:27:21.936748
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/streptomycin___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/streptomycin___260162261243005161/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/streptomycin___260162261243005161/dataset.kover
+Dataset UUID: 3fd1acfe-078e-11e8-b688-001b2193b764
+Phenotype: Streptomycin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 2725 (Group sensitive: 1848, Group resistant: 877)
+Number of genomes used for testing: 681 (Group sensitive: 474, Group resistant: 207)
+Number of k-mers: 9945269
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.09358)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 10
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07927
+Sensitivity: 0.8073
+Specificity: 0.97457
+Precision: 0.93775
+Recall: 0.8073
+F1 Score: 0.86765
+True Positives: 708.0
+True Negatives: 1801.0
+False Positives: 47.0
+False Negatives: 169.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0837
+Sensitivity: 0.78744
+Specificity: 0.97257
+Precision: 0.92614
+Recall: 0.78744
+F1 Score: 0.85117
+True Positives: 163.0
+True Negatives: 461.0
+False Positives: 13.0
+False Negatives: 44.0
+
+Model (Disjunction - 10 rules):
+-------------------------------
+Presence(AACCTTCCGAAGCGCCGAGTTCGGCTTCCTC) [Importance: 0.58, 31 equivalent rules]
+OR
+Absence(ACACCAGGCAGGTCCTTCACCCGGCCGCCGC) [Importance: 0.12, 17 equivalent rules]
+OR
+Absence(AACTACGTGCCAGCAGCCGCGGTAATACGTA) [Importance: 0.15, 3 equivalent rules]
+OR
+Absence(ATTCGGTTCGCTGTTCATGGTGGCCGGCAAG) [Importance: 0.07, 6 equivalent rules]
+OR
+Absence(ACCGGCAGCCCGACCCCAGGCATGCCCAGGC) [Importance: 0.03, 4 equivalent rules]
+OR
+Absence(ACCAACATGCCGTCGATGGTTACCTCGACGC) [Importance: 0.03, 10 equivalent rules]
+OR
+Absence(ATGGCGTCGACGTTCTTGACGAAGGCGCGCT) [Importance: 0.01, 6 equivalent rules]
+OR
+Absence(ACCGAGTGCTGTGTTGGCTTGGTTTTGAGCT) [Importance: 0.01, 19 equivalent rules]
+OR
+Absence(ACCCACGATACGGGCGACGTCGTCCCAGGTA) [Importance: 0.01, 3 equivalent rules]
+OR
+Absence(AGGCGCGGTCGTCAGCATGTACGCTGACCGA) [Importance: 0.01, 2 equivalent rules]

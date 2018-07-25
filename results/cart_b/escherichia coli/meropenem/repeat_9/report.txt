@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:10:17.582301
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/meropenem___7053822222416630118/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/meropenem___7053822222416630118/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/meropenem___7053822222416630118/dataset.kover
+Dataset UUID: bae13f2a-05ab-11e8-a327-001b2193b764
+Phenotype: Meropenem___Escherichia_Coli___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 357 (Group sensitive: 334, Group resistant: 23)
+Number of genomes used for testing: 89 (Group sensitive: 84, Group resistant: 5)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.15696)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01120448
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01681
+Sensitivity: 1.0
+Specificity: 0.98204
+Precision: 0.7931
+Recall: 1.0
+F1 Score: 0.88462
+True Positives: 23.0
+True Negatives: 328.0
+False Positives: 6.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02247
+Sensitivity: 0.8
+Specificity: 0.9881
+Precision: 0.8
+Recall: 0.8
+F1 Score: 0.8
+True Positives: 4.0
+True Negatives: 83.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(TCAAGTCCACTCAGGCCTACCAAATTTGCAC)
+   \
+    resistant
+

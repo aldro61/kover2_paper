@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:33:52.599473
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/carbapenem___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/carbapenem___-3225223558739261696/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/carbapenem___-3225223558739261696/dataset.kover
+Dataset UUID: b4e2fc5e-0578-11e8-bd5a-001b2193b764
+Phenotype: Carbapenem___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 186 (Group sensitive: 82, Group resistant: 104)
+Number of genomes used for testing: 46 (Group sensitive: 28, Group resistant: 18)
+Number of k-mers: 35542666
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.08012)
+Model type: disjunction
+p: 5.623000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03226
+Sensitivity: 0.97115
+Specificity: 0.96341
+Precision: 0.97115
+Recall: 0.97115
+F1 Score: 0.97115
+True Positives: 101.0
+True Negatives: 79.0
+False Positives: 3.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08696
+Sensitivity: 0.83333
+Specificity: 0.96429
+Precision: 0.9375
+Recall: 0.83333
+F1 Score: 0.88235
+True Positives: 15.0
+True Negatives: 27.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AGGCTGCGACTTCACACACCGTTGCCACACC) [Importance: 0.84, 4 equivalent rules]
+OR
+Presence(ACCGGATGTCTGTAGCAACTCGTGCACTAGC) [Importance: 0.59, 11 equivalent rules]
+OR
+Presence(ACGCGCCTTCACGTCCACCTTTAACTACAAA) [Importance: 0.21, 5 equivalent rules]

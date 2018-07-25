@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:16.045708
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___946434054234721145/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/tetracycline___946434054234721145/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___946434054234721145/dataset.kover
+Dataset UUID: 5d974b6a-086d-11e8-aaed-001b2193b764
+Phenotype: Tetracycline___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 80 (Group sensitive: 50, Group resistant: 30)
+Number of genomes used for testing: 20 (Group sensitive: 13, Group resistant: 7)
+Number of k-mers: 5087064
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.58864)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1375
+Sensitivity: 0.7
+Specificity: 0.96
+Precision: 0.91304
+Recall: 0.7
+F1 Score: 0.79245
+True Positives: 21.0
+True Negatives: 48.0
+False Positives: 2.0
+False Negatives: 9.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.2
+Sensitivity: 0.57143
+Specificity: 0.92308
+Precision: 0.8
+Recall: 0.57143
+F1 Score: 0.66667
+True Positives: 4.0
+True Negatives: 12.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAATATTTTGGCGTGAGAGATAGTAATAGA) [Importance: 1.00, 51 equivalent rules]

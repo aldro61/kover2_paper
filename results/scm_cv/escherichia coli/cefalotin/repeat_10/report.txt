@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 0:30:03.795631
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefalotin___7053822222416630118/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+Dataset UUID: 05673cc6-0588-11e8-9abe-001b2193b764
+Phenotype: Cefalotin___Escherichia_Coli___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 200 (Group sensitive: 157, Group resistant: 43)
+Number of genomes used for testing: 50 (Group sensitive: 34, Group resistant: 16)
+Number of k-mers: 29677326
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.12500)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07
+Sensitivity: 0.67442
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.67442
+F1 Score: 0.80556
+True Positives: 29.0
+True Negatives: 157.0
+False Positives: 0.0
+False Negatives: 14.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.18
+Sensitivity: 0.5
+Specificity: 0.97059
+Precision: 0.88889
+Recall: 0.5
+F1 Score: 0.64
+True Positives: 8.0
+True Negatives: 33.0
+False Positives: 1.0
+False Negatives: 8.0
+
+Model (Conjunction - 4 rules):
+------------------------------
+Absence(ATTACAACGAGATTGACGATAATCGAGTGAC) [Importance: 0.96, 5 equivalent rules]
+AND
+Absence(AATTCCCCATTCACGGTAAATCTGGTTATCA) [Importance: 0.21, 5 equivalent rules]
+AND
+Absence(AATATCATCCCCCCCCCGATCTCCATTAACA) [Importance: 0.05, 21 equivalent rules]
+AND
+Absence(CGTTCTTTTCCCCCGCCTTCTCTGTTTATGA) [Importance: 0.50, 24 equivalent rules]

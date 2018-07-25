@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:37.833733
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/cefalotin___7053822222416630118/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+Dataset UUID: 05673cc6-0588-11e8-9abe-001b2193b764
+Phenotype: Cefalotin___Escherichia_Coli___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 200 (Group sensitive: 155, Group resistant: 45)
+Number of genomes used for testing: 50 (Group sensitive: 36, Group resistant: 14)
+Number of k-mers: 29677326
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.40310)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.09
+Sensitivity: 0.71111
+Specificity: 0.96774
+Precision: 0.86486
+Recall: 0.71111
+F1 Score: 0.78049
+True Positives: 32.0
+True Negatives: 150.0
+False Positives: 5.0
+False Negatives: 13.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.2
+Sensitivity: 0.57143
+Specificity: 0.88889
+Precision: 0.66667
+Recall: 0.57143
+F1 Score: 0.61538
+True Positives: 8.0
+True Negatives: 32.0
+False Positives: 4.0
+False Negatives: 6.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ATTACAACGAGATTGACGATAATCGAGTGAC) [Importance: 1.00, 5 equivalent rules]

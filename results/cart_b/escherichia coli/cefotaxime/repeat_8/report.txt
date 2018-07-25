@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 1:36:00.893289
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/cefotaxime___7053822222416630118/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/cefotaxime___7053822222416630118/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/cefotaxime___7053822222416630118/dataset.kover
+Dataset UUID: 992fb996-095d-11e8-8610-001b2193b764
+Phenotype: Cefotaxime___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 1160 (Group sensitive: 1047, Group resistant: 113)
+Number of genomes used for testing: 290 (Group sensitive: 264, Group resistant: 26)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.15599)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00431034
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.025
+Sensitivity: 0.76106
+Specificity: 0.99809
+Precision: 0.97727
+Recall: 0.76106
+F1 Score: 0.85572
+True Positives: 86.0
+True Negatives: 1045.0
+False Positives: 2.0
+False Negatives: 27.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02069
+Sensitivity: 0.80769
+Specificity: 0.99621
+Precision: 0.95455
+Recall: 0.80769
+F1 Score: 0.875
+True Positives: 21.0
+True Negatives: 263.0
+False Positives: 1.0
+False Negatives: 5.0
+
+Model (2 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(AGCTAATAAAAAACACACGTGGAATTTAGGA)
+       \
+        resistant
+   /
+Presence(AAATACTTTATCGTGCTGATGAGCGCTTTGC)
+   \
+    resistant
+

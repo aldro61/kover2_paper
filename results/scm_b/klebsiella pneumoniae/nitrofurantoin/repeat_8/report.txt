@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:24:44.067094
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/nitrofurantoin___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/nitrofurantoin___2202579077548954665/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/nitrofurantoin___2202579077548954665/dataset.kover
+Dataset UUID: 501b1cea-06b6-11e8-ac25-001b2193b764
+Phenotype: Nitrofurantoin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 704 (Group sensitive: 72, Group resistant: 632)
+Number of genomes used for testing: 176 (Group sensitive: 18, Group resistant: 158)
+Number of k-mers: 40393866
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.26766)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05824
+Sensitivity: 0.98259
+Specificity: 0.58333
+Precision: 0.95392
+Recall: 0.98259
+F1 Score: 0.96804
+True Positives: 621.0
+True Negatives: 42.0
+False Positives: 30.0
+False Negatives: 11.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.06818
+Sensitivity: 0.98101
+Specificity: 0.5
+Precision: 0.94512
+Recall: 0.98101
+F1 Score: 0.96273
+True Positives: 155.0
+True Negatives: 9.0
+False Positives: 9.0
+False Negatives: 3.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(ACCGCCAGCAACCTGATCGTAGTGGATATGC) [Importance: 0.98, 2 equivalent rules]
+OR
+Absence(ACGATGGTGTCGTATACCGCGGAGTCGCCGT) [Importance: 0.83, 6 equivalent rules]

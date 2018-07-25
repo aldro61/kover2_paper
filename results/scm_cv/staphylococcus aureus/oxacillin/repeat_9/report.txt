@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:25.229327
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/oxacillin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/oxacillin___6654735289702248879/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/oxacillin___6654735289702248879/dataset.kover
+Dataset UUID: 5e68fc00-084a-11e8-a17e-001b2193b764
+Phenotype: Oxacillin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 68 (Group sensitive: 38, Group resistant: 30)
+Number of genomes used for testing: 17 (Group sensitive: 8, Group resistant: 9)
+Number of k-mers: 6095164
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01429)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 30.0
+True Negatives: 38.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05882
+Sensitivity: 0.88889
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.88889
+F1 Score: 0.94118
+True Positives: 8.0
+True Negatives: 8.0
+False Positives: 0.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAAATTACACATATCGTGAGCAATGAAC) [Importance: 1.00, 4295 equivalent rules]

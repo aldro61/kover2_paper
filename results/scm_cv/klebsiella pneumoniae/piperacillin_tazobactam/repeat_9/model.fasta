@@ -1,0 +1,57 @@
+>rule-1 presence, importance: 0.52
+AAGCCAGCCAGCGGCCATGAGAGACAAGACA
+
+>rule-2 presence, importance: 0.37
+ATGGTGTGCCCGGAGTTCAGGGCGGGCATGG
+
+>rule-3 presence, importance: 0.10
+AAAAAAAAAAATCATTATTCTGATTGCGAGG
+
+>rule-4 presence, importance: 0.07
+ACTATCTCATGATTGAATTTGAATCGTAACA
+
+>rule-5 presence, importance: 0.02
+CCTCATCGCTAACTTTGCAACAGTGCCGGCG
+
+>rule-6 presence, importance: 0.12
+CTTCGCAAAGCGGCGCGCGGCCGCGAATGTA
+
+>rule-7 presence, importance: 0.04
+ACATGGATTCTTAACGTCCTAGGACGAAAAA
+
+>rule-8 presence, importance: 0.03
+AAGACCGGATTGCTCCCGGTAAGGCACGGGG
+
+>rule-9 presence, importance: 0.02
+AAATCTCTTTCTCCAGCTCTTCCAGGAACTT
+
+>rule-10 presence, importance: 0.03
+AAGTACGGGACAAGATGTGTTTTTGGAGTAC
+
+>rule-11 presence, importance: 0.02
+AAGACATCGCTTTTAATGATGGGTGTTGTAA
+
+>rule-12 presence, importance: 0.01
+AAAACGCCAAAAAAATAGCTTTCATCGTCAA
+
+>rule-13 presence, importance: 0.02
+CCCGCCCGCCCCCCCCCCCCCCCCGCCGCCG
+
+>rule-14 presence, importance: 0.01
+AAGGACACAATTAAAACCCATAACTGGATCG
+
+>rule-15 presence, importance: 0.01
+ACTGTTGCTGTTTCTGCTCCCACTCGCGCTG
+
+>rule-16 absence, importance: 0.01
+ACACGTTTTGAAACAAGTCGATGATTCCTAA
+
+>rule-17 presence, importance: 0.01
+AATGACTTCAAACCCTTTGAGGACAAGCTTG
+
+>rule-18 presence, importance: 0.01
+ACTGTCAGAGTCCGAGTCGCTGTCGGAGTCA
+
+>rule-19 presence, importance: 0.04
+AAAAATATCTGTGTTGGCAGTGATGTTGCAG
+

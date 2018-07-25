@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:24.450742
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ofloxacin___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ofloxacin___2202579077548954665/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ofloxacin___2202579077548954665/dataset.kover
+Dataset UUID: 65ccc8c6-06bc-11e8-951f-001b2193b764
+Phenotype: Ofloxacin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 60 (Group sensitive: 20, Group resistant: 40)
+Number of genomes used for testing: 14 (Group sensitive: 7, Group resistant: 7)
+Number of k-mers: 12410574
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.54050)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01667
+Sensitivity: 1.0
+Specificity: 0.95
+Precision: 0.97561
+Recall: 1.0
+F1 Score: 0.98765
+True Positives: 40.0
+True Negatives: 19.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.21429
+Sensitivity: 1.0
+Specificity: 0.57143
+Precision: 0.7
+Recall: 1.0
+F1 Score: 0.82353
+True Positives: 7.0
+True Negatives: 4.0
+False Positives: 3.0
+False Negatives: 0.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(ACCAGGTGCGGCTCGATGCCGCGACGGCTGG) [Importance: 0.79, 23 equivalent rules]
+AND
+Presence(ACAGGATCTGGCTCGATGGCCACCGCTACGC) [Importance: 0.58, 20 equivalent rules]

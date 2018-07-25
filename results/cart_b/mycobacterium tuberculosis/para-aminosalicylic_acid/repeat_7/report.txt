@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:49.201181
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/para-aminosalicylic_acid___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/para-aminosalicylic_acid___260162261243005161/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/para-aminosalicylic_acid___260162261243005161/dataset.kover
+Dataset UUID: 4327717e-0773-11e8-a02f-001b2193b764
+Phenotype: Para-Aminosalicylic_Acid___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 303 (Group sensitive: 245, Group resistant: 58)
+Number of genomes used for testing: 75 (Group sensitive: 53, Group resistant: 22)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.45065)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01459854
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.13531
+Sensitivity: 0.36207
+Specificity: 0.98367
+Precision: 0.84
+Recall: 0.36207
+F1 Score: 0.50602
+True Positives: 21.0
+True Negatives: 241.0
+False Positives: 4.0
+False Negatives: 37.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.21333
+Sensitivity: 0.36364
+Specificity: 0.96226
+Precision: 0.8
+Recall: 0.36364
+F1 Score: 0.5
+True Positives: 8.0
+True Negatives: 51.0
+False Positives: 2.0
+False Negatives: 14.0
+
+Model (1 rules, depth = 1):
+
+    resistant
+   /
+Presence(AAGGACGAGGCCGTCAAGGGCACGGTCATCG)
+   \
+    sensitive
+

@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:09:19.804256
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___49420779660966717/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/tetracycline___49420779660966717/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___49420779660966717/dataset.kover
+Dataset UUID: 34f51754-0878-11e8-b9fc-001b2193b764
+Phenotype: Tetracycline___Streptococcus_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 315 (Group sensitive: 84, Group resistant: 231)
+Number of genomes used for testing: 78 (Group sensitive: 25, Group resistant: 53)
+Number of k-mers: 6209935
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.04123)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0254
+Sensitivity: 0.99134
+Specificity: 0.92857
+Precision: 0.97447
+Recall: 0.99134
+F1 Score: 0.98283
+True Positives: 229.0
+True Negatives: 78.0
+False Positives: 6.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03846
+Sensitivity: 0.96226
+Specificity: 0.96
+Precision: 0.98077
+Recall: 0.96226
+F1 Score: 0.97143
+True Positives: 51.0
+True Negatives: 24.0
+False Positives: 1.0
+False Negatives: 2.0
+
+Model (Conjunction - 3 rules):
+------------------------------
+Presence(AAAATCCCTGTCTTATCGTTAATGGCAAGGT) [Importance: 0.91, 531 equivalent rules]
+AND
+Absence(AAAAAGCATACAGATATTCTCCGGATACTTT) [Importance: 0.05, 27 equivalent rules]
+AND
+Absence(ATTTTTTGATGGGCTTTGACTTAAATAGAAA) [Importance: 0.34, 8 equivalent rules]

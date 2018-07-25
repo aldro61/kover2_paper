@@ -1,0 +1,89 @@
+Kover Learning Report
+=====================
+
+Running time: 0:15:36.802948
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cycloserine___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cycloserine___260162261243005161/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cycloserine___260162261243005161/dataset.kover
+Dataset UUID: 5d40d132-074f-11e8-83ec-001b2193b764
+Phenotype: Cycloserine___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 269 (Group sensitive: 207, Group resistant: 62)
+Number of genomes used for testing: 67 (Group sensitive: 57, Group resistant: 10)
+Number of k-mers: 4776616
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.18561)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 10
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08178
+Sensitivity: 0.69355
+Specificity: 0.98551
+Precision: 0.93478
+Recall: 0.69355
+F1 Score: 0.7963
+True Positives: 43.0
+True Negatives: 204.0
+False Positives: 3.0
+False Negatives: 19.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.19403
+Sensitivity: 0.5
+Specificity: 0.85965
+Precision: 0.38462
+Recall: 0.5
+F1 Score: 0.43478
+True Positives: 5.0
+True Negatives: 49.0
+False Positives: 8.0
+False Negatives: 5.0
+
+Model (Disjunction - 10 rules):
+-------------------------------
+Presence(AAGTGTGGTATGTGCTCGAAGAGGTCATCGC) [Importance: 0.17, 31 equivalent rules]
+OR
+Absence(CCCCCATGGGCCGCGGCCGGGCTAAGGCAAA) [Importance: 0.33, 27 equivalent rules]
+OR
+Absence(ACGCTGGCGGGCACCCACGCCGACGTACGCC) [Importance: 0.11, 48 equivalent rules]
+OR
+Absence(AAGCTGGATTGCCCGGCTCCTGCGCGCGCCG) [Importance: 0.11, 17 equivalent rules]
+OR
+Absence(ACACGGTTGGCTACACCAATGCCTCCTGGAC) [Importance: 0.11, 6 equivalent rules]
+OR
+Absence(AAGTTTCGGATCCCTGCCAGCAGCACTGTCG) [Importance: 0.09, 56 equivalent rules]
+OR
+Absence(ACTACGAAGTGGTCACCAGCCCGCGAGGACG) [Importance: 0.09, 3 equivalent rules]
+OR
+Presence(AACGGCGGCAACGGCGGGGCGGGGGCACCCG) [Importance: 0.09, 17 equivalent rules]
+OR
+Absence(AAACCCGAACCGGTCGGCAACATCAGCGGTG) [Importance: 0.07, 568 equivalent rules]
+OR
+Absence(AACAGCGCCGCCGATCCGGCGACCCGCCAGC) [Importance: 0.07, 336 equivalent rules]

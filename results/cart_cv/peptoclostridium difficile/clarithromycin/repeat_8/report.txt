@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 1:41:25.024920
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/clarithromycin___-8916328542551230855/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/clarithromycin___-8916328542551230855/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/clarithromycin___-8916328542551230855/dataset.kover
+Dataset UUID: 187d642c-547d-11e8-8d70-f0921c053df8
+Phenotype: Clarithromycin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 369 (Group sensitive: 199, Group resistant: 170)
+Number of genomes used for testing: 92 (Group sensitive: 49, Group resistant: 43)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01366)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00806791
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01355
+Sensitivity: 0.98235
+Specificity: 0.98995
+Precision: 0.98817
+Recall: 0.98235
+F1 Score: 0.98525
+True Positives: 167.0
+True Negatives: 197.0
+False Positives: 2.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02174
+Sensitivity: 1.0
+Specificity: 0.95918
+Precision: 0.95556
+Recall: 1.0
+F1 Score: 0.97727
+True Positives: 43.0
+True Negatives: 47.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Model (3 rules, depth = 3):
+
+            sensitive
+           /
+        Presence(AGTCGCCCTTTTTTAAGGATACGGCGGTATC)
+           \
+            resistant
+       /
+    Presence(AAAACTTACCCGCCATACCACAGATGTTCCA)
+       \
+        resistant
+   /
+Presence(ATTGAAGTTAGCATCTTAAATGAAGAACCTG)
+   \
+    resistant
+

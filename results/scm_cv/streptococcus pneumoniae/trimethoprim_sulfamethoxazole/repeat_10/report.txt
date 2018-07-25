@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 10:57:15.854376
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___49420779660966717/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/trimethoprim_sulfamethoxazole___49420779660966717/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___49420779660966717/dataset.kover
+Dataset UUID: 54d22b2e-087e-11e8-b3f3-001b2193b764
+Phenotype: Trimethoprim_Sulfamethoxazole___Streptococcus_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 2261 (Group sensitive: 518, Group resistant: 1743)
+Number of genomes used for testing: 565 (Group sensitive: 121, Group resistant: 444)
+Number of k-mers: 24216834
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.06943)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06811
+Sensitivity: 0.97935
+Specificity: 0.7722
+Precision: 0.93534
+Recall: 0.97935
+F1 Score: 0.95684
+True Positives: 1707.0
+True Negatives: 400.0
+False Positives: 118.0
+False Negatives: 36.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.06018
+Sensitivity: 0.97973
+Specificity: 0.79339
+Precision: 0.94565
+Recall: 0.97973
+F1 Score: 0.96239
+True Positives: 435.0
+True Negatives: 96.0
+False Positives: 25.0
+False Negatives: 9.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Absence(CCTTGCGAATCGCTTTGATCACTGGAACAAC) [Importance: 0.89, 9 equivalent rules]
+OR
+Absence(CTACATTATCGGTGGGAAGCAAATTTTTCAG) [Importance: 0.71, 4 equivalent rules]
+OR
+Presence(AGAAAAAAGGGTTCTATAATATTTGTAGTGG) [Importance: 0.03, 2 equivalent rules]

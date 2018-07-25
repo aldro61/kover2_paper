@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:31:47.034397
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefalotin___7053822222416630118/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefalotin___7053822222416630118/dataset.kover
+Dataset UUID: 05673cc6-0588-11e8-9abe-001b2193b764
+Phenotype: Cefalotin___Escherichia_Coli___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 200 (Group sensitive: 155, Group resistant: 45)
+Number of genomes used for testing: 50 (Group sensitive: 36, Group resistant: 14)
+Number of k-mers: 29677326
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.11000)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.095
+Sensitivity: 0.62222
+Specificity: 0.9871
+Precision: 0.93333
+Recall: 0.62222
+F1 Score: 0.74667
+True Positives: 28.0
+True Negatives: 153.0
+False Positives: 2.0
+False Negatives: 17.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.26
+Sensitivity: 0.42857
+Specificity: 0.86111
+Precision: 0.54545
+Recall: 0.42857
+F1 Score: 0.48
+True Positives: 6.0
+True Negatives: 31.0
+False Positives: 5.0
+False Negatives: 8.0
+
+Model (Disjunction - 1 rules):
+------------------------------
+Absence(CCGATATTCTCCTGCGCTTCCTGAGTCGAAC) [Importance: 1.00, 2 equivalent rules]

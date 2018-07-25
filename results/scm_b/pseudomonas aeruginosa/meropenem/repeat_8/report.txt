@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:16:55.106812
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/meropenem___-9072632565547958275/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+Dataset UUID: b1f77c1e-07ca-11e8-b57b-001b2193b764
+Phenotype: Meropenem___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 304 (Group sensitive: 174, Group resistant: 130)
+Number of genomes used for testing: 76 (Group sensitive: 43, Group resistant: 33)
+Number of k-mers: 39041770
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.57473)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.23355
+Sensitivity: 0.70769
+Specificity: 0.81034
+Precision: 0.736
+Recall: 0.70769
+F1 Score: 0.72157
+True Positives: 92.0
+True Negatives: 141.0
+False Positives: 33.0
+False Negatives: 38.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.28947
+Sensitivity: 0.66667
+Specificity: 0.74419
+Precision: 0.66667
+Recall: 0.66667
+F1 Score: 0.66667
+True Positives: 22.0
+True Negatives: 32.0
+False Positives: 11.0
+False Negatives: 11.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAGTACCACCCGCACGGCGACATCGCGGTCT) [Importance: 1.00, 7 equivalent rules]

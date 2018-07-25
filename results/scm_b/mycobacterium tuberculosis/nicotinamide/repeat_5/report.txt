@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:44.471304
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/nicotinamide___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/nicotinamide___260162261243005161/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/nicotinamide___260162261243005161/dataset.kover
+Dataset UUID: 2407f734-0767-11e8-a171-001b2193b764
+Phenotype: Nicotinamide___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 134 (Group sensitive: 68, Group resistant: 66)
+Number of genomes used for testing: 33 (Group sensitive: 15, Group resistant: 18)
+Number of k-mers: 4626600
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.57539)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.17164
+Sensitivity: 0.69697
+Specificity: 0.95588
+Precision: 0.93878
+Recall: 0.69697
+F1 Score: 0.8
+True Positives: 46.0
+True Negatives: 65.0
+False Positives: 3.0
+False Negatives: 20.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.12121
+Sensitivity: 0.77778
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.77778
+F1 Score: 0.875
+True Positives: 14.0
+True Negatives: 15.0
+False Positives: 0.0
+False Negatives: 4.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ACCACCCGCACGGCGACGCGTCGATCTACGA) [Importance: 1.00, 3 equivalent rules]

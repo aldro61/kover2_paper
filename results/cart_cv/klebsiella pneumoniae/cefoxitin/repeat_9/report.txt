@@ -1,0 +1,162 @@
+Kover Learning Report
+=====================
+
+Running time: 1 day, 21:47:54.228921
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/cefoxitin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 4
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/cefoxitin___2202579077548954665/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/cefoxitin___2202579077548954665/dataset.kover
+Dataset UUID: 990db0ca-0607-11e8-b840-001b2193b764
+Phenotype: Cefoxitin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 1432 (Group sensitive: 664, Group resistant: 768)
+Number of genomes used for testing: 357 (Group sensitive: 161, Group resistant: 196)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.11454)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00101171
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06844
+Sensitivity: 0.8724
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.8724
+F1 Score: 0.93185
+True Positives: 670.0
+True Negatives: 664.0
+False Positives: 0.0
+False Negatives: 98.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.13725
+Sensitivity: 0.81122
+Specificity: 0.92547
+Precision: 0.92982
+Recall: 0.81122
+F1 Score: 0.86649
+True Positives: 159.0
+True Negatives: 149.0
+False Positives: 12.0
+False Negatives: 37.0
+
+Model (23 rules, depth = 17):
+
+                                resistant
+                               /
+                            Presence(AAAAGGTCACGGGACCATCATTGACCAAAGA)
+                               \
+                                            resistant
+                                           /
+                                        Presence(ATACCCCTGTTCGTAGGGCGGGAAAAATCTA)
+                                           \
+                                                            resistant
+                                                           /
+                                                        Presence(AAAGCTACACCGTCGGCTCCAACGAGTTCTA)
+                                                           \
+                                                                    sensitive
+                                                                   /
+                                                                Presence(ATTTGCAGCCGCCAGGCTGCCGTGGTTCAGA)
+                                                                   \
+                                                                    resistant
+                                                               /
+                                                            Presence(CATCGCTAACTTTGCAACAGTGCCCATAGCA)
+                                                               \
+                                                                resistant
+                                                       /
+                                                    Presence(AAGTACCTCAGATTTTTATATCCGTGCCGGA)
+                                                       \
+                                                        resistant
+                                                   /
+                                                Presence(AACGCATTTGCAGCGTGAAAGGCGCCCCCCC)
+                                                   \
+                                                    resistant
+                                               /
+                                            Presence(AAGGATCCCCCGGACCGCTTCGACGCATGTG)
+                                               \
+                                                resistant
+                                       /
+                                    Presence(ACGTCCTAGGACGAAAAATGAATACCAAGTC)
+                                       \
+                                            sensitive
+                                           /
+                                        Presence(AAATCTGGGGCTGACGCGCAGCGGTAAGGAA)
+                                           \
+                                            resistant
+                                   /
+                                Presence(AAAAATTCATCATAGGGCAATTCACCAGCCC)
+                                   \
+                                    resistant
+                           /
+                        Presence(ACTATATAGTGCAGGCAGGCGAAACATCCGA)
+                           \
+                            resistant
+                       /
+                    Presence(AACTTGATTATGAGTGAATACGCACTCATTA)
+                       \
+                        resistant
+                   /
+                Presence(TTTCGCGCCGTTCTCAGCAGTTAACCTCATC)
+                   \
+                    resistant
+               /
+            Presence(AAAAAGCCGTGCGGATCTGCTGAATTTCTAT)
+               \
+                resistant
+           /
+        Presence(AAAAAAACAGGGGCAACACCCGAAAACCGGG)
+           \
+            resistant
+       /
+    Presence(ACCGACGTTCTGCCGGAATTCGGCGGCGACG)
+       \
+            sensitive
+           /
+        Presence(TCGGCTGCGGCACCACGCTGCAGTCGGCAAA)
+           \
+            resistant
+   /
+Presence(ACGTGACGAGCGCCAAAAGCCTGCCGCATCT)
+   \
+            resistant
+           /
+        Presence(AAATCCTGTCAACCGAGCGCACACTTATCCC)
+           \
+            sensitive
+       /
+    Presence(CTGGCTGCCGGAGTCGCTGGCGGTCGCCGGC)
+       \
+            sensitive
+           /
+        Presence(CGAATTTGCTGCCTTTGCCGATGGCATAGAA)
+           \
+                sensitive
+               /
+            Presence(ATGCGGCAGCTGCCGCAGATCCCCGCCCGAC)
+               \
+                resistant
+

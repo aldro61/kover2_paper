@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:06:45.818909
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/patric_data/single_species_datasets/clindamycin___-8916328542551230855/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/scm_cv/clindamycin___-8916328542551230855/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/clindamycin___-8916328542551230855/dataset.kover
+Dataset UUID: 6c54415e-07b8-11e8-8a66-001b2193b764
+Phenotype: Clindamycin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 212 (Group sensitive: 183, Group resistant: 29)
+Number of genomes used for testing: 53 (Group sensitive: 48, Group resistant: 5)
+Number of k-mers: 17807816
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.00476)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 29.0
+True Negatives: 183.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01887
+Sensitivity: 1.0
+Specificity: 0.97917
+Precision: 0.83333
+Recall: 1.0
+F1 Score: 0.90909
+True Positives: 5.0
+True Negatives: 47.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAAAAGTACTCAACCAAATAATAAAACAATT) [Importance: 0.86, 616 equivalent rules]
+OR
+Presence(ACAATTCTTCAAAAGTTACAAGCTGTTTACC) [Importance: 0.66, 4 equivalent rules]

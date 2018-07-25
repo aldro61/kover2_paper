@@ -1,0 +1,33 @@
+>rule_id: 0___ex_1320___eq_19, left_child: 1___ex_912___eq_31, right_child: 10___ex_408___eq_2, importance: 0.46
+AAAACCTGAGTACACTCCCGGCTGTGCGCCT
+
+>rule_id: 1___ex_912___eq_31, left_child: 2___ex_181___eq_2, right_child: leaf___ex_731___sensitive_82_0.14417582__resistant_649_0.85582418, importance: 0.19
+AAACAGATTCAGGTCCTCAAAAAGCAACAAT
+
+>rule_id: 2___ex_181___eq_2, left_child: leaf___ex_25___sensitive_5_0.25000000__resistant_20_0.75000000, right_child: 4___ex_156___eq_1, importance: 0.02
+TTAATCGTGCGCTCATGACAGCGGATCGCAA
+
+>rule_id: 4___ex_156___eq_1, left_child: leaf___ex_9___sensitive_0_0.00000000__resistant_9_1.00000000, right_child: 6___ex_147___eq_1, importance: 0.02
+CCTCATCGCTAACTTTGCAACAGTGCCCGTA
+
+>rule_id: 6___ex_147___eq_1, left_child: leaf___ex_130___sensitive_86_0.72268908__resistant_44_0.27731092, right_child: leaf___ex_17___sensitive_3_0.22222222__resistant_14_0.77777778, importance: 0.02
+CATATCAGGAACTTGTTCGCACCTTCCCTAA
+
+>rule_id: 10___ex_408___eq_2, left_child: 11___ex_163___eq_8, right_child: 20___ex_245___eq_51, importance: 0.11
+AGCTAATAAAAAACACACGTGGAATTTAGGG
+
+>rule_id: 11___ex_163___eq_8, left_child: 12___ex_119___eq_3, right_child: leaf___ex_44___sensitive_6_0.17391304__resistant_38_0.82608696, importance: 0.03
+AAATATTCGCGCAGGTGTTCAGGCTGTTCCC
+
+>rule_id: 12___ex_119___eq_3, left_child: leaf___ex_10___sensitive_0_0.00000000__resistant_10_1.00000000, right_child: 14___ex_109___eq_2, importance: 0.02
+ATCCGCAGCTGAGCCGGGTGTTTACCACCTG
+
+>rule_id: 14___ex_109___eq_2, left_child: 15___ex_45___eq_2, right_child: leaf___ex_64___sensitive_45_0.75949367__resistant_19_0.24050633, importance: 0.02
+ACTCCGACAGCGACTCTGACTCGGACAGCGA
+
+>rule_id: 15___ex_45___eq_2, left_child: leaf___ex_27___sensitive_14_0.58947368__resistant_13_0.41052632, right_child: leaf___ex_18___sensitive_1_0.07272727__resistant_17_0.92727273, importance: 0.02
+CCCGGCCGCCCGCGAAGTTGACCTGTTTCCC
+
+>rule_id: 20___ex_245___eq_51, left_child: leaf___ex_19___sensitive_2_0.13559322__resistant_17_0.86440678, right_child: leaf___ex_226___sensitive_207_0.93559322__resistant_19_0.06440678, importance: 0.07
+AACGGGCAGTAAGGCTCTGAAAATCATCTAT
+

@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 0:17:21.555991
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/fusidic_acid___946434054234721145/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+Dataset UUID: 8b1fcb44-0867-11e8-8137-001b2193b764
+Phenotype: Fusidic_Acid___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 92 (Group sensitive: 64, Group resistant: 28)
+Number of genomes used for testing: 22 (Group sensitive: 11, Group resistant: 11)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.17333)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.03074377
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08696
+Sensitivity: 0.96429
+Specificity: 0.89063
+Precision: 0.79412
+Recall: 0.96429
+F1 Score: 0.87097
+True Positives: 27.0
+True Negatives: 57.0
+False Positives: 7.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.22727
+Sensitivity: 0.90909
+Specificity: 0.63636
+Precision: 0.71429
+Recall: 0.90909
+F1 Score: 0.8
+True Positives: 10.0
+True Negatives: 7.0
+False Positives: 4.0
+False Negatives: 1.0
+
+Model (3 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(AAAAACTTCAGAAAGTATTTAAGAAAGTTAA)
+       \
+        resistant
+   /
+Presence(AGTCATCAGTCCAATTTATTATAGAGCCAAC)
+   \
+        resistant
+       /
+    Presence(ACCATTTAAAGCTAGATTCAGAATATGCGTC)
+       \
+        sensitive
+

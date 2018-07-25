@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:16.556670
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ofloxacin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ofloxacin___2202579077548954665/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ofloxacin___2202579077548954665/dataset.kover
+Dataset UUID: 65ccc8c6-06bc-11e8-951f-001b2193b764
+Phenotype: Ofloxacin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 60 (Group sensitive: 22, Group resistant: 38)
+Number of genomes used for testing: 14 (Group sensitive: 5, Group resistant: 9)
+Number of k-mers: 12410574
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.15000)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05
+Sensitivity: 0.92105
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.92105
+F1 Score: 0.9589
+True Positives: 35.0
+True Negatives: 22.0
+False Positives: 0.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.28571
+Sensitivity: 0.66667
+Specificity: 0.8
+Precision: 0.85714
+Recall: 0.66667
+F1 Score: 0.75
+True Positives: 6.0
+True Negatives: 4.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAATCAACCGTAATCCTCTGCCCAAATCAGA) [Importance: 0.74, 109 equivalent rules]
+OR
+Presence(AAGGGCGGGCATTATCAGTGAAGTGGTCAAC) [Importance: 0.26, 41 equivalent rules]

@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:06:51.883169
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim___7053822222416630118/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/trimethoprim___7053822222416630118/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim___7053822222416630118/dataset.kover
+Dataset UUID: deaf402a-05d1-11e8-8bfc-001b2193b764
+Phenotype: Trimethoprim___Escherichia_Coli___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 329 (Group sensitive: 206, Group resistant: 123)
+Number of genomes used for testing: 82 (Group sensitive: 58, Group resistant: 24)
+Number of k-mers: 34866345
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.31556)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05167
+Sensitivity: 0.91057
+Specificity: 0.97087
+Precision: 0.94915
+Recall: 0.91057
+F1 Score: 0.92946
+True Positives: 112.0
+True Negatives: 200.0
+False Positives: 6.0
+False Negatives: 11.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07317
+Sensitivity: 0.83333
+Specificity: 0.96552
+Precision: 0.90909
+Recall: 0.83333
+F1 Score: 0.86957
+True Positives: 20.0
+True Negatives: 56.0
+False Positives: 2.0
+False Negatives: 4.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(CCGAGGCATAGACTGTACAAAAAAACAGTCA) [Importance: 0.89, 13 equivalent rules]
+OR
+Presence(AAACAGGAGCTGTTCACCTTTGGCACTCCAT) [Importance: 0.21, 210 equivalent rules]

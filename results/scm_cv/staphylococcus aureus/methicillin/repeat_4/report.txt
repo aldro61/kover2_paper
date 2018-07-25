@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:44:32.430887
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/methicillin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/methicillin___6654735289702248879/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/methicillin___6654735289702248879/dataset.kover
+Dataset UUID: 825a1132-082f-11e8-ae92-001b2193b764
+Phenotype: Methicillin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 1275 (Group sensitive: 711, Group resistant: 564)
+Number of genomes used for testing: 318 (Group sensitive: 175, Group resistant: 143)
+Number of k-mers: 13289281
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.00862)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00863
+Sensitivity: 0.99113
+Specificity: 0.99156
+Precision: 0.98938
+Recall: 0.99113
+F1 Score: 0.99026
+True Positives: 559.0
+True Negatives: 705.0
+False Positives: 6.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01887
+Sensitivity: 0.96503
+Specificity: 0.99429
+Precision: 0.99281
+Recall: 0.96503
+F1 Score: 0.97872
+True Positives: 138.0
+True Negatives: 174.0
+False Positives: 1.0
+False Negatives: 5.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAAATAAAAATGCAAGGAGAGGTAATAT) [Importance: 1.00, 1345 equivalent rules]

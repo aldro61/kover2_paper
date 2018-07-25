@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:34:06.340073
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/penicillin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/penicillin___6654735289702248879/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/penicillin___6654735289702248879/dataset.kover
+Dataset UUID: 7f2b1f30-084b-11e8-ac51-001b2193b764
+Phenotype: Penicillin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 834 (Group sensitive: 122, Group resistant: 712)
+Number of genomes used for testing: 208 (Group sensitive: 34, Group resistant: 174)
+Number of k-mers: 12051317
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.02154)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01799
+Sensitivity: 0.99298
+Specificity: 0.91803
+Precision: 0.98605
+Recall: 0.99298
+F1 Score: 0.9895
+True Positives: 707.0
+True Negatives: 112.0
+False Positives: 10.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02404
+Sensitivity: 0.98276
+Specificity: 0.94118
+Precision: 0.98844
+Recall: 0.98276
+F1 Score: 0.98559
+True Positives: 171.0
+True Negatives: 32.0
+False Positives: 2.0
+False Negatives: 3.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AACTATTACTTGTTCAAGATTAGATATTTTC) [Importance: 0.99, 5 equivalent rules]
+OR
+Absence(AATTGTTCACGTGAATCTTTATACTTATGCA) [Importance: 0.02, 4 equivalent rules]

@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:51:38.979509
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime___7053822222416630118/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/cefuroxime___7053822222416630118/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime___7053822222416630118/dataset.kover
+Dataset UUID: a9bbd504-096e-11e8-aa89-001b2193b764
+Phenotype: Cefuroxime___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 1206 (Group sensitive: 1013, Group resistant: 193)
+Number of genomes used for testing: 301 (Group sensitive: 253, Group resistant: 48)
+Number of k-mers: 47923975
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.31086)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08126
+Sensitivity: 0.51813
+Specificity: 0.99506
+Precision: 0.95238
+Recall: 0.51813
+F1 Score: 0.67114
+True Positives: 100.0
+True Negatives: 1008.0
+False Positives: 5.0
+False Negatives: 93.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0897
+Sensitivity: 0.5
+Specificity: 0.98814
+Precision: 0.88889
+Recall: 0.5
+F1 Score: 0.64
+True Positives: 24.0
+True Negatives: 250.0
+False Positives: 3.0
+False Negatives: 24.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AACAGCGTGACGGTTGCCGTCGCCATCAGCG) [Importance: 0.70, 215 equivalent rules]
+OR
+Absence(ACAACTGTCAGGATAGCAGCCAGACCGTAGA) [Importance: 0.16, 4 equivalent rules]
+OR
+Presence(AAATAGTGATTTTTGAAGCTAATAAAAAACA) [Importance: 0.55, 16 equivalent rules]

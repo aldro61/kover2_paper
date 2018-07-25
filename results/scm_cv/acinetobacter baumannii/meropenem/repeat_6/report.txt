@@ -1,0 +1,85 @@
+Kover Learning Report
+=====================
+
+Running time: 0:13:47.311628
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-3225223558739261696/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/meropenem___-3225223558739261696/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/meropenem___-3225223558739261696/dataset.kover
+Dataset UUID: b4dffeb4-0578-11e8-9929-001b2193b764
+Phenotype: Meropenem___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 189 (Group sensitive: 26, Group resistant: 163)
+Number of genomes used for testing: 47 (Group sensitive: 7, Group resistant: 40)
+Number of k-mers: 13409599
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.08421)
+Model type: conjunction
+p: 3.162000
+Maximum number of rules: 8
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01058
+Sensitivity: 1.0
+Specificity: 0.92308
+Precision: 0.98788
+Recall: 1.0
+F1 Score: 0.9939
+True Positives: 163.0
+True Negatives: 24.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.10638
+Sensitivity: 1.0
+Specificity: 0.28571
+Precision: 0.88889
+Recall: 1.0
+F1 Score: 0.94118
+True Positives: 40.0
+True Negatives: 2.0
+False Positives: 5.0
+False Negatives: 0.0
+
+Model (Conjunction - 8 rules):
+------------------------------
+Absence(ACCTTCCTATGACAATTCAAAGATCCGGAAT) [Importance: 0.29, 28 equivalent rules]
+AND
+Absence(AAATACCCCTGGGTACAAACGCCGTTAGGCT) [Importance: 0.21, 430 equivalent rules]
+AND
+Absence(CTTTTATCCTTAATTATTTAACATAATGGCG) [Importance: 0.29, 1 equivalent rules]
+AND
+Absence(AACAAGTACTACATGGAAACAGGCTACATGA) [Importance: 0.29, 5 equivalent rules]
+AND
+Absence(AAAAAAATATTCGGGATTGGAATGATTTAAC) [Importance: 0.08, 465 equivalent rules]
+AND
+Absence(ACCTGGGTCCATTGCGATTGGGTGGATCAAT) [Importance: 0.08, 10 equivalent rules]
+AND
+Absence(TGAGCATGCAGGTGACCTTAATCAATTAACC) [Importance: 0.08, 1 equivalent rules]
+AND
+Absence(AGCGGCTTTGTTGCACAAACCTATCTGTAAA) [Importance: 0.08, 17 equivalent rules]

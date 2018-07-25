@@ -1,0 +1,79 @@
+Kover Learning Report
+=====================
+
+Running time: 12:19:20.916109
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin_clavulanic_acid___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/amoxicillin_clavulanic_acid___7053822222416630118/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin_clavulanic_acid___7053822222416630118/dataset.kover
+Dataset UUID: 994e9942-095d-11e8-9d2b-001b2193b764
+Phenotype: Amoxicillin_Clavulanic_Acid___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 1220 (Group sensitive: 859, Group resistant: 361)
+Number of genomes used for testing: 304 (Group sensitive: 201, Group resistant: 103)
+Number of k-mers: 48456086
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.15574)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 5
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.14672
+Sensitivity: 0.52078
+Specificity: 0.99302
+Precision: 0.96907
+Recall: 0.52078
+F1 Score: 0.67748
+True Positives: 188.0
+True Negatives: 853.0
+False Positives: 6.0
+False Negatives: 173.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.21711
+Sensitivity: 0.38835
+Specificity: 0.98507
+Precision: 0.93023
+Recall: 0.38835
+F1 Score: 0.54795
+True Positives: 40.0
+True Negatives: 198.0
+False Positives: 3.0
+False Negatives: 63.0
+
+Model (Disjunction - 5 rules):
+------------------------------
+Presence(AAGTATTGGTTTGGTAAAGGGCTTAATTTTA) [Importance: 0.52, 58 equivalent rules]
+OR
+Presence(AAAATAAGCGTATCACGAGGCCCTTTCGTCT) [Importance: 0.22, 7 equivalent rules]
+OR
+Presence(ACTCGCAGAAGAAGGGGTCTGACGCTCAGTG) [Importance: 0.13, 15 equivalent rules]
+OR
+Presence(ATATGTATCCGCTCATGATACAATAACCCTG) [Importance: 0.07, 8 equivalent rules]
+OR
+Presence(ATCTTGGCTTTGTGGGAGAGGCGTATCAGAC) [Importance: 0.08, 18 equivalent rules]

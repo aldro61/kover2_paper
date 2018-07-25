@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:14:35.071757
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/amoxicillin___260162261243005161/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+Dataset UUID: b2cb882e-070c-11e8-9183-001b2193b764
+Phenotype: Amoxicillin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 613 (Group sensitive: 591, Group resistant: 22)
+Number of genomes used for testing: 153 (Group sensitive: 150, Group resistant: 3)
+Number of k-mers: 7289637
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01629)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01305
+Sensitivity: 0.68182
+Specificity: 0.99831
+Precision: 0.9375
+Recall: 0.68182
+F1 Score: 0.78947
+True Positives: 15.0
+True Negatives: 590.0
+False Positives: 1.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01961
+Sensitivity: 0.0
+Specificity: 1.0
+Precision: -inf
+Recall: 0.0
+F1 Score: -inf
+True Positives: 0.0
+True Negatives: 150.0
+False Positives: 0.0
+False Negatives: 3.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Absence(ACCACCCGCACGGCGACGCGTCGATCTACGA) [Importance: 0.99, 3 equivalent rules]
+AND
+Absence(ACTAGCTGTGAGACAGTCAATCCCGATGCCC) [Importance: 0.51, 2 equivalent rules]

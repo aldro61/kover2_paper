@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 0:53:37.049361
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/rifampin___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/rifampin___260162261243005161/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/rifampin___260162261243005161/dataset.kover
+Dataset UUID: 286bda2a-078a-11e8-ac40-001b2193b764
+Phenotype: Rifampin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 4018 (Group sensitive: 2894, Group resistant: 1124)
+Number of genomes used for testing: 1004 (Group sensitive: 732, Group resistant: 272)
+Number of k-mers: 11670366
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.12173)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02165
+Sensitivity: 0.96352
+Specificity: 0.98411
+Precision: 0.95926
+Recall: 0.96352
+F1 Score: 0.96138
+True Positives: 1083.0
+True Negatives: 2848.0
+False Positives: 46.0
+False Negatives: 41.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01793
+Sensitivity: 0.96324
+Specificity: 0.98907
+Precision: 0.97037
+Recall: 0.96324
+F1 Score: 0.96679
+True Positives: 262.0
+True Negatives: 724.0
+False Positives: 8.0
+False Negatives: 10.0
+
+Model (Disjunction - 4 rules):
+------------------------------
+Absence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC) [Importance: 0.84, 1 equivalent rules]
+OR
+Absence(ACAGCGGGTTGTTCTGGTCCATGAATTGGCT) [Importance: 0.21, 2 equivalent rules]
+OR
+Absence(CCCTGTGGTGCTCGGGCAACAGCGAACCGAG) [Importance: 0.10, 1 equivalent rules]
+OR
+Presence(ACCCCGGGCGACCGCACCAGCTGGCTGAACA) [Importance: 0.01, 31 equivalent rules]

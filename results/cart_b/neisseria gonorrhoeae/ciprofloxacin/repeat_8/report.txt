@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:29.612112
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___672792900560953954/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/ciprofloxacin___672792900560953954/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___672792900560953954/dataset.kover
+Dataset UUID: fe42f54a-0797-11e8-b63e-001b2193b764
+Phenotype: Ciprofloxacin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 139 (Group sensitive: 54, Group resistant: 85)
+Number of genomes used for testing: 34 (Group sensitive: 13, Group resistant: 21)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.26674)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01438849
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02158
+Sensitivity: 1.0
+Specificity: 0.94444
+Precision: 0.96591
+Recall: 1.0
+F1 Score: 0.98266
+True Positives: 85.0
+True Negatives: 51.0
+False Positives: 3.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02941
+Sensitivity: 1.0
+Specificity: 0.92308
+Precision: 0.95455
+Recall: 1.0
+F1 Score: 0.97674
+True Positives: 21.0
+True Negatives: 12.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAATCGCCGTGGGGGTGGTATTTACCGATGA)
+   \
+    resistant
+

@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:16.543941
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ceftriaxone___-8916328542551230855/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/ceftriaxone___-8916328542551230855/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ceftriaxone___-8916328542551230855/dataset.kover
+Dataset UUID: 91d498f2-07a9-11e8-bb75-001b2193b764
+Phenotype: Ceftriaxone___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 170 (Group sensitive: 52, Group resistant: 118)
+Number of genomes used for testing: 42 (Group sensitive: 10, Group resistant: 32)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.40114)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.02941176
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08235
+Sensitivity: 0.9661
+Specificity: 0.80769
+Precision: 0.91935
+Recall: 0.9661
+F1 Score: 0.94215
+True Positives: 114.0
+True Negatives: 42.0
+False Positives: 10.0
+False Negatives: 4.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07143
+Sensitivity: 0.96875
+Specificity: 0.8
+Precision: 0.93939
+Recall: 0.96875
+F1 Score: 0.95385
+True Positives: 31.0
+True Negatives: 8.0
+False Positives: 2.0
+False Negatives: 1.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAGCAATGATAACCTATGAAATAAATGTATC)
+   \
+    resistant
+

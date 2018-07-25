@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:43.492823
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/moxifloxacin___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/moxifloxacin___260162261243005161/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/moxifloxacin___260162261243005161/dataset.kover
+Dataset UUID: f1efab30-0765-11e8-ac0b-001b2193b764
+Phenotype: Moxifloxacin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 560 (Group sensitive: 511, Group resistant: 49)
+Number of genomes used for testing: 139 (Group sensitive: 131, Group resistant: 8)
+Number of k-mers: 7176022
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.20543)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0375
+Sensitivity: 0.89796
+Specificity: 0.96869
+Precision: 0.73333
+Recall: 0.89796
+F1 Score: 0.80734
+True Positives: 44.0
+True Negatives: 495.0
+False Positives: 16.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02878
+Sensitivity: 0.875
+Specificity: 0.9771
+Precision: 0.7
+Recall: 0.875
+F1 Score: 0.77778
+True Positives: 7.0
+True Negatives: 128.0
+False Positives: 3.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ACCACCCGCACGGCGACGCGTCGATCTACGA) [Importance: 1.00, 3 equivalent rules]

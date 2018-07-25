@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:32.219056
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/chloramphenicol___49420779660966717/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/chloramphenicol___49420779660966717/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/chloramphenicol___49420779660966717/dataset.kover
+Dataset UUID: 4e609d8e-086f-11e8-b7c4-001b2193b764
+Phenotype: Chloramphenicol___Streptococcus_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 328 (Group sensitive: 211, Group resistant: 117)
+Number of genomes used for testing: 81 (Group sensitive: 49, Group resistant: 32)
+Number of k-mers: 6380123
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.25208)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04573
+Sensitivity: 0.94872
+Specificity: 0.95735
+Precision: 0.925
+Recall: 0.94872
+F1 Score: 0.93671
+True Positives: 111.0
+True Negatives: 202.0
+False Positives: 9.0
+False Negatives: 6.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01235
+Sensitivity: 0.96875
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.96875
+F1 Score: 0.98413
+True Positives: 31.0
+True Negatives: 49.0
+False Positives: 0.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAGAGTATTTAGCTAGTGAACTTTATGA) [Importance: 1.00, 657 equivalent rules]

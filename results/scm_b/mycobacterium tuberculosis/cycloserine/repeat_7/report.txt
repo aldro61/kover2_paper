@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:42.150851
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cycloserine___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/cycloserine___260162261243005161/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cycloserine___260162261243005161/dataset.kover
+Dataset UUID: 5d40d132-074f-11e8-83ec-001b2193b764
+Phenotype: Cycloserine___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 269 (Group sensitive: 213, Group resistant: 56)
+Number of genomes used for testing: 67 (Group sensitive: 51, Group resistant: 16)
+Number of k-mers: 4776616
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.51833)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.17844
+Sensitivity: 0.25
+Specificity: 0.97183
+Precision: 0.7
+Recall: 0.25
+F1 Score: 0.36842
+True Positives: 14.0
+True Negatives: 207.0
+False Positives: 6.0
+False Negatives: 42.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.22388
+Sensitivity: 0.125
+Specificity: 0.98039
+Precision: 0.66667
+Recall: 0.125
+F1 Score: 0.21053
+True Positives: 2.0
+True Negatives: 50.0
+False Positives: 1.0
+False Negatives: 14.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(AAGGATGGTGACACCATCCCGTTGAAGCGCT) [Importance: 1.00, 51 equivalent rules]

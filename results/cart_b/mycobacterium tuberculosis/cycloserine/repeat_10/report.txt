@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 0:06:22.166633
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/cycloserine___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/cycloserine___260162261243005161/train_0.800_seed_9_10_folds
+progress: False
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/cycloserine___260162261243005161/dataset.kover
+Dataset UUID: 5d40d132-074f-11e8-83ec-001b2193b764
+Phenotype: Cycloserine___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 269 (Group sensitive: 207, Group resistant: 62)
+Number of genomes used for testing: 67 (Group sensitive: 57, Group resistant: 10)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.52209)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01115242
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.12268
+Sensitivity: 0.69355
+Specificity: 0.93237
+Precision: 0.75439
+Recall: 0.69355
+F1 Score: 0.72269
+True Positives: 43.0
+True Negatives: 193.0
+False Positives: 14.0
+False Negatives: 19.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.1791
+Sensitivity: 0.2
+Specificity: 0.92982
+Precision: 0.33333
+Recall: 0.2
+F1 Score: 0.25
+True Positives: 2.0
+True Negatives: 53.0
+False Positives: 4.0
+False Negatives: 8.0
+
+Model (3 rules, depth = 2):
+
+        resistant
+       /
+    Presence(TTGTGAACCGCCCCGGCATGTCCGGAGACTC)
+       \
+        sensitive
+   /
+Presence(CTCGGCGATGACCTCTTCGAGCACATCCCAC)
+   \
+        resistant
+       /
+    Presence(CCCGGGTCGATGTGGAAGTCCTTGGTTGCCA)
+       \
+        sensitive
+

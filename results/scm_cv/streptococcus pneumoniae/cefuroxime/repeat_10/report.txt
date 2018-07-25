@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:30.355885
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime___49420779660966717/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefuroxime___49420779660966717/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime___49420779660966717/dataset.kover
+Dataset UUID: 5cf5178c-086d-11e8-a038-001b2193b764
+Phenotype: Cefuroxime___Streptococcus_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 91 (Group sensitive: 40, Group resistant: 51)
+Number of genomes used for testing: 22 (Group sensitive: 5, Group resistant: 17)
+Number of k-mers: 5654370
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.06667)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02198
+Sensitivity: 0.96078
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.96078
+F1 Score: 0.98
+True Positives: 49.0
+True Negatives: 40.0
+False Positives: 0.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04545
+Sensitivity: 1.0
+Specificity: 0.8
+Precision: 0.94444
+Recall: 1.0
+F1 Score: 0.97143
+True Positives: 17.0
+True Negatives: 4.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (Disjunction - 1 rules):
+------------------------------
+Presence(AAATTGGAGCTGAACCTTGGAAAACAATAGG) [Importance: 1.00, 18 equivalent rules]

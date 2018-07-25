@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:08.495165
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___672792900560953954/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ciprofloxacin___672792900560953954/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___672792900560953954/dataset.kover
+Dataset UUID: fe42f54a-0797-11e8-b63e-001b2193b764
+Phenotype: Ciprofloxacin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 139 (Group sensitive: 52, Group resistant: 87)
+Number of genomes used for testing: 34 (Group sensitive: 15, Group resistant: 19)
+Number of k-mers: 3018843
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.02857)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02158
+Sensitivity: 1.0
+Specificity: 0.94231
+Precision: 0.96667
+Recall: 1.0
+F1 Score: 0.98305
+True Positives: 87.0
+True Negatives: 49.0
+False Positives: 3.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02941
+Sensitivity: 1.0
+Specificity: 0.93333
+Precision: 0.95
+Recall: 1.0
+F1 Score: 0.97436
+True Positives: 19.0
+True Negatives: 14.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAATCGCCGTGGGGGTGGTATTTACCGATGA) [Importance: 1.00, 8 equivalent rules]

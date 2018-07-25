@@ -1,0 +1,90 @@
+Kover Learning Report
+=====================
+
+Running time: 11:10:33.306426
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/meropenem___-9072632565547958275/train_0.800_seed_9_10_folds
+progress: False
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/meropenem___-9072632565547958275/dataset.kover
+Dataset UUID: b1f77c1e-07ca-11e8-b57b-001b2193b764
+Phenotype: Meropenem___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 304 (Group sensitive: 176, Group resistant: 128)
+Number of genomes used for testing: 76 (Group sensitive: 41, Group resistant: 35)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.24355)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01350154
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.16447
+Sensitivity: 0.64844
+Specificity: 0.97159
+Precision: 0.94318
+Recall: 0.64844
+F1 Score: 0.76852
+True Positives: 83.0
+True Negatives: 171.0
+False Positives: 5.0
+False Negatives: 45.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.31579
+Sensitivity: 0.42857
+Specificity: 0.90244
+Precision: 0.78947
+Recall: 0.42857
+F1 Score: 0.55556
+True Positives: 15.0
+True Negatives: 37.0
+False Positives: 4.0
+False Negatives: 20.0
+
+Model (5 rules, depth = 3):
+
+        resistant
+       /
+    Presence(CGACGCGGGCCACGTCGCGCAGGCGGATCGC)
+       \
+            sensitive
+           /
+        Presence(AAGGTGATTCCGTCCTGCACCTTGGTGAGGT)
+           \
+            resistant
+   /
+Presence(CCAAGTCGCCGTGCGGGTGGAACTTGCCGAG)
+   \
+        sensitive
+       /
+    Presence(AACACCACCACCATCAGCACCGCCACCAGCG)
+       \
+            resistant
+           /
+        Presence(AGGCGCTGGAAGATGGCTTGCAGGACTACAG)
+           \
+            sensitive
+

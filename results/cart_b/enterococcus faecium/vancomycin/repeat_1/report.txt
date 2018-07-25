@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:20.218374
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/vancomycin___-8850046431738590682/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/vancomycin___-8850046431738590682/train_0.800_seed_0_10_folds
+progress: False
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/vancomycin___-8850046431738590682/dataset.kover
+Dataset UUID: 99660f46-095d-11e8-b2a7-001b2193b764
+Phenotype: Vancomycin___Enterococcus_Faecium___Metadata_Date_2018-02-03
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 108 (Group sensitive: 67, Group resistant: 41)
+Number of genomes used for testing: 26 (Group sensitive: 16, Group resistant: 10)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.24866)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00925926
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00926
+Sensitivity: 1.0
+Specificity: 0.98507
+Precision: 0.97619
+Recall: 1.0
+F1 Score: 0.98795
+True Positives: 41.0
+True Negatives: 66.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 10.0
+True Negatives: 16.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAAAAAATAGAAGCTACGCTGTGCAGCTCCC)
+   \
+    resistant
+

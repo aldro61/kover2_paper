@@ -1,0 +1,90 @@
+Kover Learning Report
+=====================
+
+Running time: 15:28:41.385652
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ampicillin_sulbactam___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/ampicillin_sulbactam___2202579077548954665/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ampicillin_sulbactam___2202579077548954665/dataset.kover
+Dataset UUID: 08791ab4-05f2-11e8-8310-001b2193b764
+Phenotype: Ampicillin_Sulbactam___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 1324 (Group sensitive: 79, Group resistant: 1245)
+Number of genomes used for testing: 330 (Group sensitive: 12, Group resistant: 318)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01585)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00297911
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0068
+Sensitivity: 0.99759
+Specificity: 0.92405
+Precision: 0.99519
+Recall: 0.99759
+F1 Score: 0.99639
+True Positives: 1242.0
+True Negatives: 73.0
+False Positives: 6.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01818
+Sensitivity: 0.98742
+Specificity: 0.83333
+Precision: 0.99367
+Recall: 0.98742
+F1 Score: 0.99054
+True Positives: 314.0
+True Negatives: 10.0
+False Positives: 2.0
+False Negatives: 4.0
+
+Model (5 rules, depth = 3):
+
+        resistant
+       /
+    Presence(ATTTCGCCCTCAGCCGGAACCGACCCCAACA)
+       \
+            sensitive
+           /
+        Presence(CATTTTCATGACCAAAACCGCCTCCGCGGCC)
+           \
+            resistant
+   /
+Presence(ATCCTGTCTCTTATACACATCTGACGCTGCC)
+   \
+            sensitive
+           /
+        Presence(ATATCGAATCGGTAAAAATCAAATTTAACTC)
+           \
+            resistant
+       /
+    Presence(AAATAGTGATTTTTGAAGCTAATAAAAAACA)
+       \
+        resistant
+

@@ -1,0 +1,90 @@
+Kover Learning Report
+=====================
+
+Running time: 5:39:15.647454
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/levofloxacin___-9072632565547958275/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/levofloxacin___-9072632565547958275/train_0.800_seed_4_10_folds
+progress: False
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/levofloxacin___-9072632565547958275/dataset.kover
+Dataset UUID: 43b381aa-07c3-11e8-8bd9-001b2193b764
+Phenotype: Levofloxacin___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 393 (Group sensitive: 231, Group resistant: 162)
+Number of genomes used for testing: 98 (Group sensitive: 59, Group resistant: 39)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05090)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00623280
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01781
+Sensitivity: 0.96914
+Specificity: 0.99134
+Precision: 0.98742
+Recall: 0.96914
+F1 Score: 0.97819
+True Positives: 157.0
+True Negatives: 229.0
+False Positives: 2.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07143
+Sensitivity: 0.97436
+Specificity: 0.89831
+Precision: 0.86364
+Recall: 0.97436
+F1 Score: 0.91566
+True Positives: 38.0
+True Negatives: 53.0
+False Positives: 6.0
+False Negatives: 1.0
+
+Model (5 rules, depth = 3):
+
+        sensitive
+       /
+    Presence(AACCTGGACGGCCTGTACGTGCTCGGCGGCA)
+       \
+        resistant
+   /
+Presence(ACGATGGTGTCGTAGACCGCGGTGTCGCCGT)
+   \
+            sensitive
+           /
+        Presence(AGCTGGGCCGACCTGCTGCAGGGCAAGTACA)
+           \
+            resistant
+       /
+    Presence(ACCTCCTGGGAGGAGAGCATCTTGTCGAAGC)
+       \
+            resistant
+           /
+        Presence(ACCTGATCGCCCGCCGCCTCGGCGAATGCCG)
+           \
+            sensitive
+

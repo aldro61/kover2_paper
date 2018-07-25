@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:27.317129
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/erythromycin___672792900560953954/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+Dataset UUID: cda8b11e-07a0-11e8-b0b1-001b2193b764
+Phenotype: Erythromycin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 143 (Group sensitive: 66, Group resistant: 77)
+Number of genomes used for testing: 35 (Group sensitive: 15, Group resistant: 20)
+Number of k-mers: 3026862
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.49179)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.12587
+Sensitivity: 0.92208
+Specificity: 0.81818
+Precision: 0.85542
+Recall: 0.92208
+F1 Score: 0.8875
+True Positives: 71.0
+True Negatives: 54.0
+False Positives: 12.0
+False Negatives: 6.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02857
+Sensitivity: 1.0
+Specificity: 0.93333
+Precision: 0.95238
+Recall: 1.0
+F1 Score: 0.97561
+True Positives: 20.0
+True Negatives: 14.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAATCATCCTGACTACTTCTATGTCGGTTC) [Importance: 1.00, 56 equivalent rules]

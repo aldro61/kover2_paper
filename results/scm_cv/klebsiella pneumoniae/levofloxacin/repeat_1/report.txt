@@ -1,0 +1,91 @@
+Kover Learning Report
+=====================
+
+Running time: 9:21:21.043647
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/levofloxacin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/levofloxacin___2202579077548954665/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/levofloxacin___2202579077548954665/dataset.kover
+Dataset UUID: 2120f34a-06a4-11e8-b0ae-001b2193b764
+Phenotype: Levofloxacin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 1460 (Group sensitive: 284, Group resistant: 1176)
+Number of genomes used for testing: 364 (Group sensitive: 78, Group resistant: 286)
+Number of k-mers: 58582815
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03493)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 11
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01301
+Sensitivity: 0.98895
+Specificity: 0.97887
+Precision: 0.99487
+Recall: 0.98895
+F1 Score: 0.9919
+True Positives: 1163.0
+True Negatives: 278.0
+False Positives: 6.0
+False Negatives: 13.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03571
+Sensitivity: 0.97203
+Specificity: 0.9359
+Precision: 0.98233
+Recall: 0.97203
+F1 Score: 0.97715
+True Positives: 278.0
+True Negatives: 73.0
+False Positives: 5.0
+False Negatives: 8.0
+
+Model (Disjunction - 11 rules):
+-------------------------------
+Absence(ACAGCGCCTGCTATGAAGCGATGGTGCTGAT) [Importance: 0.97, 5 equivalent rules]
+OR
+Presence(AAGCTAGGGAAGGTGCGAACAAGTTCCTGAT) [Importance: 0.04, 1 equivalent rules]
+OR
+Presence(ATTACGGCACTGTTGCAAATAGTCGGTGGTG) [Importance: 0.01, 1 equivalent rules]
+OR
+Presence(AATATTCTAATATTTTTTAAATTTAAAGATT) [Importance: 0.00, 171 equivalent rules]
+OR
+Presence(AAAACGCTGGGAAAAGCAAAACGGACTTGCT) [Importance: 0.00, 89 equivalent rules]
+OR
+Presence(AAAATGCGCACGCTGCCGGAGATGCGGGCCG) [Importance: 0.41, 31 equivalent rules]
+OR
+Presence(CGGCAAAAATAATCAGATGCTTCACACCCGC) [Importance: 0.01, 3 equivalent rules]
+OR
+Presence(AAAAAAAAGCTCTGACATGGCTTTCCCCTGC) [Importance: 0.01, 8 equivalent rules]
+OR
+Presence(CACCCCCCCCCCCCCCCCGCCCCCCCCCCCC) [Importance: 0.00, 2 equivalent rules]
+OR
+Presence(CGTCAGATGTGTATAAGAGACAGGTATTAAA) [Importance: 0.00, 1 equivalent rules]
+OR
+Presence(ATTCTTGCCCTAAAATAGCCTAAAAAACAGC) [Importance: 0.03, 24 equivalent rules]

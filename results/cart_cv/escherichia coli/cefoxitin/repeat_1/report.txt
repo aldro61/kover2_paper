@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 2:15:13.052065
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/cefoxitin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/cefoxitin___7053822222416630118/train_0.800_seed_0_10_folds
+progress: False
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/cefoxitin___7053822222416630118/dataset.kover
+Dataset UUID: 99a3ee38-095d-11e8-8779-001b2193b764
+Phenotype: Cefoxitin___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 334 (Group sensitive: 311, Group resistant: 23)
+Number of genomes used for testing: 83 (Group sensitive: 79, Group resistant: 4)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.02701)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00147930
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00599
+Sensitivity: 0.91304
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.91304
+F1 Score: 0.95455
+True Positives: 21.0
+True Negatives: 311.0
+False Positives: 0.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0241
+Sensitivity: 1.0
+Specificity: 0.97468
+Precision: 0.66667
+Recall: 1.0
+F1 Score: 0.8
+True Positives: 4.0
+True Negatives: 77.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Model (3 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(ACGGTCTGGCTGCTATCCTGACAGTTGACAC)
+       \
+        resistant
+   /
+Presence(TCAAGTCCACTCAGGCCTACCAAATTTGCAC)
+   \
+        sensitive
+       /
+    Presence(ACTGGTTAGCGGATGTCAGATTGATCCTTAT)
+       \
+        resistant
+

@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:13.899164
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___260162261243005161/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/ciprofloxacin___260162261243005161/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___260162261243005161/dataset.kover
+Dataset UUID: 0a3ff80a-074a-11e8-a975-001b2193b764
+Phenotype: Ciprofloxacin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 269 (Group sensitive: 241, Group resistant: 28)
+Number of genomes used for testing: 67 (Group sensitive: 60, Group resistant: 7)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.02607)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.02950652
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02602
+Sensitivity: 0.92857
+Specificity: 0.97925
+Precision: 0.83871
+Recall: 0.92857
+F1 Score: 0.88136
+True Positives: 26.0
+True Negatives: 236.0
+False Positives: 5.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01493
+Sensitivity: 1.0
+Specificity: 0.98333
+Precision: 0.875
+Recall: 1.0
+F1 Score: 0.93333
+True Positives: 7.0
+True Negatives: 59.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    resistant
+   /
+Presence(ACCACCCGCACGGCGACGCGTCGATCTACGA)
+   \
+    sensitive
+

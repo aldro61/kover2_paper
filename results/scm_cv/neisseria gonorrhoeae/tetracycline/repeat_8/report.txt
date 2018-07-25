@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:29.053455
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___672792900560953954/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/tetracycline___672792900560953954/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___672792900560953954/dataset.kover
+Dataset UUID: 16eacfd6-07a3-11e8-ba8f-001b2193b764
+Phenotype: Tetracycline___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 114 (Group sensitive: 27, Group resistant: 87)
+Number of genomes used for testing: 28 (Group sensitive: 6, Group resistant: 22)
+Number of k-mers: 2918765
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.06212)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04386
+Sensitivity: 1.0
+Specificity: 0.81481
+Precision: 0.94565
+Recall: 1.0
+F1 Score: 0.97207
+True Positives: 87.0
+True Negatives: 22.0
+False Positives: 5.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07143
+Sensitivity: 0.95455
+Specificity: 0.83333
+Precision: 0.95455
+Recall: 0.95455
+F1 Score: 0.95455
+True Positives: 21.0
+True Negatives: 5.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (Disjunction - 1 rules):
+------------------------------
+Absence(CACCCGTATTTCTCACAACCCCACCCCAAAA) [Importance: 1.00, 599 equivalent rules]

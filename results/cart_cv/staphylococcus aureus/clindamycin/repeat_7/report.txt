@@ -1,0 +1,102 @@
+Kover Learning Report
+=====================
+
+Running time: 2:09:31.541074
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/clindamycin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/clindamycin___6654735289702248879/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/clindamycin___6654735289702248879/dataset.kover
+Dataset UUID: 0de5b0d0-080d-11e8-831c-001b2193b764
+Phenotype: Clindamycin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 500 (Group sensitive: 224, Group resistant: 276)
+Number of genomes used for testing: 124 (Group sensitive: 50, Group resistant: 74)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.04200)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00447536
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.018
+Sensitivity: 0.97464
+Specificity: 0.99107
+Precision: 0.99262
+Recall: 0.97464
+F1 Score: 0.98355
+True Positives: 269.0
+True Negatives: 222.0
+False Positives: 2.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04032
+Sensitivity: 0.94595
+Specificity: 0.98
+Precision: 0.98592
+Recall: 0.94595
+F1 Score: 0.96552
+True Positives: 70.0
+True Negatives: 49.0
+False Positives: 1.0
+False Negatives: 4.0
+
+Model (8 rules, depth = 4):
+
+            sensitive
+           /
+        Presence(AATTGACGATTTAAACAATATTAGCTTTGAA)
+           \
+                sensitive
+               /
+            Presence(AAAAATGCAAAATGTTGGAATGCATTCATAT)
+               \
+                resistant
+       /
+    Presence(AAAATTTTGCGTGTCTTTAGGGTTTTTCTGG)
+       \
+            sensitive
+           /
+        Presence(ACCTTTTTTAGTTATAAACATTGTTAATGGC)
+           \
+            resistant
+   /
+Presence(AAGTCTCCATGTGGATGATATTGACCAATAA)
+   \
+        resistant
+       /
+    Presence(ACAATGGTAGAACCTTTTCTGAACCATACGC)
+       \
+            sensitive
+           /
+        Presence(TAGCTACAACAAGAGAAATAGCAAAAGCTAC)
+           \
+                resistant
+               /
+            Presence(CCTTTCGAAATTCTCTTTGTTGGGGCCCCAC)
+               \
+                sensitive
+

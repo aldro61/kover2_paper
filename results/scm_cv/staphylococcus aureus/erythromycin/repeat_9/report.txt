@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 1:57:49.097663
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/erythromycin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/erythromycin___6654735289702248879/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/erythromycin___6654735289702248879/dataset.kover
+Dataset UUID: 2fe0a08c-080d-11e8-9adb-001b2193b764
+Phenotype: Erythromycin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 1044 (Group sensitive: 654, Group resistant: 390)
+Number of genomes used for testing: 261 (Group sensitive: 167, Group resistant: 94)
+Number of k-mers: 12408440
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.02777)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0182
+Sensitivity: 0.97949
+Specificity: 0.98318
+Precision: 0.97201
+Recall: 0.97949
+F1 Score: 0.97573
+True Positives: 382.0
+True Negatives: 643.0
+False Positives: 11.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01916
+Sensitivity: 0.97872
+Specificity: 0.98204
+Precision: 0.96842
+Recall: 0.97872
+F1 Score: 0.97354
+True Positives: 92.0
+True Negatives: 164.0
+False Positives: 3.0
+False Negatives: 2.0
+
+Model (Disjunction - 4 rules):
+------------------------------
+Presence(AAAATTATATGGAGATCTGTATAATAAAGAA) [Importance: 0.52, 74 equivalent rules]
+OR
+Presence(TCAAAGCTAATATTGTTTAAATCGTCAATTC) [Importance: 0.44, 1 equivalent rules]
+OR
+Presence(AAAAAATAGCACTTATTGGGGGTAATGGTAC) [Importance: 0.09, 388 equivalent rules]
+OR
+Presence(AAACAGCATTTTTAAACCGCTATTGACAGAG) [Importance: 0.01, 1 equivalent rules]

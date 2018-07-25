@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 5:10:21.555445
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/erythromycin___6654735289702248879/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/erythromycin___6654735289702248879/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/erythromycin___6654735289702248879/dataset.kover
+Dataset UUID: 2fe0a08c-080d-11e8-9adb-001b2193b764
+Phenotype: Erythromycin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 1044 (Group sensitive: 660, Group resistant: 384)
+Number of genomes used for testing: 261 (Group sensitive: 161, Group resistant: 100)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01820)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00503689
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01245
+Sensitivity: 0.97917
+Specificity: 0.99242
+Precision: 0.98688
+Recall: 0.97917
+F1 Score: 0.98301
+True Positives: 376.0
+True Negatives: 655.0
+False Positives: 5.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04598
+Sensitivity: 0.97
+Specificity: 0.9441
+Precision: 0.91509
+Recall: 0.97
+F1 Score: 0.94175
+True Positives: 97.0
+True Negatives: 152.0
+False Positives: 9.0
+False Negatives: 3.0
+
+Model (3 rules, depth = 3):
+
+            sensitive
+           /
+        Presence(AAAAAGGTTTATTTGAGTCTCATAGAAGCTG)
+           \
+            resistant
+       /
+    Presence(TCAAAGCTAATATTGTTTAAATCGTCAATTC)
+       \
+        resistant
+   /
+Presence(AAAATTATATGGAGATCTGTATAATAAAGAA)
+   \
+    resistant
+

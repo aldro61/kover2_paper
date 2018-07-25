@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:26:50.740430
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/cefuroxime_sodium___2202579077548954665/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+Dataset UUID: dd215202-0626-11e8-9397-001b2193b764
+Phenotype: Cefuroxime_Sodium___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 1248 (Group sensitive: 70, Group resistant: 1178)
+Number of genomes used for testing: 312 (Group sensitive: 21, Group resistant: 291)
+Number of k-mers: 55560895
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.09634)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01362
+Sensitivity: 0.99745
+Specificity: 0.8
+Precision: 0.98823
+Recall: 0.99745
+F1 Score: 0.99282
+True Positives: 1175.0
+True Negatives: 56.0
+False Positives: 14.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01603
+Sensitivity: 0.99656
+Specificity: 0.80952
+Precision: 0.98639
+Recall: 0.99656
+F1 Score: 0.99145
+True Positives: 290.0
+True Negatives: 17.0
+False Positives: 4.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(AAAAAAAAAACGGGGGGGGGGGGGGGGGGGG) [Importance: 1.00, 29 equivalent rules]

@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:21.691525
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___946434054234721145/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ciprofloxacin___946434054234721145/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___946434054234721145/dataset.kover
+Dataset UUID: 8b1fb550-0867-11e8-b4d8-001b2193b764
+Phenotype: Ciprofloxacin___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 96 (Group sensitive: 40, Group resistant: 56)
+Number of genomes used for testing: 24 (Group sensitive: 6, Group resistant: 18)
+Number of k-mers: 5341646
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.47059)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07292
+Sensitivity: 0.94643
+Specificity: 0.9
+Precision: 0.92982
+Recall: 0.94643
+F1 Score: 0.93805
+True Positives: 53.0
+True Negatives: 36.0
+False Positives: 4.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 18.0
+True Negatives: 6.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ACCATGGCATCATAGATTGATGAGTCTCCGT) [Importance: 1.00, 20 equivalent rules]

@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:24.387026
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___6654735289702248879/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/tetracycline___6654735289702248879/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/tetracycline___6654735289702248879/dataset.kover
+Dataset UUID: ae2442a0-084e-11e8-abb1-001b2193b764
+Phenotype: Tetracycline___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 986 (Group sensitive: 831, Group resistant: 155)
+Number of genomes used for testing: 246 (Group sensitive: 198, Group resistant: 48)
+Number of k-mers: 12279358
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.09967)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00913
+Sensitivity: 0.98065
+Specificity: 0.99278
+Precision: 0.96203
+Recall: 0.98065
+F1 Score: 0.97125
+True Positives: 152.0
+True Negatives: 825.0
+False Positives: 6.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.00813
+Sensitivity: 0.97917
+Specificity: 0.99495
+Precision: 0.97917
+Recall: 0.97917
+F1 Score: 0.97917
+True Positives: 47.0
+True Negatives: 197.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAAAATGATATATTTAAACTATTCTAATTTA) [Importance: 0.89, 17 equivalent rules]
+OR
+Presence(AAAAAAGATTGAAAATCCGCACCCTCTACTA) [Importance: 0.72, 294 equivalent rules]

@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:44:03.962188
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/fusidic_acid___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/fusidic_acid___6654735289702248879/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/fusidic_acid___6654735289702248879/dataset.kover
+Dataset UUID: 47e7f0b8-0812-11e8-a980-001b2193b764
+Phenotype: Fusidic_Acid___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 789 (Group sensitive: 721, Group resistant: 68)
+Number of genomes used for testing: 197 (Group sensitive: 183, Group resistant: 14)
+Number of k-mers: 11929860
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01900)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01267
+Sensitivity: 0.88235
+Specificity: 0.99723
+Precision: 0.96774
+Recall: 0.88235
+F1 Score: 0.92308
+True Positives: 60.0
+True Negatives: 719.0
+False Positives: 2.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01015
+Sensitivity: 0.92857
+Specificity: 0.99454
+Precision: 0.92857
+Recall: 0.92857
+F1 Score: 0.92857
+True Positives: 13.0
+True Negatives: 182.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AATGCATTTTTTAGATTACGATGAAGTCGAT) [Importance: 0.66, 5468 equivalent rules]
+OR
+Absence(AAGATGTCTAAGTGAAGCTCACCCATACCAC) [Importance: 0.24, 1 equivalent rules]
+OR
+Presence(AAAAAAATAAAAATACCTCAATTTGAAGAAT) [Importance: 0.10, 643 equivalent rules]

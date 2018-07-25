@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:43.496956
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/rifabutin___260162261243005161/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+Dataset UUID: 0c0af0ac-077e-11e8-81c0-001b2193b764
+Phenotype: Rifabutin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 129 (Group sensitive: 71, Group resistant: 58)
+Number of genomes used for testing: 32 (Group sensitive: 18, Group resistant: 14)
+Number of k-mers: 4672403
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.55812)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.15504
+Sensitivity: 0.84483
+Specificity: 0.84507
+Precision: 0.81667
+Recall: 0.84483
+F1 Score: 0.83051
+True Positives: 49.0
+True Negatives: 60.0
+False Positives: 11.0
+False Negatives: 9.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.09375
+Sensitivity: 0.92857
+Specificity: 0.88889
+Precision: 0.86667
+Recall: 0.92857
+F1 Score: 0.89655
+True Positives: 13.0
+True Negatives: 16.0
+False Positives: 2.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC) [Importance: 1.00, 1 equivalent rules]

@@ -1,0 +1,126 @@
+Kover Learning Report
+=====================
+
+Running time: 7:29:35.375020
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/streptomycin___260162261243005161/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/streptomycin___260162261243005161/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/streptomycin___260162261243005161/dataset.kover
+Dataset UUID: 3fd1acfe-078e-11e8-b688-001b2193b764
+Phenotype: Streptomycin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 2725 (Group sensitive: 1850, Group resistant: 875)
+Number of genomes used for testing: 681 (Group sensitive: 472, Group resistant: 209)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.08441)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00143672
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07046
+Sensitivity: 0.82743
+Specificity: 0.97784
+Precision: 0.94641
+Recall: 0.82743
+F1 Score: 0.88293
+True Positives: 724.0
+True Negatives: 1809.0
+False Positives: 41.0
+False Negatives: 151.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08811
+Sensitivity: 0.79904
+Specificity: 0.96186
+Precision: 0.9027
+Recall: 0.79904
+F1 Score: 0.84772
+True Positives: 167.0
+True Negatives: 454.0
+False Positives: 18.0
+False Negatives: 42.0
+
+Model (14 rules, depth = 7):
+
+                sensitive
+               /
+            Presence(ACATGTACATCATGAAGCTGCACCACCTGGT)
+               \
+                    resistant
+                   /
+                Presence(CCCCGCCGGCGCCACCGGCCCCGCCGGCGCC)
+                   \
+                    sensitive
+           /
+        Presence(ACGATAGGTTGTCGGGGTGACTGCCACAGCC)
+           \
+                resistant
+               /
+            Presence(ATGATCTTGTAGCGCACACCAGGCAGGTCCT)
+               \
+                    resistant
+                   /
+                Presence(AGCCGCGGTAATACGTAGGGTGCGAGCGTTG)
+                   \
+                            sensitive
+                           /
+                        Presence(CGGCAGCGTCAGATGTGTATAAGAGACAGGC)
+                           \
+                            resistant
+                       /
+                    Presence(AAAGGGTAGGCCCTGGCCGCCGGTGCCGCCG)
+                       \
+                        resistant
+       /
+    Presence(AACCTTCCGAAGCGCCGAGTTCGGCTTCCTC)
+       \
+            sensitive
+           /
+        Presence(AGGCGATTTTGGCGACGTATGGACAGCGGCC)
+           \
+            resistant
+   /
+Presence(AAGGACGCGATCACCAGCGGCATCGAGGTCG)
+   \
+        resistant
+       /
+    Presence(AACTACGTGCCAGCAGCCGCGGTAATACGTA)
+       \
+                resistant
+               /
+            Presence(ATGATCTTGTAGCGCACACCAGGCAGGTCCT)
+               \
+                sensitive
+           /
+        Presence(AACCTTCCGAAGCGCCGAGTTCGGCTTCCTC)
+           \
+                sensitive
+               /
+            Presence(CTGACCGCGACGATGTTGAGATGCGGGCGGC)
+               \
+                resistant
+

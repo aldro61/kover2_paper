@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:04.491142
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/rifabutin___260162261243005161/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+Dataset UUID: 0c0af0ac-077e-11e8-81c0-001b2193b764
+Phenotype: Rifabutin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 129 (Group sensitive: 73, Group resistant: 56)
+Number of genomes used for testing: 32 (Group sensitive: 16, Group resistant: 16)
+Number of k-mers: 4672403
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.15385)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.14729
+Sensitivity: 0.875
+Specificity: 0.83562
+Precision: 0.80328
+Recall: 0.875
+F1 Score: 0.83761
+True Positives: 49.0
+True Negatives: 61.0
+False Positives: 12.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.125
+Sensitivity: 0.8125
+Specificity: 0.9375
+Precision: 0.92857
+Recall: 0.8125
+F1 Score: 0.86667
+True Positives: 13.0
+True Negatives: 15.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC) [Importance: 1.00, 5 equivalent rules]

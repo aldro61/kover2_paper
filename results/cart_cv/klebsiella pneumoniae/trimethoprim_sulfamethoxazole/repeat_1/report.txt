@@ -1,0 +1,118 @@
+Kover Learning Report
+=====================
+
+Running time: 20:15:15.986720
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/trimethoprim_sulfamethoxazole___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/trimethoprim_sulfamethoxazole___2202579077548954665/train_0.800_seed_0_10_folds
+progress: False
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/trimethoprim_sulfamethoxazole___2202579077548954665/dataset.kover
+Dataset UUID: 5b65fcca-06fa-11e8-9f9f-001b2193b764
+Phenotype: Trimethoprim_Sulfamethoxazole___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 1704 (Group sensitive: 447, Group resistant: 1257)
+Number of genomes used for testing: 425 (Group sensitive: 95, Group resistant: 330)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.06399)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00220111
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03932
+Sensitivity: 0.96818
+Specificity: 0.9396
+Precision: 0.9783
+Recall: 0.96818
+F1 Score: 0.97321
+True Positives: 1217.0
+True Negatives: 420.0
+False Positives: 27.0
+False Negatives: 40.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08
+Sensitivity: 0.93939
+Specificity: 0.85263
+Precision: 0.95679
+Recall: 0.93939
+F1 Score: 0.94801
+True Positives: 310.0
+True Negatives: 81.0
+False Positives: 14.0
+False Negatives: 20.0
+
+Model (12 rules, depth = 9):
+
+            sensitive
+           /
+        Presence(AACACGGAGCGCGTCAGCGGGATGATCGACT)
+           \
+            resistant
+       /
+    Presence(AAAATGGAAACTCCGTGGTTTCAGATAAAAA)
+       \
+            resistant
+           /
+        Presence(ATCCCGGACACCTCCGCAGCGCTGGACAGCC)
+           \
+            sensitive
+   /
+Presence(TTACGCAGCAGGGCAGTCGCCCTAAAACAAA)
+   \
+                        sensitive
+                       /
+                    Presence(AGCTCGAACCTTGCCAAAATTACGAATGAAA)
+                       \
+                            sensitive
+                           /
+                        Presence(AAGTAAGGCAACAGGTCGACTACCATACAAG)
+                           \
+                                    resistant
+                                   /
+                                Presence(TGCGCTGGCGGATAATTTGCCAGCATCCAAC)
+                                   \
+                                    sensitive
+                               /
+                            Presence(ACCCCCTGCACATGCAACGCGGCGTAAATCG)
+                               \
+                                sensitive
+                   /
+                Presence(AAACAGGCGGGAAAACGCCTGTGGATAGCGG)
+                   \
+                    sensitive
+               /
+            Presence(AGCAGGGCAGTCGCCCTAAAACAAAGTTAGC)
+               \
+                resistant
+           /
+        Presence(ACGAAATCCTGCGGCTGGCCACCTCGATCAA)
+           \
+            resistant
+       /
+    Presence(ATCCATTTTCTCTTTCCTGCGCGGAGCGTCA)
+       \
+        sensitive
+

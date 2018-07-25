@@ -1,0 +1,86 @@
+Kover Learning Report
+=====================
+
+Running time: 0:40:53.714096
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/tetracycline___49420779660966717/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/tetracycline___49420779660966717/train_0.800_seed_9_10_folds
+progress: False
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/tetracycline___49420779660966717/dataset.kover
+Dataset UUID: 34f51754-0878-11e8-b9fc-001b2193b764
+Phenotype: Tetracycline___Streptococcus_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 315 (Group sensitive: 93, Group resistant: 222)
+Number of genomes used for testing: 78 (Group sensitive: 16, Group resistant: 62)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05071)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01893579
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02222
+Sensitivity: 0.97748
+Specificity: 0.97849
+Precision: 0.99087
+Recall: 0.97748
+F1 Score: 0.98413
+True Positives: 217.0
+True Negatives: 91.0
+False Positives: 2.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05128
+Sensitivity: 0.95161
+Specificity: 0.9375
+Precision: 0.98333
+Recall: 0.95161
+F1 Score: 0.96721
+True Positives: 59.0
+True Negatives: 15.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (4 rules, depth = 4):
+
+    sensitive
+   /
+Presence(AAATCAGTAGAATTGCCCCATCTAAAACTGA)
+   \
+            sensitive
+           /
+        Presence(AAATTTGCAGATCCTATGGCGGATAAGTTAC)
+           \
+                sensitive
+               /
+            Presence(AATGTTGATGACAATCTTTGGTGTGGCAGGT)
+               \
+                resistant
+       /
+    Presence(AAAAAGCATACAGATATTCTCCGGATACTTT)
+       \
+        sensitive
+

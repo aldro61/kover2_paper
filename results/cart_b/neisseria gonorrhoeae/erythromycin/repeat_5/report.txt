@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:36.718014
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/erythromycin___672792900560953954/train_0.800_seed_4_10_folds
+progress: False
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+Dataset UUID: cda8b11e-07a0-11e8-b0b1-001b2193b764
+Phenotype: Erythromycin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 143 (Group sensitive: 66, Group resistant: 77)
+Number of genomes used for testing: 35 (Group sensitive: 15, Group resistant: 20)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.49903)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.02797203
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.12587
+Sensitivity: 0.93506
+Specificity: 0.80303
+Precision: 0.84706
+Recall: 0.93506
+F1 Score: 0.88889
+True Positives: 72.0
+True Negatives: 53.0
+False Positives: 13.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05714
+Sensitivity: 1.0
+Specificity: 0.86667
+Precision: 0.90909
+Recall: 1.0
+F1 Score: 0.95238
+True Positives: 20.0
+True Negatives: 13.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(ACCCCGTTCAGTCCGACGAAATCGTCCGCCG)
+   \
+    resistant
+

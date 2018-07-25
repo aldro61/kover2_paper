@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:02.171608
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/rifabutin___260162261243005161/train_0.800_seed_5_10_folds
+progress: False
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/rifabutin___260162261243005161/dataset.kover
+Dataset UUID: 0c0af0ac-077e-11e8-81c0-001b2193b764
+Phenotype: Rifabutin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 129 (Group sensitive: 74, Group resistant: 55)
+Number of genomes used for testing: 32 (Group sensitive: 15, Group resistant: 17)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.53258)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.03100775
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.13178
+Sensitivity: 0.85455
+Specificity: 0.87838
+Precision: 0.83929
+Recall: 0.85455
+F1 Score: 0.84685
+True Positives: 47.0
+True Negatives: 65.0
+False Positives: 9.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.1875
+Sensitivity: 0.88235
+Specificity: 0.73333
+Precision: 0.78947
+Recall: 0.88235
+F1 Score: 0.83333
+True Positives: 15.0
+True Negatives: 11.0
+False Positives: 4.0
+False Negatives: 2.0
+
+Model (1 rules, depth = 1):
+
+    resistant
+   /
+Presence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC)
+   \
+    sensitive
+

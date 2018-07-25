@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:29.997731
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/para-aminosalicylic_acid___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/para-aminosalicylic_acid___260162261243005161/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/para-aminosalicylic_acid___260162261243005161/dataset.kover
+Dataset UUID: 4327717e-0773-11e8-a02f-001b2193b764
+Phenotype: Para-Aminosalicylic_Acid___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 303 (Group sensitive: 238, Group resistant: 65)
+Number of genomes used for testing: 75 (Group sensitive: 60, Group resistant: 15)
+Number of k-mers: 4873968
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.43621)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.13201
+Sensitivity: 0.52308
+Specificity: 0.96218
+Precision: 0.7907
+Recall: 0.52308
+F1 Score: 0.62963
+True Positives: 34.0
+True Negatives: 229.0
+False Positives: 9.0
+False Negatives: 31.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.18667
+Sensitivity: 0.13333
+Specificity: 0.98333
+Precision: 0.66667
+Recall: 0.13333
+F1 Score: 0.22222
+True Positives: 2.0
+True Negatives: 59.0
+False Positives: 1.0
+False Negatives: 13.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AGTCTCCGGACATGCCGGGGCGGTTCAGGAA) [Importance: 1.00, 1 equivalent rules]

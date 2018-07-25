@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 0:06:29.165107
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/nicotinamide___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/nicotinamide___260162261243005161/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/nicotinamide___260162261243005161/dataset.kover
+Dataset UUID: 2407f734-0767-11e8-a171-001b2193b764
+Phenotype: Nicotinamide___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 134 (Group sensitive: 65, Group resistant: 69)
+Number of genomes used for testing: 33 (Group sensitive: 18, Group resistant: 15)
+Number of k-mers: 4626600
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.12802)
+Model type: disjunction
+p: 3.162000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08955
+Sensitivity: 0.84058
+Specificity: 0.98462
+Precision: 0.98305
+Recall: 0.84058
+F1 Score: 0.90625
+True Positives: 58.0
+True Negatives: 64.0
+False Positives: 1.0
+False Negatives: 11.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.21212
+Sensitivity: 0.8
+Specificity: 0.77778
+Precision: 0.75
+Recall: 0.8
+F1 Score: 0.77419
+True Positives: 12.0
+True Negatives: 14.0
+False Positives: 4.0
+False Negatives: 3.0
+
+Model (Disjunction - 4 rules):
+------------------------------
+Absence(ACCACCCGCACGGCGACGCGTCGATCTACGA) [Importance: 0.83, 3 equivalent rules]
+OR
+Presence(CTTTGAACCGCCCCGGCATGTCCGGAGACTC) [Importance: 0.07, 57 equivalent rules]
+OR
+Presence(GACCAACACCCCCCCCCCCCCCCCCCCCCCC) [Importance: 0.20, 1 equivalent rules]
+OR
+Absence(ACCCAAAACCCCGAGAGGGGACGGAAACTGG) [Importance: 0.08, 3 equivalent rules]

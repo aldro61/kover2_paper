@@ -1,0 +1,105 @@
+Kover Learning Report
+=====================
+
+Running time: 6:09:43.270395
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/pyrazinamide___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/pyrazinamide___260162261243005161/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/pyrazinamide___260162261243005161/dataset.kover
+Dataset UUID: dfd8aa82-0779-11e8-b8e9-001b2193b764
+Phenotype: Pyrazinamide___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 2935 (Group sensitive: 2626, Group resistant: 309)
+Number of genomes used for testing: 733 (Group sensitive: 665, Group resistant: 68)
+Number of k-mers: 10628165
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05146)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 18
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03305
+Sensitivity: 0.75728
+Specificity: 0.99162
+Precision: 0.91406
+Recall: 0.75728
+F1 Score: 0.82832
+True Positives: 234.0
+True Negatives: 2604.0
+False Positives: 22.0
+False Negatives: 75.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04911
+Sensitivity: 0.64706
+Specificity: 0.98195
+Precision: 0.78571
+Recall: 0.64706
+F1 Score: 0.70968
+True Positives: 44.0
+True Negatives: 653.0
+False Positives: 12.0
+False Negatives: 24.0
+
+Model (Disjunction - 18 rules):
+-------------------------------
+Absence(AGAAGTCGTTCTGCACGTCGACGATGATCAA) [Importance: 0.28, 2 equivalent rules]
+OR
+Absence(AGCACCCTGGTGGCCAAGCCATTGCGTACCG) [Importance: 0.20, 1 equivalent rules]
+OR
+Absence(AACGCGGCGTCGATGAGGTCGATGTGGTCGG) [Importance: 0.14, 3 equivalent rules]
+OR
+Presence(ACTGCCCGGGCAGTCGCCCGAACGTGTGGTG) [Importance: 0.08, 31 equivalent rules]
+OR
+Absence(AATAGTCCGGTGTGCCGGAGAAGTGGTCACC) [Importance: 0.11, 2 equivalent rules]
+OR
+Presence(ACACCTTCGACTCCGAGCCGATCTCCCGGGG) [Importance: 0.04, 90 equivalent rules]
+OR
+Absence(ACTCGACGCTGGCGGTGCGCATCTCCTCCAG) [Importance: 0.09, 6 equivalent rules]
+OR
+Presence(AAGTGGTCACCCGGGTCGATGTGGAAGCCCT) [Importance: 0.02, 57 equivalent rules]
+OR
+Absence(AATCGAGGCGGTGTTCTACAAGGGTGCCTAC) [Importance: 0.08, 13 equivalent rules]
+OR
+Absence(CGTTCTCGTCGACTCCTTCGAAGCCGCTGTA) [Importance: 0.06, 2 equivalent rules]
+OR
+Absence(ATGGCGCGGGCCAGCGCGGCGCCACCGGTTA) [Importance: 0.07, 1 equivalent rules]
+OR
+Presence(CTGCAAATGCGGCCAGCACCGCCGATATCCA) [Importance: 0.02, 3 equivalent rules]
+OR
+Absence(TACGAAGTGGTCACCAGCCCGCGAGGACGTA) [Importance: 0.03, 13 equivalent rules]
+OR
+Presence(CTCCGGACTCACCGGGGCGGTTCACTGGTGC) [Importance: 0.02, 12 equivalent rules]
+OR
+Presence(AACCGGGGACTGTTGGCCACCACCGCCACCG) [Importance: 0.02, 10 equivalent rules]
+OR
+Absence(AGCCGTCTTCGATGGCGCCGGAAAACGGGTG) [Importance: 0.14, 3 equivalent rules]
+OR
+Presence(CCCGCCCCCCAGCCCCGCCTGCAACGGAATC) [Importance: 0.02, 2 equivalent rules]
+OR
+Presence(AACGGCACCATCGCAGGCCAACCCGCCGGCC) [Importance: 0.01, 9 equivalent rules]

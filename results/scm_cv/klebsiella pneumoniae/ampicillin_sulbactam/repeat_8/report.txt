@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 6:06:40.521917
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ampicillin_sulbactam___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ampicillin_sulbactam___2202579077548954665/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ampicillin_sulbactam___2202579077548954665/dataset.kover
+Dataset UUID: 08791ab4-05f2-11e8-8310-001b2193b764
+Phenotype: Ampicillin_Sulbactam___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 1324 (Group sensitive: 74, Group resistant: 1250)
+Number of genomes used for testing: 330 (Group sensitive: 17, Group resistant: 313)
+Number of k-mers: 52322163
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01889)
+Model type: disjunction
+p: 5.623000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01435
+Sensitivity: 0.996
+Specificity: 0.81081
+Precision: 0.98888
+Recall: 0.996
+F1 Score: 0.99243
+True Positives: 1245.0
+True Negatives: 60.0
+False Positives: 14.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.00606
+Sensitivity: 1.0
+Specificity: 0.88235
+Precision: 0.99365
+Recall: 1.0
+F1 Score: 0.99682
+True Positives: 313.0
+True Negatives: 15.0
+False Positives: 2.0
+False Negatives: 0.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Absence(ATGCCGTCTTCTGCTTGAAAAAAAAAACGGG) [Importance: 0.96, 16 equivalent rules]
+OR
+Presence(AAATAGTGATTTTTGAAGCTAATAAAAAACA) [Importance: 0.66, 23 equivalent rules]
+OR
+Presence(AATCGGTAAAAATCAAATTTAACTCATTTAA) [Importance: 0.30, 5 equivalent rules]

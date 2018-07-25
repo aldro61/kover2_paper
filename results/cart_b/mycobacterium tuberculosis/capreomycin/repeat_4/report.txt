@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 0:20:55.209869
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/capreomycin___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/capreomycin___260162261243005161/train_0.800_seed_3_10_folds
+progress: False
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/capreomycin___260162261243005161/dataset.kover
+Dataset UUID: 13c0510a-073f-11e8-8ad8-001b2193b764
+Phenotype: Capreomycin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 899 (Group sensitive: 746, Group resistant: 153)
+Number of genomes used for testing: 224 (Group sensitive: 173, Group resistant: 51)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.24081)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00333704
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05006
+Sensitivity: 0.81046
+Specificity: 0.97855
+Precision: 0.88571
+Recall: 0.81046
+F1 Score: 0.84642
+True Positives: 124.0
+True Negatives: 730.0
+False Positives: 16.0
+False Negatives: 29.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08929
+Sensitivity: 0.70588
+Specificity: 0.9711
+Precision: 0.87805
+Recall: 0.70588
+F1 Score: 0.78261
+True Positives: 36.0
+True Negatives: 168.0
+False Positives: 5.0
+False Negatives: 15.0
+
+Model (2 rules, depth = 2):
+
+        resistant
+       /
+    Presence(CCAGCCCGGCCAGCAGCCCACCGGCTCCGCC)
+       \
+        sensitive
+   /
+Presence(ACTTTCATGACGTGACGGGCGGTGTGTACAA)
+   \
+    sensitive
+

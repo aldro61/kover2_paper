@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 3:38:58.207308
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/nitrofurantoin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/nitrofurantoin___2202579077548954665/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/nitrofurantoin___2202579077548954665/dataset.kover
+Dataset UUID: 501b1cea-06b6-11e8-ac25-001b2193b764
+Phenotype: Nitrofurantoin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 704 (Group sensitive: 68, Group resistant: 636)
+Number of genomes used for testing: 176 (Group sensitive: 22, Group resistant: 154)
+Number of k-mers: 40393866
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.06676)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06392
+Sensitivity: 0.99214
+Specificity: 0.41176
+Precision: 0.94039
+Recall: 0.99214
+F1 Score: 0.96557
+True Positives: 631.0
+True Negatives: 28.0
+False Positives: 40.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.11364
+Sensitivity: 0.97403
+Specificity: 0.27273
+Precision: 0.90361
+Recall: 0.97403
+F1 Score: 0.9375
+True Positives: 150.0
+True Negatives: 6.0
+False Positives: 16.0
+False Negatives: 4.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAAGGGACCGCCATTTCTCTGGTCGAGG) [Importance: 1.00, 10 equivalent rules]

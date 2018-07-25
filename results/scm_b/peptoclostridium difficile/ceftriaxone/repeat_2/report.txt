@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:57.929640
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ceftriaxone___-8916328542551230855/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/scm_bound/ceftriaxone___-8916328542551230855/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ceftriaxone___-8916328542551230855/dataset.kover
+Dataset UUID: 91d498f2-07a9-11e8-bb75-001b2193b764
+Phenotype: Ceftriaxone___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 170 (Group sensitive: 50, Group resistant: 120)
+Number of genomes used for testing: 42 (Group sensitive: 12, Group resistant: 30)
+Number of k-mers: 11108007
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.38199)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07647
+Sensitivity: 0.96667
+Specificity: 0.82
+Precision: 0.928
+Recall: 0.96667
+F1 Score: 0.94694
+True Positives: 116.0
+True Negatives: 41.0
+False Positives: 9.0
+False Negatives: 4.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.09524
+Sensitivity: 0.96667
+Specificity: 0.75
+Precision: 0.90625
+Recall: 0.96667
+F1 Score: 0.93548
+True Positives: 29.0
+True Negatives: 9.0
+False Positives: 3.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAGCAATGATAACCTATGAAATAAATGTATC) [Importance: 1.00, 38 equivalent rules]

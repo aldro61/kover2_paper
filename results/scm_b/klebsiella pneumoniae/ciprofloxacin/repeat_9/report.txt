@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 1:36:34.989000
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ciprofloxacin___2202579077548954665/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ciprofloxacin___2202579077548954665/dataset.kover
+Dataset UUID: 97670a3c-062a-11e8-b6e2-001b2193b764
+Phenotype: Ciprofloxacin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 1722 (Group sensitive: 271, Group resistant: 1451)
+Number of genomes used for testing: 430 (Group sensitive: 64, Group resistant: 366)
+Number of k-mers: 71501045
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.13878)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02149
+Sensitivity: 0.98622
+Specificity: 0.93727
+Precision: 0.98826
+Recall: 0.98622
+F1 Score: 0.98724
+True Positives: 1431.0
+True Negatives: 254.0
+False Positives: 17.0
+False Negatives: 20.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03256
+Sensitivity: 0.97814
+Specificity: 0.90625
+Precision: 0.98352
+Recall: 0.97814
+F1 Score: 0.98082
+True Positives: 358.0
+True Negatives: 58.0
+False Positives: 6.0
+False Negatives: 8.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Absence(ACCCGCACGGCGACTCCGCGGTATACGACAC) [Importance: 0.87, 4 equivalent rules]
+OR
+Presence(AAACTTCACACATTGCGATCTGACCAATTCG) [Importance: 0.22, 31 equivalent rules]
+OR
+Presence(AAATCTGATTTATTCAACAAAGCCTTTTTAA) [Importance: 0.02, 25 equivalent rules]

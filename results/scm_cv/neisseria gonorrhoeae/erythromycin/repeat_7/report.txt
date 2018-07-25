@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:35.867815
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/erythromycin___672792900560953954/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+Dataset UUID: cda8b11e-07a0-11e8-b0b1-001b2193b764
+Phenotype: Erythromycin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 143 (Group sensitive: 65, Group resistant: 78)
+Number of genomes used for testing: 35 (Group sensitive: 16, Group resistant: 19)
+Number of k-mers: 3026862
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.10429)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1049
+Sensitivity: 0.96154
+Specificity: 0.81538
+Precision: 0.86207
+Recall: 0.96154
+F1 Score: 0.90909
+True Positives: 75.0
+True Negatives: 53.0
+False Positives: 12.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.11429
+Sensitivity: 0.84211
+Specificity: 0.9375
+Precision: 0.94118
+Recall: 0.84211
+F1 Score: 0.88889
+True Positives: 16.0
+True Negatives: 15.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAATCATCCTGACTACTTCTATGTCGGTTC) [Importance: 1.00, 7 equivalent rules]

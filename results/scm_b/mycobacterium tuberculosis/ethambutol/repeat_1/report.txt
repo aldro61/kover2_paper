@@ -1,0 +1,83 @@
+Kover Learning Report
+=====================
+
+Running time: 1:01:00.652734
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ethambutol___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ethambutol___260162261243005161/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ethambutol___260162261243005161/dataset.kover
+Dataset UUID: 50478596-0751-11e8-8a7f-001b2193b764
+Phenotype: Ethambutol___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 3824 (Group sensitive: 3231, Group resistant: 593)
+Number of genomes used for testing: 956 (Group sensitive: 801, Group resistant: 155)
+Number of k-mers: 11620042
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.27090)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 7
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07087
+Sensitivity: 0.81619
+Specificity: 0.94986
+Precision: 0.74923
+Recall: 0.81619
+F1 Score: 0.78128
+True Positives: 484.0
+True Negatives: 3069.0
+False Positives: 162.0
+False Negatives: 109.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08159
+Sensitivity: 0.82581
+Specificity: 0.93633
+Precision: 0.71508
+Recall: 0.82581
+F1 Score: 0.76647
+True Positives: 128.0
+True Negatives: 750.0
+False Positives: 51.0
+False Negatives: 27.0
+
+Model (Conjunction - 7 rules):
+------------------------------
+Absence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC) [Importance: 0.96, 1 equivalent rules]
+AND
+Presence(CTCTTGCAGAGCCCGCCACAGACATATACGC) [Importance: 0.30, 2 equivalent rules]
+AND
+Presence(CCAACACCGCCTCGATGGTGGCCCGCAACTC) [Importance: 0.52, 1 equivalent rules]
+AND
+Presence(ACACCGCCGTCCGCCCCCACCGCCCCGGCTG) [Importance: 0.05, 1 equivalent rules]
+AND
+Presence(CCACCCCTCGACTGCAGACGAGGTTTCAGAC) [Importance: 0.01, 1 equivalent rules]
+AND
+Presence(ACCGGCCGTAACTTTGCGGCGGGTATGTCCG) [Importance: 0.02, 3 equivalent rules]
+AND
+Presence(AGATTACTAGCAGCCCGCGCGGGCCCCTAGC) [Importance: 0.01, 10 equivalent rules]

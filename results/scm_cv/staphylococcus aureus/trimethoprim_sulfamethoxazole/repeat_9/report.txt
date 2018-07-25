@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:05:39.455862
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___6654735289702248879/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/trimethoprim_sulfamethoxazole___6654735289702248879/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___6654735289702248879/dataset.kover
+Dataset UUID: aafc18c0-0856-11e8-a8cc-001b2193b764
+Phenotype: Trimethoprim_Sulfamethoxazole___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 256 (Group sensitive: 135, Group resistant: 121)
+Number of genomes used for testing: 64 (Group sensitive: 43, Group resistant: 21)
+Number of k-mers: 6880057
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03108)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03125
+Sensitivity: 0.93388
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.93388
+F1 Score: 0.96581
+True Positives: 113.0
+True Negatives: 135.0
+False Positives: 0.0
+False Negatives: 8.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04688
+Sensitivity: 0.85714
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.85714
+F1 Score: 0.92308
+True Positives: 18.0
+True Negatives: 43.0
+False Positives: 0.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAACCTTTTCTCATTATCCTGCCCGTTA) [Importance: 1.00, 3029 equivalent rules]

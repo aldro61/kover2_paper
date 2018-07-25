@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:07:01.613986
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/capreomycin___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/capreomycin___260162261243005161/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/capreomycin___260162261243005161/dataset.kover
+Dataset UUID: 13c0510a-073f-11e8-8ad8-001b2193b764
+Phenotype: Capreomycin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 899 (Group sensitive: 725, Group resistant: 174)
+Number of genomes used for testing: 224 (Group sensitive: 194, Group resistant: 30)
+Number of k-mers: 7664336
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.26860)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06229
+Sensitivity: 0.75862
+Specificity: 0.98069
+Precision: 0.90411
+Recall: 0.75862
+F1 Score: 0.825
+True Positives: 132.0
+True Negatives: 711.0
+False Positives: 14.0
+False Negatives: 42.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03571
+Sensitivity: 0.86667
+Specificity: 0.97938
+Precision: 0.86667
+Recall: 0.86667
+F1 Score: 0.86667
+True Positives: 26.0
+True Negatives: 190.0
+False Positives: 4.0
+False Negatives: 4.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Absence(ACTTTCATGACGTGACGGGCGGTGTGTACAA) [Importance: 0.97, 5 equivalent rules]
+AND
+Presence(ATCCGGCGCGGTCAGGCCGATCTCGTCGTCC) [Importance: 0.03, 3 equivalent rules]

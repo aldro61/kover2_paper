@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:39.038048
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/amoxicillin___260162261243005161/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+Dataset UUID: b2cb882e-070c-11e8-9183-001b2193b764
+Phenotype: Amoxicillin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 613 (Group sensitive: 592, Group resistant: 21)
+Number of genomes used for testing: 153 (Group sensitive: 149, Group resistant: 4)
+Number of k-mers: 7289637
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.14297)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01958
+Sensitivity: 0.66667
+Specificity: 0.99155
+Precision: 0.73684
+Recall: 0.66667
+F1 Score: 0.7
+True Positives: 14.0
+True Negatives: 587.0
+False Positives: 5.0
+False Negatives: 7.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.00654
+Sensitivity: 0.75
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.75
+F1 Score: 0.85714
+True Positives: 3.0
+True Negatives: 149.0
+False Positives: 0.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(ACCACCCGCACGGCGACGCGTCGATCTACGA) [Importance: 1.00, 3 equivalent rules]

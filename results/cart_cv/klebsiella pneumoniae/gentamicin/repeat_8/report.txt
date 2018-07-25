@@ -1,0 +1,102 @@
+Kover Learning Report
+=====================
+
+Running time: 16:17:22.782604
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/gentamicin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/gentamicin___2202579077548954665/train_0.800_seed_7_10_folds
+progress: False
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/gentamicin___2202579077548954665/dataset.kover
+Dataset UUID: 9765c7f8-0693-11e8-8974-001b2193b764
+Phenotype: Gentamicin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 1686 (Group sensitive: 962, Group resistant: 724)
+Number of genomes used for testing: 421 (Group sensitive: 239, Group resistant: 182)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.05101)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.750
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00223759
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03262
+Sensitivity: 0.96271
+Specificity: 0.97089
+Precision: 0.96138
+Recall: 0.96271
+F1 Score: 0.96204
+True Positives: 697.0
+True Negatives: 934.0
+False Positives: 28.0
+False Negatives: 27.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03563
+Sensitivity: 0.96154
+Specificity: 0.96653
+Precision: 0.95628
+Recall: 0.96154
+F1 Score: 0.9589
+True Positives: 175.0
+True Negatives: 231.0
+False Positives: 8.0
+False Negatives: 7.0
+
+Model (8 rules, depth = 7):
+
+                        sensitive
+                       /
+                    Presence(CACTGGCGAATGCATCACAACTGGGCAAAGG)
+                       \
+                            sensitive
+                           /
+                        Presence(AATAGCGACTCGCAAATAGTGATTTTTTATA)
+                           \
+                            resistant
+                   /
+                Presence(AAAAAATTGTCGCCATTATACGGAAAGCGTA)
+                   \
+                    resistant
+               /
+            Presence(TTTTCGTTCCACTGAGCGTCAGACCCCATCA)
+               \
+                resistant
+           /
+        Presence(TGTGACCTGCGTTGTGTCCATGCGGCCTAAC)
+           \
+                sensitive
+               /
+            Presence(AGGGCAAAGACGTCGGGATCATCGCCACCGA)
+               \
+                resistant
+       /
+    Presence(AAAATTCTGATTGGATTAGTTGTTCGGGGTG)
+       \
+        resistant
+   /
+Presence(AATCTGGATCAACGGACCTTTCGGCGCCGGA)
+   \
+    resistant
+

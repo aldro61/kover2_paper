@@ -1,0 +1,102 @@
+Kover Learning Report
+=====================
+
+Running time: 2:52:01.791467
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/streptomycin___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/streptomycin___260162261243005161/train_0.800_seed_6_10_folds
+progress: False
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/streptomycin___260162261243005161/dataset.kover
+Dataset UUID: 3fd1acfe-078e-11e8-b688-001b2193b764
+Phenotype: Streptomycin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 2725 (Group sensitive: 1848, Group resistant: 877)
+Number of genomes used for testing: 681 (Group sensitive: 474, Group resistant: 207)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.32391)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00240542
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.08697
+Sensitivity: 0.79818
+Specificity: 0.96753
+Precision: 0.92105
+Recall: 0.79818
+F1 Score: 0.85522
+True Positives: 700.0
+True Negatives: 1788.0
+False Positives: 60.0
+False Negatives: 177.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0793
+Sensitivity: 0.81159
+Specificity: 0.96835
+Precision: 0.91803
+Recall: 0.81159
+F1 Score: 0.86154
+True Positives: 168.0
+True Negatives: 459.0
+False Positives: 15.0
+False Negatives: 39.0
+
+Model (8 rules, depth = 5):
+
+            resistant
+           /
+        Presence(ACGATAGGTTGTCGGGGTGACTGCCACAGCC)
+           \
+                resistant
+               /
+            Presence(ACACCAGGCAGGTCCTTCACCCGGCCGCCGC)
+               \
+                    resistant
+                   /
+                Presence(AACTACGTGCCAGCAGCCGCGGTAATACGTA)
+                   \
+                    sensitive
+       /
+    Presence(AACCTTCCGAAGCGCCGAGTTCGGCTTCCTC)
+       \
+        resistant
+   /
+Presence(AAGGACGCGATCACCAGCGGCATCGAGGTCG)
+   \
+        resistant
+       /
+    Presence(AACTACGTGCCAGCAGCCGCGGTAATACGTA)
+       \
+            resistant
+           /
+        Presence(ACACCAGGCAGGTCCTTCACCCGGCCGCCGC)
+           \
+                sensitive
+               /
+            Presence(AACCTTCCGAAGCGCCGAGTTCGGCTTCCTC)
+               \
+                resistant
+

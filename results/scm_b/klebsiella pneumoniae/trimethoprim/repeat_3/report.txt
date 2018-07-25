@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:43.060108
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/trimethoprim___2202579077548954665/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim___2202579077548954665/dataset.kover
+Dataset UUID: 90cb0312-06e4-11e8-bece-001b2193b764
+Phenotype: Trimethoprim___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 151 (Group sensitive: 83, Group resistant: 68)
+Number of genomes used for testing: 37 (Group sensitive: 24, Group resistant: 13)
+Number of k-mers: 35088418
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.35750)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.0596
+Sensitivity: 0.97059
+Specificity: 0.91566
+Precision: 0.90411
+Recall: 0.97059
+F1 Score: 0.93617
+True Positives: 66.0
+True Negatives: 76.0
+False Positives: 7.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.08108
+Sensitivity: 0.84615
+Specificity: 0.95833
+Precision: 0.91667
+Recall: 0.84615
+F1 Score: 0.88
+True Positives: 11.0
+True Negatives: 23.0
+False Positives: 1.0
+False Negatives: 2.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(TAACTTTGTTTTAGGGCGACTGCCCTGCTGC) [Importance: 1.00, 321 equivalent rules]

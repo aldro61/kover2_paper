@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 4:05:38.655391
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/gentamicin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/gentamicin___7053822222416630118/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/gentamicin___7053822222416630118/dataset.kover
+Dataset UUID: 85d9c1f6-0981-11e8-82a5-001b2193b764
+Phenotype: Gentamicin___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 1211 (Group sensitive: 1122, Group resistant: 89)
+Number of genomes used for testing: 302 (Group sensitive: 276, Group resistant: 26)
+Number of k-mers: 48661070
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01156)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01073
+Sensitivity: 0.88764
+Specificity: 0.99733
+Precision: 0.96341
+Recall: 0.88764
+F1 Score: 0.92398
+True Positives: 79.0
+True Negatives: 1119.0
+False Positives: 3.0
+False Negatives: 10.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.01325
+Sensitivity: 0.92308
+Specificity: 0.99275
+Precision: 0.92308
+Recall: 0.92308
+F1 Score: 0.92308
+True Positives: 24.0
+True Negatives: 274.0
+False Positives: 2.0
+False Negatives: 2.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(AAATGCTTACGTGAAGCTCGGTCGCCATCGA) [Importance: 0.84, 462 equivalent rules]
+OR
+Presence(AAATGCTCGGCGGGCGCGTCATGGAGGAGTT) [Importance: 0.17, 561 equivalent rules]

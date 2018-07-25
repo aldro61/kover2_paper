@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:05.075071
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefepime___7053822222416630118/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/cefepime___7053822222416630118/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefepime___7053822222416630118/dataset.kover
+Dataset UUID: 99785214-095d-11e8-8e35-001b2193b764
+Phenotype: Cefepime___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 341 (Group sensitive: 315, Group resistant: 26)
+Number of genomes used for testing: 85 (Group sensitive: 79, Group resistant: 6)
+Number of k-mers: 35782454
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.21002)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03226
+Sensitivity: 0.65385
+Specificity: 0.99365
+Precision: 0.89474
+Recall: 0.65385
+F1 Score: 0.75556
+True Positives: 17.0
+True Negatives: 313.0
+False Positives: 2.0
+False Negatives: 9.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07059
+Sensitivity: 0.33333
+Specificity: 0.97468
+Precision: 0.5
+Recall: 0.33333
+F1 Score: 0.4
+True Positives: 2.0
+True Negatives: 77.0
+False Positives: 2.0
+False Negatives: 4.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(ACTTTGCAGTGCTCACACAGATTGTCTGATG) [Importance: 1.00, 28 equivalent rules]

@@ -1,0 +1,15 @@
+>rule_id: 0___ex_1722___eq_4, left_child: 1___ex_470___eq_13, right_child: leaf___ex_1252___sensitive_2_0.00159744__resistant_1250_0.99840256, importance: 0.52
+ACCCGCACGGCGACTCCGCGGTATACGACAC
+
+>rule_id: 1___ex_470___eq_13, left_child: 2___ex_201___eq_7, right_child: 7___ex_269___eq_25, importance: 0.37
+AACTCCGAATTGGTCAGATCGCAATGTGTGA
+
+>rule_id: 2___ex_201___eq_7, left_child: leaf___ex_176___sensitive_4_0.02272727__resistant_172_0.97727273, right_child: 4___ex_25___eq_2, importance: 0.04
+AAACAAAGTTAGGCATCACAAAGTACAGCAT
+
+>rule_id: 4___ex_25___eq_2, left_child: leaf___ex_13___sensitive_13_1.00000000__resistant_0_0.00000000, right_child: leaf___ex_12___sensitive_2_0.16666667__resistant_10_0.83333333, importance: 0.02
+AACTGCTCTTCCCGCTGCTTATCTGGGGCAG
+
+>rule_id: 7___ex_269___eq_25, left_child: leaf___ex_13___sensitive_1_0.07692308__resistant_12_0.92307692, right_child: leaf___ex_256___sensitive_245_0.95703125__resistant_11_0.04296875, importance: 0.05
+AAATCTGATTTATTCAACAAAGCCTTTTTAA
+

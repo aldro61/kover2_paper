@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 1:20:17.507443
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/imipenem___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/imipenem___2202579077548954665/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/imipenem___2202579077548954665/dataset.kover
+Dataset UUID: dde33834-06a0-11e8-9c43-001b2193b764
+Phenotype: Imipenem___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 1513 (Group sensitive: 989, Group resistant: 524)
+Number of genomes used for testing: 378 (Group sensitive: 242, Group resistant: 136)
+Number of k-mers: 62221807
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.18970)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.039
+Sensitivity: 0.94656
+Specificity: 0.96866
+Precision: 0.94118
+Recall: 0.94656
+F1 Score: 0.94386
+True Positives: 496.0
+True Negatives: 958.0
+False Positives: 31.0
+False Negatives: 28.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03704
+Sensitivity: 0.95588
+Specificity: 0.96694
+Precision: 0.94203
+Recall: 0.95588
+F1 Score: 0.94891
+True Positives: 130.0
+True Negatives: 234.0
+False Positives: 8.0
+False Negatives: 6.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(ACCTGCGGAGTGTATGGCACGGCAAATGACT) [Importance: 0.96, 29 equivalent rules]
+OR
+Presence(AAAAAAGCACCGGCTGGCCGCGCTTCAAAGC) [Importance: 0.04, 1693 equivalent rules]

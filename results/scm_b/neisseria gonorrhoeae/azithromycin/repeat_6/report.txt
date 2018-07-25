@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:27.336413
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/azithromycin___672792900560953954/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/azithromycin___672792900560953954/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/azithromycin___672792900560953954/dataset.kover
+Dataset UUID: 27963fe0-0790-11e8-8774-001b2193b764
+Phenotype: Azithromycin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 314 (Group sensitive: 140, Group resistant: 174)
+Number of genomes used for testing: 78 (Group sensitive: 38, Group resistant: 40)
+Number of k-mers: 4766702
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.34243)
+Model type: disjunction
+p: 1.778000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04777
+Sensitivity: 0.97701
+Specificity: 0.92143
+Precision: 0.93923
+Recall: 0.97701
+F1 Score: 0.95775
+True Positives: 170.0
+True Negatives: 129.0
+False Positives: 11.0
+False Negatives: 4.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03846
+Sensitivity: 1.0
+Specificity: 0.92105
+Precision: 0.93023
+Recall: 1.0
+F1 Score: 0.96386
+True Positives: 40.0
+True Negatives: 35.0
+False Positives: 3.0
+False Negatives: 0.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AAAAACGCTGCCCGAACGCATGTTCAGACGG) [Importance: 0.85, 28 equivalent rules]
+OR
+Absence(AAAACGTCGTGAGACAGTTTGGTCCCTATCT) [Importance: 0.63, 62 equivalent rules]
+OR
+Absence(AAAAAAAATGAACAGACAAATCCGCCAAGAA) [Importance: 0.17, 24 equivalent rules]

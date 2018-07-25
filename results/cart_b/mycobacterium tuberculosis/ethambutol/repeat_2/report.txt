@@ -1,0 +1,118 @@
+Kover Learning Report
+=====================
+
+Running time: 4:05:11.040524
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ethambutol___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/ethambutol___260162261243005161/train_0.800_seed_1_10_folds
+progress: False
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ethambutol___260162261243005161/dataset.kover
+Dataset UUID: 50478596-0751-11e8-8a7f-001b2193b764
+Phenotype: Ethambutol___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 3824 (Group sensitive: 3236, Group resistant: 588)
+Number of genomes used for testing: 956 (Group sensitive: 796, Group resistant: 160)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.25675)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 1.000
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00157546
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.05492
+Sensitivity: 0.84694
+Specificity: 0.96292
+Precision: 0.80583
+Recall: 0.84694
+F1 Score: 0.82587
+True Positives: 498.0
+True Negatives: 3116.0
+False Positives: 120.0
+False Negatives: 90.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07113
+Sensitivity: 0.78125
+Specificity: 0.95854
+Precision: 0.79114
+Recall: 0.78125
+F1 Score: 0.78616
+True Positives: 125.0
+True Negatives: 763.0
+False Positives: 33.0
+False Negatives: 35.0
+
+Model (12 rules, depth = 9):
+
+        sensitive
+       /
+    Presence(TGGCTTTGACTGCTGGGGGTCAATCGGGTTC)
+       \
+            resistant
+           /
+        Presence(ACCACCCGCACGGCGACGCGTCGATCTACGA)
+           \
+                    resistant
+                   /
+                Presence(GGCGCCAAACCCGCCGGCAACCCCCGTCACC)
+                   \
+                        resistant
+                       /
+                    Presence(CGGAGAATGCTAGAAGCTGCCGCCGGCGCCG)
+                       \
+                                resistant
+                               /
+                            Presence(AACACCGTTGACAGGGTCTGGTCGGCGAACA)
+                               \
+                                    resistant
+                                   /
+                                Presence(CTTTCATGACGTGACGGGCGGTGTGTACAAG)
+                                   \
+                                    sensitive
+                           /
+                        Presence(ACATGAACCGCCCCGGTGAGTCCGGAGACTC)
+                           \
+                            resistant
+               /
+            Presence(ACATCCTGGGCGTGGCCCGAGTCGCCGACCA)
+               \
+                resistant
+   /
+Presence(AGCGCCGACAGTCGGCGCTTGTGGGTCAACC)
+   \
+            sensitive
+           /
+        Presence(ACCTCTTGGGGCAAAACACGCCGGCGATCGC)
+           \
+                sensitive
+               /
+            Presence(AGCCCCCCCGGTGCCCAGCGCGCTGCCGCCG)
+               \
+                resistant
+       /
+    Presence(CAGCGGGTTGTTCTGGTCCATGAATTGGCTC)
+       \
+        sensitive
+

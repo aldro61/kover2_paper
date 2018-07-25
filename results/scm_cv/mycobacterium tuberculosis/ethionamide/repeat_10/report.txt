@@ -1,0 +1,79 @@
+Kover Learning Report
+=====================
+
+Running time: 0:25:48.475615
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ethionamide___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/ethionamide___260162261243005161/train_0.800_seed_9_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ethionamide___260162261243005161/dataset.kover
+Dataset UUID: a2cac942-0754-11e8-8bc4-001b2193b764
+Phenotype: Ethionamide___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 452 (Group sensitive: 292, Group resistant: 160)
+Number of genomes used for testing: 112 (Group sensitive: 62, Group resistant: 50)
+Number of k-mers: 4968150
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.22778)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 5
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1792
+Sensitivity: 0.575
+Specificity: 0.95548
+Precision: 0.87619
+Recall: 0.575
+F1 Score: 0.69434
+True Positives: 92.0
+True Negatives: 279.0
+False Positives: 13.0
+False Negatives: 68.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.22321
+Sensitivity: 0.56
+Specificity: 0.95161
+Precision: 0.90323
+Recall: 0.56
+F1 Score: 0.69136
+True Positives: 28.0
+True Negatives: 59.0
+False Positives: 3.0
+False Negatives: 22.0
+
+Model (Conjunction - 5 rules):
+------------------------------
+Absence(CACCCGCACGGCGACGCGTCGATCTACGACA) [Importance: 0.81, 3 equivalent rules]
+AND
+Absence(AAGAGAGCCAGGGCCAACCAACCCAAGCCCC) [Importance: 0.24, 23 equivalent rules]
+AND
+Absence(AACCGGCTGCGCATCACCAAGCCCGACGCCG) [Importance: 0.04, 5 equivalent rules]
+AND
+Presence(AACAACACTCGTCATATCCGATACCCTGGGT) [Importance: 0.05, 6 equivalent rules]
+AND
+Presence(ACCACCAGCGGCGCCTCCGGCAGCGGCGGCA) [Importance: 0.05, 5 equivalent rules]

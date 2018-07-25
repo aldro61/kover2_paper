@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:17:14.454125
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/fusidic_acid___946434054234721145/train_0.800_seed_0_10_folds
+progress: False
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+Dataset UUID: 8b1fcb44-0867-11e8-8137-001b2193b764
+Phenotype: Fusidic_Acid___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 92 (Group sensitive: 62, Group resistant: 30)
+Number of genomes used for testing: 22 (Group sensitive: 13, Group resistant: 9)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.18667)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.09962121
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.17391
+Sensitivity: 0.93333
+Specificity: 0.77419
+Precision: 0.66667
+Recall: 0.93333
+F1 Score: 0.77778
+True Positives: 28.0
+True Negatives: 48.0
+False Positives: 14.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.36364
+Sensitivity: 0.55556
+Specificity: 0.69231
+Precision: 0.55556
+Recall: 0.55556
+F1 Score: 0.55556
+True Positives: 5.0
+True Negatives: 9.0
+False Positives: 4.0
+False Negatives: 4.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AATACAGCTTAACCTTAGTATATAAGATTAA)
+   \
+    resistant
+

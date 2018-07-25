@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:01:11.867690
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/streptomycin___-736338835843459561/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/streptomycin___-736338835843459561/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/streptomycin___-736338835843459561/dataset.kover
+Dataset UUID: 3c54eb68-07f2-11e8-aaa1-001b2193b764
+Phenotype: Streptomycin___Salmonella_Enterica___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 278 (Group sensitive: 45, Group resistant: 233)
+Number of genomes used for testing: 69 (Group sensitive: 11, Group resistant: 58)
+Number of k-mers: 6864155
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.26651)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04676
+Sensitivity: 0.97425
+Specificity: 0.84444
+Precision: 0.97009
+Recall: 0.97425
+F1 Score: 0.97216
+True Positives: 227.0
+True Negatives: 38.0
+False Positives: 7.0
+False Negatives: 6.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07246
+Sensitivity: 0.94828
+Specificity: 0.81818
+Precision: 0.96491
+Recall: 0.94828
+F1 Score: 0.95652
+True Positives: 55.0
+True Negatives: 9.0
+False Positives: 2.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAGCAAGAGAACATAGCGTTGCCTTGGTA) [Importance: 1.00, 778 equivalent rules]

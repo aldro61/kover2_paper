@@ -1,0 +1,70 @@
+Kover Learning Report
+=====================
+
+Running time: 0:04:16.647968
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/amoxicillin___260162261243005161/train_0.800_seed_2_10_folds
+progress: False
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin___260162261243005161/dataset.kover
+Dataset UUID: b2cb882e-070c-11e8-9183-001b2193b764
+Phenotype: Amoxicillin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 613 (Group sensitive: 596, Group resistant: 17)
+Number of genomes used for testing: 153 (Group sensitive: 145, Group resistant: 8)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.13487)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00978793
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02773
+Sensitivity: 0.0
+Specificity: 1.0
+Precision: -inf
+Recall: 0.0
+F1 Score: -inf
+True Positives: 0.0
+True Negatives: 596.0
+False Positives: 0.0
+False Negatives: 17.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05229
+Sensitivity: 0.0
+Specificity: 1.0
+Precision: -inf
+Recall: 0.0
+F1 Score: -inf
+True Positives: 0.0
+True Negatives: 145.0
+False Positives: 0.0
+False Negatives: 8.0
+
+Model (0 rules, depth = 0):
+
+sensitive
+

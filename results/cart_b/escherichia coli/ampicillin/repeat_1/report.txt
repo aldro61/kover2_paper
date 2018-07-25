@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 0:34:20.447661
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ampicillin___7053822222416630118/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/ampicillin___7053822222416630118/train_0.800_seed_0_10_folds
+progress: False
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ampicillin___7053822222416630118/dataset.kover
+Dataset UUID: 9957fcbc-095d-11e8-b1fe-001b2193b764
+Phenotype: Ampicillin___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 349 (Group sensitive: 134, Group resistant: 215)
+Number of genomes used for testing: 87 (Group sensitive: 31, Group resistant: 56)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.32902)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01432665
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06017
+Sensitivity: 0.93488
+Specificity: 0.94776
+Precision: 0.96635
+Recall: 0.93488
+F1 Score: 0.95035
+True Positives: 201.0
+True Negatives: 127.0
+False Positives: 7.0
+False Negatives: 14.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.13793
+Sensitivity: 0.91071
+Specificity: 0.77419
+Precision: 0.87931
+Recall: 0.91071
+F1 Score: 0.89474
+True Positives: 51.0
+True Negatives: 24.0
+False Positives: 7.0
+False Negatives: 5.0
+
+Model (2 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(ACTAAGCACATAATTGCTCACAGCCAAACTA)
+       \
+        resistant
+   /
+Presence(TGAGTTTTCGTTCCACTGAGCGTCAGACCCC)
+   \
+    resistant
+

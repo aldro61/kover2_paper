@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 1:04:01.980115
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/kanamycin___260162261243005161/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/kanamycin___260162261243005161/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/kanamycin___260162261243005161/dataset.kover
+Dataset UUID: c4f8795a-075f-11e8-ae06-001b2193b764
+Phenotype: Kanamycin___Mycobacterium_Tuberculosis___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 1084 (Group sensitive: 851, Group resistant: 233)
+Number of genomes used for testing: 271 (Group sensitive: 207, Group resistant: 64)
+Number of k-mers: 7604833
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.04524)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04428
+Sensitivity: 0.87554
+Specificity: 0.97767
+Precision: 0.9148
+Recall: 0.87554
+F1 Score: 0.89474
+True Positives: 204.0
+True Negatives: 832.0
+False Positives: 19.0
+False Negatives: 29.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05535
+Sensitivity: 0.85938
+Specificity: 0.97101
+Precision: 0.90164
+Recall: 0.85938
+F1 Score: 0.88
+True Positives: 55.0
+True Negatives: 201.0
+False Positives: 6.0
+False Negatives: 9.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Absence(ACACACCGCCCGTCACGTCATGAAAGTCGGT) [Importance: 0.78, 51 equivalent rules]
+OR
+Absence(ACAGTCACAGAATCCGACTGTGGCATATGCC) [Importance: 0.23, 13 equivalent rules]

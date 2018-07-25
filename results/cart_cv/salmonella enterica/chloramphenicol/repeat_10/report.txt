@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 0:57:13.880202
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/chloramphenicol___-736338835843459561/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/chloramphenicol___-736338835843459561/train_0.800_seed_9_10_folds
+progress: False
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/chloramphenicol___-736338835843459561/dataset.kover
+Dataset UUID: 8798bc00-07d2-11e8-9853-001b2193b764
+Phenotype: Chloramphenicol___Salmonella_Enterica___Metadata_Date_2018-01-29
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 278 (Group sensitive: 81, Group resistant: 197)
+Number of genomes used for testing: 69 (Group sensitive: 15, Group resistant: 54)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.09722)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.01216007
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07554
+Sensitivity: 0.93401
+Specificity: 0.90123
+Precision: 0.95833
+Recall: 0.93401
+F1 Score: 0.94602
+True Positives: 184.0
+True Negatives: 73.0
+False Positives: 8.0
+False Negatives: 13.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.05797
+Sensitivity: 0.96296
+Specificity: 0.86667
+Precision: 0.96296
+Recall: 0.96296
+F1 Score: 0.96296
+True Positives: 52.0
+True Negatives: 13.0
+False Positives: 2.0
+False Negatives: 2.0
+
+Model (3 rules, depth = 3):
+
+    sensitive
+   /
+Presence(ACACCGTGAAGACAATACCGACCGCGACAAC)
+   \
+            resistant
+           /
+        Presence(ATTGCTCCGGCTCTGGTTCAAGCAGAACACG)
+           \
+            sensitive
+       /
+    Presence(ACACACTCAGGGTATAATCACCATCCGCCCA)
+       \
+        resistant
+

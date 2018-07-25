@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:03:12.828200
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/gentamicin___6654735289702248879/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/gentamicin___6654735289702248879/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/gentamicin___6654735289702248879/dataset.kover
+Dataset UUID: 33326bca-081d-11e8-8ed0-001b2193b764
+Phenotype: Gentamicin___Staphylococcus_Aureus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 1045 (Group sensitive: 916, Group resistant: 129)
+Number of genomes used for testing: 261 (Group sensitive: 228, Group resistant: 33)
+Number of k-mers: 12409196
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.05507)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00478
+Sensitivity: 0.97674
+Specificity: 0.99782
+Precision: 0.98438
+Recall: 0.97674
+F1 Score: 0.98054
+True Positives: 126.0
+True Negatives: 914.0
+False Positives: 2.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.00383
+Sensitivity: 1.0
+Specificity: 0.99561
+Precision: 0.97059
+Recall: 1.0
+F1 Score: 0.98507
+True Positives: 33.0
+True Negatives: 227.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAATTATATATTGCTTTTTCTTTTGCAT) [Importance: 1.00, 1481 equivalent rules]

@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:30.504342
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ofloxacin___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ofloxacin___2202579077548954665/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ofloxacin___2202579077548954665/dataset.kover
+Dataset UUID: 65ccc8c6-06bc-11e8-951f-001b2193b764
+Phenotype: Ofloxacin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 60 (Group sensitive: 22, Group resistant: 38)
+Number of genomes used for testing: 14 (Group sensitive: 5, Group resistant: 9)
+Number of k-mers: 12410574
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.58292)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1
+Sensitivity: 0.94737
+Specificity: 0.81818
+Precision: 0.9
+Recall: 0.94737
+F1 Score: 0.92308
+True Positives: 36.0
+True Negatives: 18.0
+False Positives: 4.0
+False Negatives: 2.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.14286
+Sensitivity: 0.88889
+Specificity: 0.8
+Precision: 0.88889
+Recall: 0.88889
+F1 Score: 0.88889
+True Positives: 8.0
+True Negatives: 4.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(ATCACTTTGCATTATTTTATTAAATCTTGGA) [Importance: 1.00, 11 equivalent rules]

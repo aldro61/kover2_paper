@@ -1,0 +1,85 @@
+Kover Learning Report
+=====================
+
+Running time: 3:38:01.418306
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefuroxime_sodium___2202579077548954665/train_0.800_seed_7_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_7_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+Dataset UUID: dd215202-0626-11e8-9397-001b2193b764
+Phenotype: Cefuroxime_Sodium___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_7_10_folds
+Number of genomes used for training: 1248 (Group sensitive: 74, Group resistant: 1174)
+Number of genomes used for testing: 312 (Group sensitive: 17, Group resistant: 295)
+Number of k-mers: 55560895
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01683)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 8
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00321
+Sensitivity: 0.99744
+Specificity: 0.98649
+Precision: 0.99915
+Recall: 0.99744
+F1 Score: 0.99829
+True Positives: 1171.0
+True Negatives: 73.0
+False Positives: 1.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02564
+Sensitivity: 0.97966
+Specificity: 0.88235
+Precision: 0.99313
+Recall: 0.97966
+F1 Score: 0.98635
+True Positives: 289.0
+True Negatives: 15.0
+False Positives: 2.0
+False Negatives: 6.0
+
+Model (Conjunction - 8 rules):
+------------------------------
+Absence(AAAAAAAAAACGGGGGGGGGGGGGGGGGGGG) [Importance: 0.80, 47 equivalent rules]
+AND
+Absence(AACATTTGCAGGTCTTCCCCACGCACGTGGG) [Importance: 0.07, 255 equivalent rules]
+AND
+Absence(AAAAGCGGAAATAAATCTGCAATACTGATGT) [Importance: 0.08, 17 equivalent rules]
+AND
+Absence(ACTGGTGTGAGGACGCAGGAAATGCGCTTTG) [Importance: 0.07, 12 equivalent rules]
+AND
+Absence(AAAATCAGGACGGTAGTGCGCCGATGCCGTT) [Importance: 0.07, 21 equivalent rules]
+AND
+Absence(ACGATAGTCTGGTGATGTATGACCGGATGCT) [Importance: 0.09, 58 equivalent rules]
+AND
+Absence(ATTCACCATATCGCCGCACCGTCTGAACGTG) [Importance: 0.09, 31 equivalent rules]
+AND
+Absence(CGTCAGCACAGCAAAACTGTCCCGCTGCCCG) [Importance: 0.05, 3 equivalent rules]

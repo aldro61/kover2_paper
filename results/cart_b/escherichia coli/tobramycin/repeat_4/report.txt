@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 0:12:42.885544
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/tobramycin___7053822222416630118/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/tobramycin___7053822222416630118/train_0.800_seed_3_10_folds
+progress: False
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/tobramycin___7053822222416630118/dataset.kover
+Dataset UUID: 2ca1e864-05af-11e8-a59f-001b2193b764
+Phenotype: Tobramycin___Escherichia_Coli___Metadata_Date_2018-01-29
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 338 (Group sensitive: 299, Group resistant: 39)
+Number of genomes used for testing: 84 (Group sensitive: 73, Group resistant: 11)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.21050)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00443787
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01479
+Sensitivity: 0.92308
+Specificity: 0.99331
+Precision: 0.94737
+Recall: 0.92308
+F1 Score: 0.93506
+True Positives: 36.0
+True Negatives: 297.0
+False Positives: 2.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0119
+Sensitivity: 1.0
+Specificity: 0.9863
+Precision: 0.91667
+Recall: 1.0
+F1 Score: 0.95652
+True Positives: 11.0
+True Negatives: 72.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Model (2 rules, depth = 2):
+
+        sensitive
+       /
+    Presence(ATATCGCGATGCATACGCGGAAGGCAATAAC)
+       \
+        resistant
+   /
+Presence(AAACACGCCAGGCATTCGAGCGAACACGCAG)
+   \
+    resistant
+

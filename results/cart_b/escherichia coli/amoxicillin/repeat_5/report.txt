@@ -1,0 +1,86 @@
+Kover Learning Report
+=====================
+
+Running time: 2:32:44.183259
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin___7053822222416630118/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/amoxicillin___7053822222416630118/train_0.800_seed_4_10_folds
+progress: False
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin___7053822222416630118/dataset.kover
+Dataset UUID: 992eb23a-095d-11e8-8ab5-001b2193b764
+Phenotype: Amoxicillin___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 876 (Group sensitive: 349, Group resistant: 527)
+Number of genomes used for testing: 219 (Group sensitive: 85, Group resistant: 134)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.31108)
+Criterion: gini
+Class importance: class sensitive: 0.500, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00408163
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.06507
+Sensitivity: 0.90702
+Specificity: 0.97708
+Precision: 0.98354
+Recall: 0.90702
+F1 Score: 0.94373
+True Positives: 478.0
+True Negatives: 341.0
+False Positives: 8.0
+False Negatives: 49.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.07306
+Sensitivity: 0.89552
+Specificity: 0.97647
+Precision: 0.98361
+Recall: 0.89552
+F1 Score: 0.9375
+True Positives: 120.0
+True Negatives: 83.0
+False Positives: 2.0
+False Negatives: 14.0
+
+Model (4 rules, depth = 4):
+
+                resistant
+               /
+            Presence(ACAGCCGTATCGACCGTTTCTCAAAAGTGCT)
+               \
+                sensitive
+           /
+        Presence(ATCACCACCGACTATTTGCAACAGTGCCGTG)
+           \
+            resistant
+       /
+    Presence(AAAAACATATTTATGTCCTGATTTGCTTATA)
+       \
+        resistant
+   /
+Presence(AAATGCTTCAATAATATTGAAAAAGGAAGAG)
+   \
+    resistant
+

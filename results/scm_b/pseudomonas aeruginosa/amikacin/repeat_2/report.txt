@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:18:05.861124
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amikacin___-9072632565547958275/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/amikacin___-9072632565547958275/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amikacin___-9072632565547958275/dataset.kover
+Dataset UUID: af064fce-07bd-11e8-810d-001b2193b764
+Phenotype: Amikacin___Pseudomonas_Aeruginosa___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 399 (Group sensitive: 322, Group resistant: 77)
+Number of genomes used for testing: 99 (Group sensitive: 86, Group resistant: 13)
+Number of k-mers: 43246793
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.42529)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.09273
+Sensitivity: 0.62338
+Specificity: 0.97516
+Precision: 0.85714
+Recall: 0.62338
+F1 Score: 0.7218
+True Positives: 48.0
+True Negatives: 314.0
+False Positives: 8.0
+False Negatives: 29.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.12121
+Sensitivity: 0.53846
+Specificity: 0.93023
+Precision: 0.53846
+Recall: 0.53846
+F1 Score: 0.53846
+True Positives: 7.0
+True Negatives: 80.0
+False Positives: 6.0
+False Negatives: 6.0
+
+Model (Disjunction - 3 rules):
+------------------------------
+Presence(AAACTACCGATTCGGCCAGTTGGCTAAGCAT) [Importance: 0.43, 401 equivalent rules]
+OR
+Presence(ATTCAAAAACTGGTTTTTCTGGTGTGGGAAC) [Importance: 0.30, 8 equivalent rules]
+OR
+Presence(AATTATACGTGACGCGTCACGATAAATACAT) [Importance: 0.27, 3 equivalent rules]

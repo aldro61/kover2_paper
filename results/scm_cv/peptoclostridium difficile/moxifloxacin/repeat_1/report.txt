@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:13:58.600225
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/patric_data/single_species_datasets/moxifloxacin___-8916328542551230855/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/scm_cv/moxifloxacin___-8916328542551230855/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/moxifloxacin___-8916328542551230855/dataset.kover
+Dataset UUID: 188637c8-547d-11e8-9fd4-f0921c053df8
+Phenotype: Moxifloxacin___Peptoclostridium_Difficile___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 370 (Group sensitive: 220, Group resistant: 150)
+Number of genomes used for testing: 92 (Group sensitive: 54, Group resistant: 38)
+Number of k-mers: 19753432
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01622)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01622
+Sensitivity: 0.96667
+Specificity: 0.99545
+Precision: 0.99315
+Recall: 0.96667
+F1 Score: 0.97973
+True Positives: 145.0
+True Negatives: 219.0
+False Positives: 1.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03261
+Sensitivity: 0.92105
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.92105
+F1 Score: 0.9589
+True Positives: 35.0
+True Negatives: 54.0
+False Positives: 0.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(ATATTGCTGTTTATTATGCTATGGTAAGAAT) [Importance: 1.00, 47 equivalent rules]

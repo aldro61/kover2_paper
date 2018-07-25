@@ -1,0 +1,78 @@
+Kover Learning Report
+=====================
+
+Running time: 10:25:43.182065
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/ciprofloxacin___7053822222416630118/train_0.800_seed_2_10_folds
+progress: False
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/ciprofloxacin___7053822222416630118/dataset.kover
+Dataset UUID: 1d912dc0-0970-11e8-89a3-001b2193b764
+Phenotype: Ciprofloxacin___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 1216 (Group sensitive: 987, Group resistant: 229)
+Number of genomes used for testing: 303 (Group sensitive: 243, Group resistant: 60)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01233)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00328312
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01151
+Sensitivity: 0.9607
+Specificity: 0.99493
+Precision: 0.97778
+Recall: 0.9607
+F1 Score: 0.96916
+True Positives: 220.0
+True Negatives: 982.0
+False Positives: 5.0
+False Negatives: 9.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0198
+Sensitivity: 0.95
+Specificity: 0.98765
+Precision: 0.95
+Recall: 0.95
+F1 Score: 0.95
+True Positives: 57.0
+True Negatives: 240.0
+False Positives: 3.0
+False Negatives: 3.0
+
+Model (2 rules, depth = 2):
+
+        resistant
+       /
+    Presence(AAATACCATCCGCATGGCGACAGCGCCTGCT)
+       \
+        sensitive
+   /
+Presence(CTATCGCCGTGCGGATGGTATTTACCCAGTA)
+   \
+    sensitive
+

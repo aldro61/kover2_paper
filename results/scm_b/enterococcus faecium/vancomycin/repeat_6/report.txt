@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:29.016182
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/vancomycin___-8850046431738590682/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/vancomycin___-8850046431738590682/train_0.800_seed_5_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/vancomycin___-8850046431738590682/dataset.kover
+Dataset UUID: 99660f46-095d-11e8-b2a7-001b2193b764
+Phenotype: Vancomycin___Enterococcus_Faecium___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 108 (Group sensitive: 66, Group resistant: 42)
+Number of genomes used for testing: 26 (Group sensitive: 17, Group resistant: 9)
+Number of k-mers: 10341091
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.23598)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00926
+Sensitivity: 1.0
+Specificity: 0.98485
+Precision: 0.97674
+Recall: 1.0
+F1 Score: 0.98824
+True Positives: 42.0
+True Negatives: 65.0
+False Positives: 1.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0
+Sensitivity: 1.0
+Specificity: 1.0
+Precision: 1.0
+Recall: 1.0
+F1 Score: 1.0
+True Positives: 9.0
+True Negatives: 17.0
+False Positives: 0.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAAAAATAGAAGCTACGCTGTGCAGCTCCC) [Importance: 1.00, 30553 equivalent rules]

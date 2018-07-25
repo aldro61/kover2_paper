@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:53.018602
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/ceftazidime___-3225223558739261696/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/ceftazidime___-3225223558739261696/train_0.800_seed_4_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_4_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/ceftazidime___-3225223558739261696/dataset.kover
+Dataset UUID: 9991fcb4-095d-11e8-81b5-001b2193b764
+Phenotype: Ceftazidime___Acinetobacter_Baumannii___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_4_10_folds
+Number of genomes used for training: 222 (Group sensitive: 24, Group resistant: 198)
+Number of genomes used for testing: 55 (Group sensitive: 4, Group resistant: 51)
+Number of k-mers: 14381774
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.20991)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.02252
+Sensitivity: 1.0
+Specificity: 0.79167
+Precision: 0.97537
+Recall: 1.0
+F1 Score: 0.98753
+True Positives: 198.0
+True Negatives: 19.0
+False Positives: 5.0
+False Negatives: 0.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.16364
+Sensitivity: 0.86275
+Specificity: 0.5
+Precision: 0.95652
+Recall: 0.86275
+F1 Score: 0.90722
+True Positives: 44.0
+True Negatives: 2.0
+False Positives: 2.0
+False Negatives: 7.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AAAACTTACGATTGGACTGGCGCGATTCTAG) [Importance: 1.00, 21 equivalent rules]

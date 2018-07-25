@@ -1,0 +1,114 @@
+Kover Learning Report
+=====================
+
+Running time: 16:52:06.591360
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin_clavulanic_acid___7053822222416630118/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/amoxicillin_clavulanic_acid___7053822222416630118/train_0.800_seed_1_10_folds
+progress: False
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/amoxicillin_clavulanic_acid___7053822222416630118/dataset.kover
+Dataset UUID: 994e9942-095d-11e8-9d2b-001b2193b764
+Phenotype: Amoxicillin_Clavulanic_Acid___Escherichia_Coli___Metadata_Date_2018-02-03
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 1220 (Group sensitive: 859, Group resistant: 361)
+Number of genomes used for testing: 304 (Group sensitive: 201, Group resistant: 103)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.15820)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00163202
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.11639
+Sensitivity: 0.6205
+Specificity: 0.99418
+Precision: 0.97817
+Recall: 0.6205
+F1 Score: 0.75932
+True Positives: 224.0
+True Negatives: 854.0
+False Positives: 5.0
+False Negatives: 137.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.21382
+Sensitivity: 0.41748
+Specificity: 0.97512
+Precision: 0.89583
+Recall: 0.41748
+F1 Score: 0.56954
+True Positives: 43.0
+True Negatives: 196.0
+False Positives: 5.0
+False Negatives: 60.0
+
+Model (11 rules, depth = 11):
+
+                sensitive
+               /
+            Presence(AAATGTTGAATACTCATACTCTTCCTTTTTC)
+               \
+                    resistant
+                   /
+                Presence(CAAATATGTATCCGCTCATGAGACAATAACC)
+                   \
+                                            sensitive
+                                           /
+                                        Presence(ACATCGCGGCAACTTCACCGCTATCGGCCAG)
+                                           \
+                                            resistant
+                                       /
+                                    Presence(ATTGCGCGACGCATTTTTTAAAGTTGGCCTG)
+                                       \
+                                        resistant
+                                   /
+                                Presence(AAAACGAACGTTCGCATCAGCACAGCAGAGC)
+                                   \
+                                    resistant
+                               /
+                            Presence(AAGGCCGCGCCGATGGCGTTTTTCCATAGGC)
+                               \
+                                resistant
+                           /
+                        Presence(TTTGGCACTGTTGCAAAGTTAGCGATGAGGC)
+                           \
+                            resistant
+                       /
+                    Presence(AGGCAACTGTCAGCGTGACGAAACGTGTGAC)
+                       \
+                        resistant
+           /
+        Presence(AAAAGATGAACAAGCAGCAGCAAGCTGTACT)
+           \
+            resistant
+       /
+    Presence(AAAATAAGCGTATCACGAGGCCCTTTCGTCT)
+       \
+        resistant
+   /
+Presence(AAGTATTGGTTTGGTAAAGGGCTTAATTTTA)
+   \
+    resistant
+

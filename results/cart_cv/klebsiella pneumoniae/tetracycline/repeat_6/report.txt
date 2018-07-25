@@ -1,0 +1,86 @@
+Kover Learning Report
+=====================
+
+Running time: 14:35:41.467859
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/tetracycline___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 8
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/tetracycline___2202579077548954665/train_0.800_seed_5_10_folds
+progress: False
+split: train_0.800_seed_5_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/tetracycline___2202579077548954665/dataset.kover
+Dataset UUID: 806c8188-06c3-11e8-bf1d-001b2193b764
+Phenotype: Tetracycline___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_5_10_folds
+Number of genomes used for training: 1243 (Group sensitive: 600, Group resistant: 643)
+Number of genomes used for testing: 310 (Group sensitive: 154, Group resistant: 156)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.11585)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.500
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00535409
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.10539
+Sensitivity: 0.80871
+Specificity: 0.98667
+Precision: 0.98485
+Recall: 0.80871
+F1 Score: 0.88813
+True Positives: 520.0
+True Negatives: 592.0
+False Positives: 8.0
+False Negatives: 123.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.13871
+Sensitivity: 0.75
+Specificity: 0.97403
+Precision: 0.96694
+Recall: 0.75
+F1 Score: 0.84477
+True Positives: 117.0
+True Negatives: 150.0
+False Positives: 4.0
+False Negatives: 39.0
+
+Model (4 rules, depth = 4):
+
+                sensitive
+               /
+            Presence(AACACCGTAGGCCCGCGCAAGCGCATGGACT)
+               \
+                resistant
+           /
+        Presence(ACCTCGAGTGCCCAATTTCAAAATGTTCAGT)
+           \
+            resistant
+       /
+    Presence(CCGCGTTTTTACTGATGTCTGCTATCACTTC)
+       \
+        resistant
+   /
+Presence(AGCGTCGAGCGCGACAGTGCTCAGAATTACG)
+   \
+    resistant
+

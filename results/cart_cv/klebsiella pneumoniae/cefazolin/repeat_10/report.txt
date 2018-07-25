@@ -1,0 +1,82 @@
+Kover Learning Report
+=====================
+
+Running time: 19:30:38.506068
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/cefazolin___2202579077548954665/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 4
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/cefazolin___2202579077548954665/train_0.800_seed_9_10_folds
+progress: False
+split: train_0.800_seed_9_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/cefazolin___2202579077548954665/dataset.kover
+Dataset UUID: f2e35080-05fa-11e8-a023-001b2193b764
+Phenotype: Cefazolin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_9_10_folds
+Number of genomes used for training: 1516 (Group sensitive: 156, Group resistant: 1360)
+Number of genomes used for testing: 379 (Group sensitive: 33, Group resistant: 346)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.03631)
+Criterion: gini
+Class importance: class sensitive: 0.750, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00925139
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.03298
+Sensitivity: 0.975
+Specificity: 0.89744
+Precision: 0.98808
+Recall: 0.975
+F1 Score: 0.9815
+True Positives: 1326.0
+True Negatives: 140.0
+False Positives: 16.0
+False Negatives: 34.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.04222
+Sensitivity: 0.96243
+Specificity: 0.90909
+Precision: 0.99107
+Recall: 0.96243
+F1 Score: 0.97654
+True Positives: 333.0
+True Negatives: 30.0
+False Positives: 3.0
+False Negatives: 13.0
+
+Model (3 rules, depth = 3):
+
+        resistant
+       /
+    Presence(AAATACCACCCGCACGGCGACTCCGCGGTAT)
+       \
+            sensitive
+           /
+        Presence(CAAGCCGACGCCGCTTCGCGGCGCGGCTTAA)
+           \
+            resistant
+   /
+Presence(AACAGCCATTACGCCCAATCAACTGGTGCAG)
+   \
+    resistant
+

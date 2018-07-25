@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:02:36.484493
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/meropenem___7053822222416630118/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/meropenem___7053822222416630118/train_0.800_seed_0_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_0_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/meropenem___7053822222416630118/dataset.kover
+Dataset UUID: bae13f2a-05ab-11e8-a327-001b2193b764
+Phenotype: Meropenem___Escherichia_Coli___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_0_10_folds
+Number of genomes used for training: 357 (Group sensitive: 333, Group resistant: 24)
+Number of genomes used for testing: 89 (Group sensitive: 85, Group resistant: 4)
+Number of k-mers: 36241506
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.14105)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01401
+Sensitivity: 0.95833
+Specificity: 0.98799
+Precision: 0.85185
+Recall: 0.95833
+F1 Score: 0.90196
+True Positives: 23.0
+True Negatives: 329.0
+False Positives: 4.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03371
+Sensitivity: 1.0
+Specificity: 0.96471
+Precision: 0.57143
+Recall: 1.0
+F1 Score: 0.72727
+True Positives: 4.0
+True Negatives: 82.0
+False Positives: 3.0
+False Negatives: 0.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(TCAAGTCCACTCAGGCCTACCAAATTTGCAC) [Importance: 1.00, 1 equivalent rules]

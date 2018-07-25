@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 0:13:14.028720
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+hp_choice: cv
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_cv/erythromycin___672792900560953954/train_0.800_seed_2_10_folds
+progress: False
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/erythromycin___672792900560953954/dataset.kover
+Dataset UUID: cda8b11e-07a0-11e8-b0b1-001b2193b764
+Phenotype: Erythromycin___Neisseria_Gonorrhoeae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 143 (Group sensitive: 62, Group resistant: 81)
+Number of genomes used for testing: 35 (Group sensitive: 19, Group resistant: 16)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.12000)
+Criterion: gini
+Class importance: class sensitive: 1.000, class resistant: 0.750
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.09673598
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1049
+Sensitivity: 0.93827
+Specificity: 0.83871
+Precision: 0.88372
+Recall: 0.93827
+F1 Score: 0.91018
+True Positives: 76.0
+True Negatives: 52.0
+False Positives: 10.0
+False Negatives: 5.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.11429
+Sensitivity: 0.9375
+Specificity: 0.84211
+Precision: 0.83333
+Recall: 0.9375
+F1 Score: 0.88235
+True Positives: 15.0
+True Negatives: 16.0
+False Positives: 3.0
+False Negatives: 1.0
+
+Model (1 rules, depth = 1):
+
+    sensitive
+   /
+Presence(AAAATCATCCTGACTACTTCTATGTCGGTTC)
+   \
+    resistant
+

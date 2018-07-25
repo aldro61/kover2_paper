@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 1:56:41.473025
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/trimethoprim_sulfamethoxazole___2202579077548954665/train_0.800_seed_3_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_3_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/trimethoprim_sulfamethoxazole___2202579077548954665/dataset.kover
+Dataset UUID: 5b65fcca-06fa-11e8-9f9f-001b2193b764
+Phenotype: Trimethoprim_Sulfamethoxazole___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_3_10_folds
+Number of genomes used for training: 1704 (Group sensitive: 432, Group resistant: 1272)
+Number of genomes used for testing: 425 (Group sensitive: 110, Group resistant: 315)
+Number of k-mers: 71296467
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.26600)
+Model type: disjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.07101
+Sensitivity: 0.98192
+Specificity: 0.77315
+Precision: 0.92725
+Recall: 0.98192
+F1 Score: 0.9538
+True Positives: 1249.0
+True Negatives: 334.0
+False Positives: 98.0
+False Negatives: 23.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.09176
+Sensitivity: 0.95873
+Specificity: 0.76364
+Precision: 0.92073
+Recall: 0.95873
+F1 Score: 0.93935
+True Positives: 302.0
+True Negatives: 84.0
+False Positives: 26.0
+False Negatives: 13.0
+
+Model (Disjunction - 2 rules):
+------------------------------
+Presence(TTACGCAGCAGGGCAGTCGCCCTAAAACAAA) [Importance: 0.98, 3 equivalent rules]
+OR
+Presence(AAAGCCAGGAAAGCGGCCTATGGAGCTGTGC) [Importance: 0.45, 62 equivalent rules]

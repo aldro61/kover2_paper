@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 0:00:24.713894
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/fusidic_acid___946434054234721145/train_0.800_seed_8_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/fusidic_acid___946434054234721145/dataset.kover
+Dataset UUID: 8b1fcb44-0867-11e8-8137-001b2193b764
+Phenotype: Fusidic_Acid___Staphylococcus_Haemolyticus___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 92 (Group sensitive: 60, Group resistant: 32)
+Number of genomes used for testing: 22 (Group sensitive: 15, Group resistant: 7)
+Number of k-mers: 5195418
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.62920)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.18478
+Sensitivity: 0.59375
+Specificity: 0.93333
+Precision: 0.82609
+Recall: 0.59375
+F1 Score: 0.69091
+True Positives: 19.0
+True Negatives: 56.0
+False Positives: 4.0
+False Negatives: 13.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.18182
+Sensitivity: 0.42857
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.42857
+F1 Score: 0.6
+True Positives: 3.0
+True Negatives: 15.0
+False Positives: 0.0
+False Negatives: 4.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Presence(AATTAATTAATATTGAAGTGATATAAATGAA) [Importance: 1.00, 17 equivalent rules]

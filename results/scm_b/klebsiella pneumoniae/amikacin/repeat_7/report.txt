@@ -1,0 +1,77 @@
+Kover Learning Report
+=====================
+
+Running time: 1:37:00.859530
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/amikacin___2202579077548954665/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/amikacin___2202579077548954665/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/amikacin___2202579077548954665/dataset.kover
+Dataset UUID: 7b7211e2-05d4-11e8-b93a-001b2193b764
+Phenotype: Amikacin___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 1515 (Group sensitive: 1371, Group resistant: 144)
+Number of genomes used for testing: 378 (Group sensitive: 342, Group resistant: 36)
+Number of k-mers: 73248603
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.23110)
+Model type: conjunction
+p: 1.778000
+Maximum number of rules: 4
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.04752
+Sensitivity: 0.65972
+Specificity: 0.98322
+Precision: 0.80508
+Recall: 0.65972
+F1 Score: 0.72519
+True Positives: 95.0
+True Negatives: 1348.0
+False Positives: 23.0
+False Negatives: 49.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.03968
+Sensitivity: 0.69444
+Specificity: 0.9883
+Precision: 0.86207
+Recall: 0.69444
+F1 Score: 0.76923
+True Positives: 25.0
+True Negatives: 338.0
+False Positives: 4.0
+False Negatives: 11.0
+
+Model (Conjunction - 4 rules):
+------------------------------
+Presence(CCCTATTATGGCGAAGGTATCATTCAGGAAG) [Importance: 0.96, 21 equivalent rules]
+AND
+Presence(ACCCGCAGCAGGCAATCCAGACCATCGCGCA) [Importance: 0.42, 1 equivalent rules]
+AND
+Presence(GCCTTTGTCCTTGCATGGGAAACGCTGGCGC) [Importance: 0.34, 1 equivalent rules]
+AND
+Absence(AACACAAGCTACATACATGTCGATATGGGAA) [Importance: 0.30, 6 equivalent rules]

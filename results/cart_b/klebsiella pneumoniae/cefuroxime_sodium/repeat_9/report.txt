@@ -1,0 +1,74 @@
+Kover Learning Report
+=====================
+
+Running time: 1:49:37.181412
+
+Configuration:
+--------------
+authorized_rules: 
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+class_importance: ['0.25', '0.5', '0.75', '1.0']
+criterion: ['gini']
+dataset: /scratch/adrouin/patric_data/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+hp_choice: bound
+max_depth: [20]
+min_samples_split: [2]
+n_cpu: 2
+output_dir: /scratch/adrouin/patric_experiments/single_species_datasets/cart_bound/cefuroxime_sodium___2202579077548954665/train_0.800_seed_8_10_folds
+progress: False
+split: train_0.800_seed_8_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/patric_data/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+Dataset UUID: dd215202-0626-11e8-9397-001b2193b764
+Phenotype: Cefuroxime_Sodium___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Split: train_0.800_seed_8_10_folds
+Number of genomes used for training: 1248 (Group sensitive: 79, Group resistant: 1169)
+Number of genomes used for testing: 312 (Group sensitive: 12, Group resistant: 300)
+
+Hyperparameter Values:
+----------------------
+Selection strategy: sample-compression bound (delta = 0.050, max-genome-size = 10461658, value = 0.10726)
+Criterion: gini
+Class importance: class sensitive: 0.250, class resistant: 0.250
+Maximum tree depth: 20
+Minimum samples to split a node (examples): 2.000
+Pruning alpha: 0.00320513
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01603
+Sensitivity: 0.99743
+Specificity: 0.78481
+Precision: 0.98563
+Recall: 0.99743
+F1 Score: 0.9915
+True Positives: 1166.0
+True Negatives: 62.0
+False Positives: 17.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.00641
+Sensitivity: 0.99667
+Specificity: 0.91667
+Precision: 0.99667
+Recall: 0.99667
+F1 Score: 0.99667
+True Positives: 299.0
+True Negatives: 11.0
+False Positives: 1.0
+False Negatives: 1.0
+
+Model (1 rules, depth = 1):
+
+    resistant
+   /
+Presence(AAAAAAAAAACGGGGGGGGGGGGGGGGGGGG)
+   \
+    sensitive
+

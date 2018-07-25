@@ -1,0 +1,71 @@
+Kover Learning Report
+=====================
+
+Running time: 3:35:26.233907
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefuroxime_sodium___2202579077548954665/train_0.800_seed_2_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_2_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefuroxime_sodium___2202579077548954665/dataset.kover
+Dataset UUID: dd215202-0626-11e8-9397-001b2193b764
+Phenotype: Cefuroxime_Sodium___Klebsiella_Pneumoniae___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_2_10_folds
+Number of genomes used for training: 1248 (Group sensitive: 74, Group resistant: 1174)
+Number of genomes used for testing: 312 (Group sensitive: 17, Group resistant: 295)
+Number of k-mers: 55560895
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01441)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 1
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.01122
+Sensitivity: 0.99915
+Specificity: 0.82432
+Precision: 0.98904
+Recall: 0.99915
+F1 Score: 0.99407
+True Positives: 1173.0
+True Negatives: 61.0
+False Positives: 13.0
+False Negatives: 1.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.02564
+Sensitivity: 0.98983
+Specificity: 0.70588
+Precision: 0.98316
+Recall: 0.98983
+F1 Score: 0.98649
+True Positives: 292.0
+True Negatives: 12.0
+False Positives: 5.0
+False Negatives: 3.0
+
+Model (Conjunction - 1 rules):
+------------------------------
+Absence(AAAAAAAAAACGGGGGGGGGGGGGGGGGGGG) [Importance: 1.00, 29 equivalent rules]

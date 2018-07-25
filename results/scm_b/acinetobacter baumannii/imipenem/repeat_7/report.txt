@@ -1,0 +1,75 @@
+Kover Learning Report
+=====================
+
+Running time: 0:18:27.969320
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/imipenem___-3225223558739261696/dataset.kover
+hp_choice: bound
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_bound/imipenem___-3225223558739261696/train_0.800_seed_6_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_6_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/imipenem___-3225223558739261696/dataset.kover
+Dataset UUID: b4e39f74-0578-11e8-932f-001b2193b764
+Phenotype: Imipenem___Acinetobacter_Baumannii___Metadata_Date_2018-01-29
+Genomic data type: contigs
+Split: train_0.800_seed_6_10_folds
+Number of genomes used for training: 400 (Group sensitive: 135, Group resistant: 265)
+Number of genomes used for testing: 99 (Group sensitive: 39, Group resistant: 60)
+Number of k-mers: 42406238
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: bound selection (score = 0.43132)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 3
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.1025
+Sensitivity: 0.95849
+Specificity: 0.77778
+Precision: 0.89437
+Recall: 0.95849
+F1 Score: 0.92532
+True Positives: 254.0
+True Negatives: 105.0
+False Positives: 30.0
+False Negatives: 11.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.15152
+Sensitivity: 0.93333
+Specificity: 0.71795
+Precision: 0.83582
+Recall: 0.93333
+F1 Score: 0.88189
+True Positives: 56.0
+True Negatives: 28.0
+False Positives: 11.0
+False Negatives: 4.0
+
+Model (Conjunction - 3 rules):
+------------------------------
+Presence(TACAGCACATAGTGTTTTGAAGACATCACCA) [Importance: 0.80, 1 equivalent rules]
+AND
+Absence(ATTTTGATCAGACATAATAAAAGCACTTAAG) [Importance: 0.25, 12 equivalent rules]
+AND
+Presence(CAATGTAGGAATTTGCTTCAGATCCTGAATA) [Importance: 0.63, 1 equivalent rules]

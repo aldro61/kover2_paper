@@ -1,0 +1,73 @@
+Kover Learning Report
+=====================
+
+Running time: 0:25:12.288029
+
+Configuration:
+--------------
+bound_delta: 0.05
+bound_max_genome_size: 10461658
+dataset: /scratch/adrouin/data/patric/single_species_datasets/cefoxitin___7053822222416630118/dataset.kover
+hp_choice: cv
+max_equiv_rules: 100000
+max_rules: 20
+model_type: ['conjunction', 'disjunction']
+n_cpu: 2
+output_dir: /scratch/adrouin/experiments/patric/single_species_datasets/scm_cv/cefoxitin___7053822222416630118/train_0.800_seed_1_10_folds
+p: [1.0, 1.778, 3.162, 5.623, 10.0]
+progress: False
+random_seed: 42
+split: train_0.800_seed_1_10_folds
+verbose: False
+
+Data summary:
+-------------
+Dataset file: /scratch/adrouin/data/patric/single_species_datasets/cefoxitin___7053822222416630118/dataset.kover
+Dataset UUID: 99a3ee38-095d-11e8-8779-001b2193b764
+Phenotype: Cefoxitin___Escherichia_Coli___Metadata_Date_2018-02-03
+Genomic data type: contigs
+Split: train_0.800_seed_1_10_folds
+Number of genomes used for training: 334 (Group sensitive: 313, Group resistant: 21)
+Number of genomes used for testing: 83 (Group sensitive: 77, Group resistant: 6)
+Number of k-mers: 35303782
+K-mer size : 31
+K-mer filtering : singleton
+
+Hyperparameter Values:
+----------------------
+Selection strategy: 10-fold cross-validation (score = 0.01791)
+Model type: conjunction
+p: 1.000000
+Maximum number of rules: 2
+
+Metrics (training data)
+-----------------------
+Error Rate: 0.00898
+Sensitivity: 0.85714
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.85714
+F1 Score: 0.92308
+True Positives: 18.0
+True Negatives: 313.0
+False Positives: 0.0
+False Negatives: 3.0
+
+Metrics (testing data)
+----------------------
+Error Rate: 0.0241
+Sensitivity: 0.66667
+Specificity: 1.0
+Precision: 1.0
+Recall: 0.66667
+F1 Score: 0.8
+True Positives: 4.0
+True Negatives: 77.0
+False Positives: 0.0
+False Negatives: 2.0
+
+Model (Conjunction - 2 rules):
+------------------------------
+Presence(AATCACTACAGAGATGGTGGAGCTATGCGGG) [Importance: 0.99, 76 equivalent rules]
+AND
+Presence(ACTACATAAAGTAGTTGGTGGGTGATGACGG) [Importance: 0.91, 5 equivalent rules]
