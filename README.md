@@ -3,7 +3,7 @@ By: Alexandre Drouin, Gaël Letarte, Frédéric Raymond, Mario Marchand, Jacques
 
 Powered by 
 
-<a href="https://github.com/aldro61/kover" target="_blank"><img src="http://graal.ift.ulaval.ca/adrouin/kover.png" height="50" /></a>
+<a href="https://github.com/aldro61/kover"><img src="http://graal.ift.ulaval.ca/adrouin/kover.png" height="50" /></a>
 
 
 ## Contents
