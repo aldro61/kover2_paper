@@ -2,6 +2,7 @@
 # Model
 
 Species: staphylococcus haemolyticus
+
 Antibiotic: fusidic_acid
 
 ```

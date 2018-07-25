@@ -2,6 +2,7 @@
 # Model
 
 Species: staphylococcus aureus
+
 Antibiotic: penicillin
 
 ```

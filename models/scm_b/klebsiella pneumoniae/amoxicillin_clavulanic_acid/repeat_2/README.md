@@ -2,6 +2,7 @@
 # Model
 
 Species: klebsiella pneumoniae
+
 Antibiotic: amoxicillin_clavulanic_acid
 
 ```

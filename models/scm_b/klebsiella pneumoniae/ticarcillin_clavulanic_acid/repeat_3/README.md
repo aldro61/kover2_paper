@@ -2,6 +2,7 @@
 # Model
 
 Species: klebsiella pneumoniae
+
 Antibiotic: ticarcillin_clavulanic_acid
 
 ```

@@ -2,6 +2,7 @@
 # Model
 
 Species: enterococcus faecium
+
 Antibiotic: vancomycin
 
 ```

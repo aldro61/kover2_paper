@@ -2,6 +2,7 @@
 # Model
 
 Species: peptoclostridium difficile
+
 Antibiotic: ceftriaxone
 
 ```
