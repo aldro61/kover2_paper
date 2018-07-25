@@ -1,5 +1,5 @@
 """
-Runs kover SCM on all the datasets in some directory structure
+Runs kover SCM (bound selection) on all the datasets in some directory structure
 
 """
 import json
