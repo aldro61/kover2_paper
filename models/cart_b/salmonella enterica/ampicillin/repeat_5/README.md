@@ -5,7 +5,7 @@ Species: *Salmonella enterica*
 
 Antibiotic: Ampicillin
 
-<a href="./model.pdf"><img src="./model.png" width=500 height=500 /></a>
+<a href="./model.pdf"><img src="./model.png" /></a>
 
 For details, please refer to the [results directory](../../../../../results/cart_b/salmonella%20enterica/ampicillin/repeat_4/).
 
