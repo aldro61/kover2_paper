@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: ciprofloxacin
+Antibiotic: Ciprofloxacin
 
 ```
 Model (Conjunction - 2 rules):

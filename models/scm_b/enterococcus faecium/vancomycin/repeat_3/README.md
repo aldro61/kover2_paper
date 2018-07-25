@@ -1,9 +1,9 @@
 
 # Model
 
-Species: enterococcus faecium
+Species: *Enterococcus faecium*
 
-Antibiotic: vancomycin
+Antibiotic: Vancomycin
 
 ```
 Model (Conjunction - 1 rules):

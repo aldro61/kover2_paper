@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus haemolyticus
+Species: *Staphylococcus haemolyticus*
 
-Antibiotic: ciprofloxacin
+Antibiotic: Ciprofloxacin
 
 ```
 Model (Conjunction - 1 rules):

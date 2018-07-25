@@ -1,9 +1,9 @@
 
 # Model
 
-Species: salmonella enterica
+Species: *Salmonella enterica*
 
-Antibiotic: sulphonamides
+Antibiotic: Sulphonamides
 
 ```
 Model (Disjunction - 3 rules):

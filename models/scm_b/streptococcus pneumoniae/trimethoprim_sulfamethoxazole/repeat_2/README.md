@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: trimethoprim_sulfamethoxazole
+Antibiotic: Trimethoprim_Sulfamethoxazole
 
 ```
 Model (Disjunction - 4 rules):

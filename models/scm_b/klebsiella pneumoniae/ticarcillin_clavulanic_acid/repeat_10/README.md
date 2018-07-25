@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: ticarcillin_clavulanic_acid
+Antibiotic: Ticarcillin_Clavulanic_Acid
 
 ```
 Model (Disjunction - 2 rules):

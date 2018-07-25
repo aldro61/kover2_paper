@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: cefuroxime
+Antibiotic: Cefuroxime
 
 ```
 Model (Conjunction - 1 rules):

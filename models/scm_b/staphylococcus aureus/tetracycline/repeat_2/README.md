@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: tetracycline
+Antibiotic: Tetracycline
 
 ```
 Model (Disjunction - 2 rules):

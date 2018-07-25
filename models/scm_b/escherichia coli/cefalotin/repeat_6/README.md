@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: cefalotin
+Antibiotic: Cefalotin
 
 ```
 Model (Conjunction - 1 rules):

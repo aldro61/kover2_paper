@@ -1,9 +1,9 @@
 
 # Model
 
-Species: peptoclostridium difficile
+Species: *Peptoclostridium difficile*
 
-Antibiotic: moxifloxacin
+Antibiotic: Moxifloxacin
 
 ```
 Model (Conjunction - 1 rules):

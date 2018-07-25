@@ -1,9 +1,9 @@
 
 # Model
 
-Species: acinetobacter baumannii
+Species: *Acinetobacter baumannii*
 
-Antibiotic: imipenem
+Antibiotic: Imipenem
 
 ```
 Model (Disjunction - 3 rules):

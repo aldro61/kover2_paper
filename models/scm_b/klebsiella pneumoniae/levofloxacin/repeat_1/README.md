@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: levofloxacin
+Antibiotic: Levofloxacin
 
 ```
 Model (Conjunction - 2 rules):

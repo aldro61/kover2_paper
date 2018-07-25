@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: ciprofloxacin
+Antibiotic: Ciprofloxacin
 
 ```
 Model (Conjunction - 2 rules):

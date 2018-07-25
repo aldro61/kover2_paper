@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: ofloxacin
+Antibiotic: Ofloxacin
 
 ```
 Model (Conjunction - 1 rules):

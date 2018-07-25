@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: meropenem
+Antibiotic: Meropenem
 
 ```
 Model (Conjunction - 1 rules):

@@ -1,9 +1,9 @@
 
 # Model
 
-Species: acinetobacter baumannii
+Species: *Acinetobacter baumannii*
 
-Antibiotic: amikacin
+Antibiotic: Amikacin
 
 ```
 Model (Disjunction - 3 rules):

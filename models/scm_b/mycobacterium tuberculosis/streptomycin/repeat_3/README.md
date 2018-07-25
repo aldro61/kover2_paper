@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: streptomycin
+Antibiotic: Streptomycin
 
 ```
 Model (Disjunction - 6 rules):

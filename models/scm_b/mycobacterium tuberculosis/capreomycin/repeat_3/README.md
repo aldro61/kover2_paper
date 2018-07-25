@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: capreomycin
+Antibiotic: Capreomycin
 
 ```
 Model (Conjunction - 1 rules):

@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: cycloserine
+Antibiotic: Cycloserine
 
 ```
 Model (Conjunction - 2 rules):

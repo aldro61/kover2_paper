@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: gentamicin
+Antibiotic: Gentamicin
 
 ```
 Model (Disjunction - 2 rules):

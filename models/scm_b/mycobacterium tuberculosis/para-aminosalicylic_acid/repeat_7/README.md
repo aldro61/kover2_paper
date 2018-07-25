@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: para-aminosalicylic_acid
+Antibiotic: Para-Aminosalicylic_Acid
 
 ```
 Model (Conjunction - 2 rules):

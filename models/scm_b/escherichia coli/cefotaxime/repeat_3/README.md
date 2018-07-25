@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: cefotaxime
+Antibiotic: Cefotaxime
 
 ```
 Model (Disjunction - 3 rules):

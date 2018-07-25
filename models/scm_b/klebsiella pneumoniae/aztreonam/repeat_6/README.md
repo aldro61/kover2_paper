@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: aztreonam
+Antibiotic: Aztreonam
 
 ```
 Model (Disjunction - 6 rules):

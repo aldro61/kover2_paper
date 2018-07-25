@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: ofloxacin
+Antibiotic: Ofloxacin
 
 ```
 Model (Disjunction - 2 rules):

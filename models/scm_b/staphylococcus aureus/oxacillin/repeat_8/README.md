@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: oxacillin
+Antibiotic: Oxacillin
 
 ```
 Model (Conjunction - 1 rules):

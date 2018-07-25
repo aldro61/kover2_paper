@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: ampicillin
+Antibiotic: Ampicillin
 
 ```
 Model (Disjunction - 2 rules):

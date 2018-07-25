@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: pyrazinamide
+Antibiotic: Pyrazinamide
 
 ```
 Model (Disjunction - 6 rules):

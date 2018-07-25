@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: clindamycin
+Antibiotic: Clindamycin
 
 ```
 Model (Disjunction - 2 rules):

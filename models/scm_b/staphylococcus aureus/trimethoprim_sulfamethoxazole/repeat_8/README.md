@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: trimethoprim_sulfamethoxazole
+Antibiotic: Trimethoprim_Sulfamethoxazole
 
 ```
 Model (Conjunction - 1 rules):

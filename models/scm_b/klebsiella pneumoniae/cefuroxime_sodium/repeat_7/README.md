@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: cefuroxime_sodium
+Antibiotic: Cefuroxime_Sodium
 
 ```
 Model (Conjunction - 1 rules):

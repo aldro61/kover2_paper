@@ -1,9 +1,9 @@
 
 # Model
 
-Species: peptoclostridium difficile
+Species: *Peptoclostridium difficile*
 
-Antibiotic: clindamycin
+Antibiotic: Clindamycin
 
 ```
 Model (Disjunction - 2 rules):

@@ -1,9 +1,9 @@
 
 # Model
 
-Species: salmonella enterica
+Species: *Salmonella enterica*
 
-Antibiotic: chloramphenicol
+Antibiotic: Chloramphenicol
 
 ```
 Model (Conjunction - 1 rules):

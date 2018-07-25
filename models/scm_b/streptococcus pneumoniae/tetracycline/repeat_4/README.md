@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: tetracycline
+Antibiotic: Tetracycline
 
 ```
 Model (Conjunction - 1 rules):

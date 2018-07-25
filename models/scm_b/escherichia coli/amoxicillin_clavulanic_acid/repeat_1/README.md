@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: amoxicillin_clavulanic_acid
+Antibiotic: Amoxicillin_Clavulanic_Acid
 
 ```
 Model (Disjunction - 6 rules):

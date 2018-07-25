@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: imipenem
+Antibiotic: Imipenem
 
 ```
 Model (Disjunction - 2 rules):

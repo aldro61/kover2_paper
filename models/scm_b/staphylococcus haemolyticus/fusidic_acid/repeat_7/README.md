@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus haemolyticus
+Species: *Staphylococcus haemolyticus*
 
-Antibiotic: fusidic_acid
+Antibiotic: Fusidic_Acid
 
 ```
 Model (Conjunction - 1 rules):

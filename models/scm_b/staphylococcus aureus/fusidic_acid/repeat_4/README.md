@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: fusidic_acid
+Antibiotic: Fusidic_Acid
 
 ```
 Model (Disjunction - 2 rules):

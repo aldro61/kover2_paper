@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: cefoxitin
+Antibiotic: Cefoxitin
 
 ```
 Model (Disjunction - 8 rules):

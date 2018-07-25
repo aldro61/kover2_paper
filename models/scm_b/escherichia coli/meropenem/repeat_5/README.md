@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: meropenem
+Antibiotic: Meropenem
 
 ```
 Model (Conjunction - 1 rules):

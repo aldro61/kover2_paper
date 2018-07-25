@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: piperacillin_tazobactam
+Antibiotic: Piperacillin_Tazobactam
 
 ```
 Model (Conjunction - 1 rules):

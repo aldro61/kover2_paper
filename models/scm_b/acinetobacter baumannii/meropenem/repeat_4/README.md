@@ -1,9 +1,9 @@
 
 # Model
 
-Species: acinetobacter baumannii
+Species: *Acinetobacter baumannii*
 
-Antibiotic: meropenem
+Antibiotic: Meropenem
 
 ```
 Model (Disjunction - 2 rules):

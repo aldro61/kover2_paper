@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: gentamicin
+Antibiotic: Gentamicin
 
 ```
 Model (Disjunction - 4 rules):

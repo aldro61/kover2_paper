@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: amoxicillin
+Antibiotic: Amoxicillin
 
 ```
 Model (Conjunction - 1 rules):

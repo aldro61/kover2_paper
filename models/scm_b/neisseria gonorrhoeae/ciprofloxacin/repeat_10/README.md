@@ -1,9 +1,9 @@
 
 # Model
 
-Species: neisseria gonorrhoeae
+Species: *Neisseria gonorrhoeae*
 
-Antibiotic: ciprofloxacin
+Antibiotic: Ciprofloxacin
 
 ```
 Model (Conjunction - 1 rules):

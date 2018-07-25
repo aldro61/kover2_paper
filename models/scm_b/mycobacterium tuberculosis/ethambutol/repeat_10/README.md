@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: ethambutol
+Antibiotic: Ethambutol
 
 ```
 Model (Conjunction - 7 rules):

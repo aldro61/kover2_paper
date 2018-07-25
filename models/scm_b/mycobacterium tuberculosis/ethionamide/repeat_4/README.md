@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: ethionamide
+Antibiotic: Ethionamide
 
 ```
 Model (Disjunction - 3 rules):

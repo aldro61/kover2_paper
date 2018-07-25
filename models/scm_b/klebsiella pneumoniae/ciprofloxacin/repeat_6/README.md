@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: ciprofloxacin
+Antibiotic: Ciprofloxacin
 
 ```
 Model (Disjunction - 4 rules):

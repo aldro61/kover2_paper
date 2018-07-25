@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: rifampin
+Antibiotic: Rifampin
 
 ```
 Model (Disjunction - 4 rules):

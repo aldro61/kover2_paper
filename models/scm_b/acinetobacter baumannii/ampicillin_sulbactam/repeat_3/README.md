@@ -1,9 +1,9 @@
 
 # Model
 
-Species: acinetobacter baumannii
+Species: *Acinetobacter baumannii*
 
-Antibiotic: ampicillin_sulbactam
+Antibiotic: Ampicillin_Sulbactam
 
 ```
 Model (Conjunction - 1 rules):

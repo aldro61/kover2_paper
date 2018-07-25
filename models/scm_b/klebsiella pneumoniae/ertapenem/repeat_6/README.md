@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: ertapenem
+Antibiotic: Ertapenem
 
 ```
 Model (Disjunction - 3 rules):

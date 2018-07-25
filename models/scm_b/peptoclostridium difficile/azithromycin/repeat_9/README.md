@@ -1,9 +1,9 @@
 
 # Model
 
-Species: peptoclostridium difficile
+Species: *Peptoclostridium difficile*
 
-Antibiotic: azithromycin
+Antibiotic: Azithromycin
 
 ```
 Model (Disjunction - 2 rules):

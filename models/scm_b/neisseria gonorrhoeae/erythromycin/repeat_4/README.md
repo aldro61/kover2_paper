@@ -1,9 +1,9 @@
 
 # Model
 
-Species: neisseria gonorrhoeae
+Species: *Neisseria gonorrhoeae*
 
-Antibiotic: erythromycin
+Antibiotic: Erythromycin
 
 ```
 Model (Conjunction - 1 rules):

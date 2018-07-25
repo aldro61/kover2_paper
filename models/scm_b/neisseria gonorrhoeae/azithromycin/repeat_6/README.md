@@ -1,9 +1,9 @@
 
 # Model
 
-Species: neisseria gonorrhoeae
+Species: *Neisseria gonorrhoeae*
 
-Antibiotic: azithromycin
+Antibiotic: Azithromycin
 
 ```
 Model (Disjunction - 3 rules):

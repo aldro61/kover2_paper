@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: ceftazidime
+Antibiotic: Ceftazidime
 
 ```
 Model (Disjunction - 7 rules):

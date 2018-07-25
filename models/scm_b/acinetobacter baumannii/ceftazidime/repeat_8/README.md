@@ -1,9 +1,9 @@
 
 # Model
 
-Species: acinetobacter baumannii
+Species: *Acinetobacter baumannii*
 
-Antibiotic: ceftazidime
+Antibiotic: Ceftazidime
 
 ```
 Model (Conjunction - 1 rules):

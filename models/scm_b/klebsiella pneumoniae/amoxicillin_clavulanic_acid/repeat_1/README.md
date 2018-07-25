@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: amoxicillin_clavulanic_acid
+Antibiotic: Amoxicillin_Clavulanic_Acid
 
 ```
 Model (Conjunction - 1 rules):

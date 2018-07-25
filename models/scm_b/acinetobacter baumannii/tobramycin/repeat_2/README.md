@@ -1,9 +1,9 @@
 
 # Model
 
-Species: acinetobacter baumannii
+Species: *Acinetobacter baumannii*
 
-Antibiotic: tobramycin
+Antibiotic: Tobramycin
 
 ```
 Model (Conjunction - 1 rules):

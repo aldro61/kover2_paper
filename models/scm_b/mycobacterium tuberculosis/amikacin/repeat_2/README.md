@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: amikacin
+Antibiotic: Amikacin
 
 ```
 Model (Conjunction - 1 rules):

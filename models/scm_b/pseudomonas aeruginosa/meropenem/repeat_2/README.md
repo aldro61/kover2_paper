@@ -1,9 +1,9 @@
 
 # Model
 
-Species: pseudomonas aeruginosa
+Species: *Pseudomonas aeruginosa*
 
-Antibiotic: meropenem
+Antibiotic: Meropenem
 
 ```
 Model (Conjunction - 2 rules):

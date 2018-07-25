@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: amikacin
+Antibiotic: Amikacin
 
 ```
 Model (Conjunction - 4 rules):

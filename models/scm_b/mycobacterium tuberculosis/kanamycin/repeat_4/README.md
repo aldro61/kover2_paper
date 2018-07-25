@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: kanamycin
+Antibiotic: Kanamycin
 
 ```
 Model (Disjunction - 2 rules):

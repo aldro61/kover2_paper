@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: chloramphenicol
+Antibiotic: Chloramphenicol
 
 ```
 Model (Conjunction - 1 rules):

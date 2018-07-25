@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: isoniazid
+Antibiotic: Isoniazid
 
 ```
 Model (Disjunction - 5 rules):

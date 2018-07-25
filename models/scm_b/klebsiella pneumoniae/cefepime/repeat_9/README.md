@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: cefepime
+Antibiotic: Cefepime
 
 ```
 Model (Disjunction - 2 rules):

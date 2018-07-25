@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: trimethoprim_sulfamethoxazole
+Antibiotic: Trimethoprim_Sulfamethoxazole
 
 ```
 Model (Disjunction - 5 rules):

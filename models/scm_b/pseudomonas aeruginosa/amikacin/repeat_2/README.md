@@ -1,9 +1,9 @@
 
 # Model
 
-Species: pseudomonas aeruginosa
+Species: *Pseudomonas aeruginosa*
 
-Antibiotic: amikacin
+Antibiotic: Amikacin
 
 ```
 Model (Disjunction - 3 rules):

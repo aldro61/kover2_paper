@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: piperacillin_tazobactam
+Antibiotic: Piperacillin_Tazobactam
 
 ```
 Model (Disjunction - 6 rules):

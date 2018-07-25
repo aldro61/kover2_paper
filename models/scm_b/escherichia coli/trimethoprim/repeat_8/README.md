@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: trimethoprim
+Antibiotic: Trimethoprim
 
 ```
 Model (Disjunction - 2 rules):

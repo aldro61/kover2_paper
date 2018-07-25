@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: nicotinamide
+Antibiotic: Nicotinamide
 
 ```
 Model (Conjunction - 1 rules):

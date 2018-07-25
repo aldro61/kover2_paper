@@ -1,9 +1,9 @@
 
 # Model
 
-Species: pseudomonas aeruginosa
+Species: *Pseudomonas aeruginosa*
 
-Antibiotic: ciprofloxacin
+Antibiotic: Ciprofloxacin
 
 ```
 Model (Conjunction - 1 rules):

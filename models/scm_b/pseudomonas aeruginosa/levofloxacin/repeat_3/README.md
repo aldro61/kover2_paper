@@ -1,9 +1,9 @@
 
 # Model
 
-Species: pseudomonas aeruginosa
+Species: *Pseudomonas aeruginosa*
 
-Antibiotic: levofloxacin
+Antibiotic: Levofloxacin
 
 ```
 Model (Disjunction - 2 rules):

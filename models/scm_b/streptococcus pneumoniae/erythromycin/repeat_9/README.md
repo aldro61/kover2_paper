@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: erythromycin
+Antibiotic: Erythromycin
 
 ```
 Model (Disjunction - 3 rules):

@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: tobramycin
+Antibiotic: Tobramycin
 
 ```
 Model (Disjunction - 5 rules):

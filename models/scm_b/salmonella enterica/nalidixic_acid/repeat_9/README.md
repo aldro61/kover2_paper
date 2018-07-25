@@ -1,9 +1,9 @@
 
 # Model
 
-Species: salmonella enterica
+Species: *Salmonella enterica*
 
-Antibiotic: nalidixic_acid
+Antibiotic: Nalidixic_Acid
 
 ```
 Model (Conjunction - 1 rules):

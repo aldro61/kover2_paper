@@ -1,9 +1,9 @@
 
 # Model
 
-Species: peptoclostridium difficile
+Species: *Peptoclostridium difficile*
 
-Antibiotic: ceftriaxone
+Antibiotic: Ceftriaxone
 
 ```
 Model (Conjunction - 1 rules):

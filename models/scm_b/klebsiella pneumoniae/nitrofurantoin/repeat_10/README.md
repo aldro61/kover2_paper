@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: nitrofurantoin
+Antibiotic: Nitrofurantoin
 
 ```
 Model (Conjunction - 3 rules):

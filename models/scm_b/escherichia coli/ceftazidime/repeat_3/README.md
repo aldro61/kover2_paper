@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: ceftazidime
+Antibiotic: Ceftazidime
 
 ```
 Model (Conjunction - 2 rules):

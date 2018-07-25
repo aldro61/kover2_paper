@@ -1,9 +1,9 @@
 
 # Model
 
-Species: salmonella enterica
+Species: *Salmonella enterica*
 
-Antibiotic: streptomycin
+Antibiotic: Streptomycin
 
 ```
 Model (Conjunction - 1 rules):

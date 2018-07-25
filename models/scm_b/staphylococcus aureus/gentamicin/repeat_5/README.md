@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: gentamicin
+Antibiotic: Gentamicin
 
 ```
 Model (Conjunction - 1 rules):

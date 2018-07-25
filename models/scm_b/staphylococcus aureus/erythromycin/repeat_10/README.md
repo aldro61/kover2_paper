@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus aureus
+Species: *Staphylococcus aureus*
 
-Antibiotic: erythromycin
+Antibiotic: Erythromycin
 
 ```
 Model (Disjunction - 3 rules):

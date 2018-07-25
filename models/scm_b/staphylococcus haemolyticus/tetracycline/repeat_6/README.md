@@ -1,9 +1,9 @@
 
 # Model
 
-Species: staphylococcus haemolyticus
+Species: *Staphylococcus haemolyticus*
 
-Antibiotic: tetracycline
+Antibiotic: Tetracycline
 
 ```
 Model (Conjunction - 1 rules):

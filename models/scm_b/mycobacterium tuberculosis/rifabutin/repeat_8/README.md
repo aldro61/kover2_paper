@@ -1,9 +1,9 @@
 
 # Model
 
-Species: mycobacterium tuberculosis
+Species: *Mycobacterium tuberculosis*
 
-Antibiotic: rifabutin
+Antibiotic: Rifabutin
 
 ```
 Model (Conjunction - 1 rules):

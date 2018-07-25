@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: clindamycin
+Antibiotic: Clindamycin
 
 ```
 Model (Conjunction - 1 rules):

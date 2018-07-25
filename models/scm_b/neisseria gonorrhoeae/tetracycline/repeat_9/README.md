@@ -1,9 +1,9 @@
 
 # Model
 
-Species: neisseria gonorrhoeae
+Species: *Neisseria gonorrhoeae*
 
-Antibiotic: tetracycline
+Antibiotic: Tetracycline
 
 ```
 Model (Conjunction - 1 rules):

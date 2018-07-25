@@ -1,9 +1,9 @@
 
 # Model
 
-Species: escherichia coli
+Species: *Escherichia coli*
 
-Antibiotic: tobramycin
+Antibiotic: Tobramycin
 
 ```
 Model (Disjunction - 2 rules):

@@ -1,9 +1,9 @@
 
 # Model
 
-Species: streptococcus pneumoniae
+Species: *Streptococcus pneumoniae*
 
-Antibiotic: penicillin
+Antibiotic: Penicillin
 
 ```
 Model (Conjunction - 1 rules):

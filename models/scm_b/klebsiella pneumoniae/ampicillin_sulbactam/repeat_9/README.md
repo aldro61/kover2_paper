@@ -1,9 +1,9 @@
 
 # Model
 
-Species: klebsiella pneumoniae
+Species: *Klebsiella pneumoniae*
 
-Antibiotic: ampicillin_sulbactam
+Antibiotic: Ampicillin_Sulbactam
 
 ```
 Model (Disjunction - 3 rules):
