@@ -9,7 +9,7 @@ The models are organized by algorithm, species, and antimicrobial agent.
 
 ## Visualization
 
-A visual representation of each model is given (see [example](https://github.com/aldro61/kover2_paper/tree/master/models/cart_b/mycobacterium%20tuberculosis/pyrazinamide/repeat_5)). You can generate this representation for your models using the following script:
+A visual representation of each model is given (see [example](https://github.com/aldro61/kover2_paper/tree/master/models/cart_b/mycobacterium%20tuberculosis/pyrazinamide/repeat_5#model)). You can generate this representation for your models using the following script:
 
 ```
 python plot_model.py model.fasta
