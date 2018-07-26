@@ -1,10 +1,10 @@
 # Tutorial
 
-This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [Data](../data/)), but you could use your own.
+This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own.
 
 ## Outline
 
-* Getting the example data
+* [Getting the example data](#getting-the-example-data)
 * Creating a Kover dataset
 * Splitting the data into training and testing sets
 * Learning models with:
