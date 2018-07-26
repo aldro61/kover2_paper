@@ -7,15 +7,15 @@ Rule-based models are available for the following algorithms:
 The models are organized by algorithm, species, and antimicrobial agent.
 
 
-## Format
-
-All models are provided in FASTA format to facilitate their annotation using tools such as [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). Equivalent rules are also given in separate FASTA files.
-
-
 ## Visualization
 
-A visual representation of each model is given in PDF format. You can generate this representation for your models using the following script:
+A visual representation of each model is given in PDF format (see [example](https://github.com/aldro61/kover2_paper/tree/master/models/cart_b/mycobacterium%20tuberculosis/pyrazinamide/repeat_5)). You can generate this representation for your models using the following script:
 
 ```
 python plot_model.py model.fasta
 ```
+
+
+## Format
+
+All models are provided in FASTA format to facilitate their annotation using tools such as [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn&PAGE_TYPE=BlastSearch&LINK_LOC=blasthome). Equivalent rules are also given in separate FASTA files.
