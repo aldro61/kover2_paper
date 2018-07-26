@@ -1,4 +1,4 @@
-# Tutorial: learning genotype-to-phenotype models with Kover
+# Tutorial: genotype-to-phenotype models with Kover
 
 This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own.
 
