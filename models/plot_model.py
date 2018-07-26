@@ -2,6 +2,7 @@ import argparse
 import os
 import subprocess
 import numpy as np
+import warnings
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -94,7 +95,7 @@ class ModelParser(object):
 		return roots[0]
 			
 	def parse(self):
-		self.rules = zip(*fasta_to_contigs(self.input_path, return_headers=True)[::-1])
+		self.rules = list(zip(*fasta_to_contigs(self.input_path, return_headers=True)[::-1]))
 		self.rule_dict = {self.extract_rule_id(header): self.extract_rule_node(header, kmer) for header, kmer in self.rules}
 		
 		for header, kmer in self.rules:
@@ -111,9 +112,12 @@ class ModelParser(object):
 		self.tree = self.rule_dict[self.find_root()]
 
 def visualize_model(input_path):
-
 	tree = ModelParser(input_path).get_tree()
-
+	try:
+		tree = ModelParser(input_path).get_tree()
+	except:
+		warnings.warn("Unable to parse {}. Invalid decision tree model".format(input_path))
+		return
 	latex_str = _latex_export(tree)
 	base_filename = os.path.splitext(input_path)[0]
 	tex_filename = base_filename + ".tex"
@@ -188,7 +192,7 @@ def _latex_export(model):
 			return "{0!s}[as=L, terminal]".format(hashed_node)
 	tree_graph = _rec_export(model, 0)
 	leaf_donuts = ""
-	for hashed_node, donut_params in leaf_dict.iteritems():
+	for hashed_node, donut_params in leaf_dict.items():
 		leaf_donuts += '\n\\ExtractCoordinate{{$({0!s})$}};'.format(hashed_node)
 		leaf_donuts += '\n\\wheelchart{{{0!s}}}{{{1!s}}}'.format(donut_params[0], donut_params[1])
 	exported = \
