@@ -14,5 +14,5 @@ Presence(CCCGCGCGGGCGCCTGCGGGTCAGCCTGCCG) [Importance: 0.22, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas%20aeruginosa/meropenem/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas%20aeruginosa/meropenem/repeat_2/).
 

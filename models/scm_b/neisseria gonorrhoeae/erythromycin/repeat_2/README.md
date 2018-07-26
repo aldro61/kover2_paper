@@ -12,5 +12,5 @@ Presence(AAAATCATCCTGACTACTTCTATGTCGGTTC) [Importance: 1.00, 887 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/neisseria%20gonorrhoeae/erythromycin/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/neisseria%20gonorrhoeae/erythromycin/repeat_2/).
 

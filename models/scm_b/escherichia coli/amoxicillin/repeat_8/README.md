@@ -20,5 +20,5 @@ Presence(ACCTGCTGCCGGGTCGTAGATTTTGTTAACG) [Importance: 0.03, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/amoxicillin/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/amoxicillin/repeat_8/).
 

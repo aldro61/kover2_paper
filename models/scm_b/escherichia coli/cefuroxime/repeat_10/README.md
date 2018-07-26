@@ -20,5 +20,5 @@ Absence(AAAAACAACGGTGGTCTGACATAGAGAGGGC) [Importance: 0.05, 7 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/cefuroxime/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/cefuroxime/repeat_10/).
 

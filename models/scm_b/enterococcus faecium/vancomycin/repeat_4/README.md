@@ -12,5 +12,5 @@ Presence(AAAAAAATAGAAGCTACGCTGTGCAGCTCCC) [Importance: 1.00, 30335 equivalent ru
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/enterococcus%20faecium/vancomycin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/enterococcus%20faecium/vancomycin/repeat_4/).
 

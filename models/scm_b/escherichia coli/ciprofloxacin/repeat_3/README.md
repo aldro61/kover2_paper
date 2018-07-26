@@ -14,5 +14,5 @@ Presence(ATATCGCCGTGCGGATGGTATTTACCCAGTA) [Importance: 0.88, 1 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/ciprofloxacin/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/ciprofloxacin/repeat_3/).
 

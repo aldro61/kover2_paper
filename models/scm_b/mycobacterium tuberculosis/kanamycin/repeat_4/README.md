@@ -14,5 +14,5 @@ Absence(ACAGTCACAGAATCCGACTGTGGCATATGCC) [Importance: 0.25, 13 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/kanamycin/repeat_3/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/kanamycin/repeat_4/).
 

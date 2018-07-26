@@ -14,5 +14,5 @@ Presence(AAAGTCTGATAGCCTAAAAGTAGAACAACAG) [Importance: 0.69, 2 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter%20baumannii/imipenem/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/acinetobacter%20baumannii/imipenem/repeat_10/).
 

@@ -14,5 +14,5 @@ Absence(ATCGCCACATGTTTTTTAGCAGTAACAAAAC) [Importance: 0.06, 3 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/penicillin/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/penicillin/repeat_8/).
 

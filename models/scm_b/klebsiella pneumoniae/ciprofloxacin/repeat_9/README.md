@@ -16,5 +16,5 @@ Presence(AAATCTGATTTATTCAACAAAGCCTTTTTAA) [Importance: 0.02, 25 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/ciprofloxacin/repeat_8/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/ciprofloxacin/repeat_9/).
 

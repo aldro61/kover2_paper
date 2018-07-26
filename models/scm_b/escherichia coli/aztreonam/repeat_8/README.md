@@ -12,5 +12,5 @@ Presence(AAATAATGTTACAATGTGTGAGAAGCAGTCT) [Importance: 1.00, 132 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/aztreonam/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/escherichia%20coli/aztreonam/repeat_8/).
 

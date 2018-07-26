@@ -16,5 +16,5 @@ Presence(AAAAAAATAAAAATACCTCAATTTGAAGAAT) [Importance: 0.10, 982 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/fusidic_acid/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/fusidic_acid/repeat_1/).
 

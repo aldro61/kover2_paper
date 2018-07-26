@@ -14,5 +14,5 @@ Presence(AAAAATGAAGTTTTAAATCAATCTAAAGTAT) [Importance: 0.84, 27 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/amoxicillin_clavulanic_acid/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/amoxicillin_clavulanic_acid/repeat_3/).
 

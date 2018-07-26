@@ -16,5 +16,5 @@ Absence(ACCGTTCACGGTAACCCTTTCATTCATTTTC) [Importance: 0.35, 3 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/ceftazidime/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/ceftazidime/repeat_1/).
 

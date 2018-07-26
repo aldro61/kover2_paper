@@ -18,5 +18,5 @@ Absence(CCCTGTGGTGCTCGGGCAACAGCGAACCGAG) [Importance: 0.10, 63 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/rifampin/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/rifampin/repeat_5/).
 

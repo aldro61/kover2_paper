@@ -12,5 +12,5 @@ Presence(ACTTTCATGACGCGACGGGCGGTGTGTACAA) [Importance: 1.00, 14 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/amikacin/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/amikacin/repeat_10/).
 

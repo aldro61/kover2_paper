@@ -16,5 +16,5 @@ Absence(ATTCGGGTGTCGGCAATGCGACCGAAACAGG) [Importance: 0.18, 145 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/neisseria%20gonorrhoeae/azithromycin/repeat_4/).
+For details, please refer to the [results directory](../../../../../results/scm_b/neisseria%20gonorrhoeae/azithromycin/repeat_5/).
 

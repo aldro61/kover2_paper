@@ -14,5 +14,5 @@ Presence(AAAAATGGAGGAATATGAAATGAATAAAATA) [Importance: 0.40, 1380 equivalent rul
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20haemolyticus/fusidic_acid/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20haemolyticus/fusidic_acid/repeat_3/).
 

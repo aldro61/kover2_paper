@@ -12,5 +12,5 @@ Presence(AAAAGCAAGAGAACATAGCGTTGCCTTGGTA) [Importance: 1.00, 778 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/salmonella%20enterica/streptomycin/repeat_6/).
+For details, please refer to the [results directory](../../../../../results/scm_b/salmonella%20enterica/streptomycin/repeat_7/).
 

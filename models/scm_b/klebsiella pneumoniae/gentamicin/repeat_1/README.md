@@ -18,5 +18,5 @@ Presence(AAAGCAGTCCGGCACAACCAGACGCGATTGG) [Importance: 0.02, 22 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/gentamicin/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/gentamicin/repeat_1/).
 

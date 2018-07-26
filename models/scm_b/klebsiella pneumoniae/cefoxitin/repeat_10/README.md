@@ -22,5 +22,5 @@ Presence(AACTTGATTATGAGTGAATACGCACTCATTA) [Importance: 0.08, 19 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/cefoxitin/repeat_9/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/cefoxitin/repeat_10/).
 

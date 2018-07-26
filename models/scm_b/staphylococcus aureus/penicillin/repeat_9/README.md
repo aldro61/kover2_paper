@@ -12,5 +12,5 @@ Presence(AAAACTATTACTTGTTCAAGATTAGATATTT) [Importance: 1.00, 9 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/penicillin/repeat_8/).
+For details, please refer to the [results directory](../../../../../results/scm_b/staphylococcus%20aureus/penicillin/repeat_9/).
 

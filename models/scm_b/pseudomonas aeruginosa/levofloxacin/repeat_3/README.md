@@ -14,5 +14,5 @@ Absence(ACCTCCTGGGAGGAGAGCATCTTGTCGAAGC) [Importance: 0.12, 5 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas%20aeruginosa/levofloxacin/repeat_2/).
+For details, please refer to the [results directory](../../../../../results/scm_b/pseudomonas%20aeruginosa/levofloxacin/repeat_3/).
 

@@ -22,5 +22,5 @@ Presence(AAGCGCTGGCGCGAGGCCTGCTATCAGTTGC) [Importance: 0.40, 3 equivalent rules]
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/piperacillin_tazobactam/repeat_0/).
+For details, please refer to the [results directory](../../../../../results/scm_b/klebsiella%20pneumoniae/piperacillin_tazobactam/repeat_1/).
 

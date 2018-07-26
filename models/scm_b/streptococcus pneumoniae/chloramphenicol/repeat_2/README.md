@@ -12,5 +12,5 @@ Presence(AAAAAGAGTATTTAGCTAGTGAACTTTATGA) [Importance: 1.00, 164 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/chloramphenicol/repeat_1/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/chloramphenicol/repeat_2/).
 

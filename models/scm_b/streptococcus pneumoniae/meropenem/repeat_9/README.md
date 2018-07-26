@@ -12,5 +12,5 @@ Presence(AATAAGGTCGGTCTAGATAGAGCTAAAACCT) [Importance: 1.00, 55 equivalent rules
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/meropenem/repeat_8/).
+For details, please refer to the [results directory](../../../../../results/scm_b/streptococcus%20pneumoniae/meropenem/repeat_9/).
 

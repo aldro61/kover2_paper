@@ -20,5 +20,5 @@ Presence(AACAATAGCGAAATTCTCGTATATAGTGACT) [Importance: 0.00, 136 equivalent rule
 
 ```
 
-For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/isoniazid/repeat_7/).
+For details, please refer to the [results directory](../../../../../results/scm_b/mycobacterium%20tuberculosis/isoniazid/repeat_8/).
 
