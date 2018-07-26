@@ -5,14 +5,14 @@ This tutorial will walk you through an application of Kover to a set of genomes 
 ## Outline
 
 * [Getting the example data](#getting-the-example-data)
-* Creating a Kover dataset
-* Splitting the data into training and testing sets
-* Learning models with:
-  * Set Covering Machines
-  * Classification and Regression Trees
-* Interpreting the learned models
-  * Annotating k-mers
-  * Analyzing equivalent rules
+* [Creating a Kover dataset](#creating-a-kover-dataset)
+* [Splitting the data into training and testing sets](#splitting-the-data-into-training-and-testing-sets)
+* [Learning models with:](#learning-models)
+  * [Set Covering Machines](#set-covering-machines)
+  * [Classification and Regression Trees](#classification-and-regression-trees)
+* [Interpreting the learned models](#interpreting-the-learned-models)
+  * [Annotating k-mers](#annotating-k-mers)
+  * [Analyzing equivalent rules](#analyzing-equivalent-rules)
 
 
 ## Getting the example data
