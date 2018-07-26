@@ -27,6 +27,6 @@ Follow this [tutorial](TODO), but replace the label file by the `metadata.tsv` t
 
 These datasets were extracted from the PATRIC database (https://www.patricbrc.org/). See our paper for the data acquisition protocol. More info on this database can be found in:
 
-Wattam, A. R., Abraham, D., Dalay, O., Disz, T. L., Driscoll, T., Gabbard, J. L., ... & Machi, D. (2013). PATRIC, the bacterial bioinformatics database and analysis resource. Nucleic acids research, 42(D1), D581-D591.
-
 Antonopoulos, D. A., Assaf, R., Aziz, R. K., Brettin, T., Bun, C., Conrad, N., ... & Kenyon, R. W. (2017). PATRIC as a unique resource for studying antimicrobial resistance. Briefings in bioinformatics.
+
+Wattam, A. R., Abraham, D., Dalay, O., Disz, T. L., Driscoll, T., Gabbard, J. L., ... & Machi, D. (2013). PATRIC, the bacterial bioinformatics database and analysis resource. Nucleic acids research, 42(D1), D581-D591.
