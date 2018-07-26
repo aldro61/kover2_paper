@@ -1,8 +1,8 @@
 # Antimicrobial resistance prediction models
 
 Rule-based models are available for the following algorithms:
-* Set Covering Machines (model selection: bound)
-* Classification and Regression Trees (model selection: bound)
+* Set Covering Machines (bound selection)
+* Classification and Regression Trees (bound selection)
 
 The models are organized by algorithm, species, and antimicrobial agent.
 
