@@ -160,7 +160,53 @@ The computation time is little under **5 minutes** and the resulting tree model 
 ```
 python plot_model.py results/cart_cv/model.fasta
 ```
+to obtain the following representation showing the complexity of this decision tree model:
+
+<a><img src="./model_cv.png" /></a>
+
+The testing set metrics for this model are:
+
+```
+Error Rate: 0.03846
+Sensitivity: 1.0
+Specificity: 0.93617
+Precision: 0.91176
+Recall: 1.0
+F1 Score: 0.95385
+True Positives: 31.0
+True Negatives: 44.0
+False Positives: 3.0
+False Negatives: 0.0
+```
 #### Bound selection
+Again, let's now use the risk bound derived from Sample Compression Theory as as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies) and see how it affect the learning for CART. We only have to modify the previous command to specify *bound* as the *hp-choice* and output the results files in another directory, *results/cart_b*.
+
+```
+kover learn tree --dataset example.kover --split example_split --criterion gini --max-depth 20 --min-samples-split 2 --hp-choice bound --n-cpu 4 --output-dir results/cart_b --progress
+```
+Using the bound selection, the computation time drop to just under **25 seconds**! The resulting model is a lot simpler with only 4 rules and a depth of 3. Using the same script to plot the model:
+
+```
+python plot_model.py results/cart_b/model.fasta
+```
+we obtain this visual representation highlighting how simple and interpretable this model is:
+
+<a><img src="./model_b.png" /></a>
+
+And the testing set metrics for this new model are:
+
+```
+Error Rate: 0.01282
+Sensitivity: 1.0
+Specificity: 0.97872
+Precision: 0.96875
+Recall: 1.0
+F1 Score: 0.98413
+True Positives: 31.0
+True Negatives: 46.0
+False Positives: 1.0
+False Negatives: 0.0
+```
 
 ## Interpreting the learned models
 
