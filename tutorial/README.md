@@ -1,6 +1,8 @@
 # Tutorial: genotype-to-phenotype models with Kover
 
-This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own. Specifically, we will learn a model that predicts azithromycin resistance in *Neisseria gonorrhoeae*.
+This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own. Specifically, we will learn a model that predicts Azithromycin resistance in *Neisseria gonorrhoeae*.
+
+For an introduction to machine learning , please refer to [this tutorial](https://aldro61.github.io/microbiome-summer-school-2017/sections/basics/).
 
 ## Outline
 
@@ -17,7 +19,7 @@ This tutorial will walk you through an application of Kover to a set of genomes 
 
 ## Getting the example data
 
-First, download the [example data](http://graal.ift.ulaval.ca/adrouin/kover-example-data.zip) (~? Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to azithromycin.
+First, download the [example data](http://graal.ift.ulaval.ca/adrouin/kover-example-data.zip) (~? Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
 ## Creating a Kover dataset
 
 Before using Kover to learn a model, we must package the genomic and phenotypic data into a [Kover dataset](doc_dataset.html#creating-a-dataset), which relies on the HDF5 library to store a compressed representation of the data ([details here](https://github.com/aldro61/kover/wiki/Kover-Dataset-Format)).
@@ -58,7 +60,86 @@ kover dataset split --dataset example.kover --id example_split --train-size 0.80
 
 ## Learning models
 
+Now that we have created and split the dataset, we are ready to learn a predictive model of Azithromcycin resistance in *Mycobacterium tuberculosis*. The [kover learn](doc_learning.html#learning-models) command is used to learn models, both Set Covering Machines and Classficication and Regression Trees.
+
 ### Set Covering Machines
+
+Let's first learn a Set Covering Machine model containing at most 10 rules, to try both
+conjunction (logical-AND) and disjunction (logical-OR) models and the values 0.1, 1.0 and 10.0 for the *p*
+hyperparameter (see [hyperparameters](doc_learning.html#understanding-the-hyperparameters)).
+
+#### Cross-Validation
+
+The following command tells Kover to learn a model while using cross-validation as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies).
+Moreover, it distributes the cross-validation on 4 CPUs and outputs the results files into the *results/scm_cv* directory.
+
+```
+kover learn scm --dataset example.kover --split example_split --model-type conjunction disjunction --p 0.1 1.0 10.0 --max-rules 10 --hp-choice cv --n-cpu 4 --output-dir results/scm_cv --progress
+```
+
+The total computation time is around **3 minutes**. Kover then uses the obtained model to predict the phenotype of the genomes in the testing set and computes various metrics.
+For this example, the obtained model is:
+
+```
+Model (Conjunction - 3 rules):
+------------------------------
+Presence(AAACTTCCAACGCCCACTGCAGATAGGGACC) [Importance: 0.74, 62 equivalent rules]
+AND
+Absence(AGAGTCGTTGTCTTTGGGCCATTCGCCGTGA) [Importance: 0.17, 2 equivalent rules]
+AND
+Presence(ATTCGACTGTGCGTAAAAATCGTCCGCTACG) [Importance: 0.18, 7 equivalent rules]
+```
+
+Notice the simplicity and interpretability of the obtained model. 
+The testing set metrics for this model are:
+
+```
+Error Rate: 0.08974
+Sensitivity: 1.0
+Specificity: 0.85106
+Precision: 0.81579
+Recall: 1.0
+F1 Score: 0.89855
+True Positives: 31.0
+True Negatives: 40.0
+False Positives: 7.0
+False Negatives: 0.0
+```
+
+#### Bound selection
+
+Let's now use the risk bound derived from Sample Compression Theory as as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies) and compare it to cross-validation. We only have to modify the previous command to specify *bound* as the *hp-choice* and output the results files in another directory, *results/scm_b*.
+
+```
+kover learn scm --dataset example.kover --split example_split --model-type conjunction disjunction --p 0.1 1.0 10.0 --max-rules 10 --hp-choice bound  --output-dir results/scm_b --progress
+```
+Using the bound selection, the computation time drop to just under **20 seconds**! The resulting model has the same number of rules but different ones.
+
+```
+Model (Conjunction - 3 rules):
+------------------------------
+Absence(AAGTGTTTTTGTTATAAAAACGCTGCCCGAA) [Importance: 0.85, 28 equivalent rules]
+AND
+Presence(AAACTTCCAACGCCCACTGCAGATAGGGACC) [Importance: 0.60, 62 equivalent rules]
+AND
+Absence(ACACGGGGATGAGTTTGAACAGGTCGGTTAC) [Importance: 0.19, 19 equivalent rules]
+```
+
+And the testing set metrics for this new model are:
+```
+Error Rate: 0.02564
+Sensitivity: 1.0
+Specificity: 0.95745
+Precision: 0.93939
+Recall: 1.0
+F1 Score: 0.96875
+True Positives: 31.0
+True Negatives: 45.0
+False Positives: 2.0
+False Negatives: 0.0
+```
+
+As we can see for this example, using the risk bound instead of cross-validation takes less time to compute and gives us a model with better accuracy.
 
 ### Classification and Regression Trees
 ** Dont forget to mention multiclass can be done and how **
