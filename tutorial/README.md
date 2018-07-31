@@ -19,6 +19,8 @@ For an introduction to machine learning , please refer to [this tutorial](https:
 
 ## Getting the example data
 
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creation of the example dataset from the contigs data takes about *20 minutes* on a laptop. You can skip to [here](#exploring-the-dataset) to start the tutorial with the dataset already made.
+
 First, download the [example data](https://graal.ift.ulaval.ca/public/kover_example_data.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
 ## Creating a Kover dataset
 
@@ -31,6 +33,10 @@ kover dataset create from-contigs --genomic-data genome_contigs.tsv --phenotype-
 ```
 
 This produces a dataset file called "example.kover". From now on, you no longer need the original data files.
+
+### Exploring the dataset
+
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Note:** If you skipped the dataset creation step, download the [example dataset](https://graal.ift.ulaval.ca/public/kover_example.zip) (~100 Mb).
 
 You can use the [kover dataset info](doc_dataset.html#listing-information-about-a-dataset) command to print information about the dataset. For example, t print the number of genomes and k-mers in the dataset, use:
 
