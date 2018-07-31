@@ -19,7 +19,7 @@ For an introduction to machine learning , please refer to [this tutorial](https:
 
 ## Getting the example data
 
-First, download the [example data](http://graal.ift.ulaval.ca/public/kover-example-data.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
+First, download the [example data](https://graal.ift.ulaval.ca/public/kover_example_data.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
 ## Creating a Kover dataset
 
 Before using Kover to learn a model, we must package the genomic and phenotypic data into a [Kover dataset](doc_dataset.html#creating-a-dataset), which relies on the HDF5 library to store a compressed representation of the data ([details here](https://github.com/aldro61/kover/wiki/Kover-Dataset-Format)).
