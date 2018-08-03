@@ -68,19 +68,24 @@ The following command creates a split of the data called "example_split", which 
 kover dataset split --dataset example.kover --id example_split --train-size 0.80 --folds 10 --random-seed 2 --progress
 ```
 
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Note:** You can set ``--folds 0`` if you will only be using bound selection.
+
+
 ## Learning models
 
-Now that we have created and split the dataset, we are ready to learn a predictive model of Azithromcycin resistance in *Mycobacterium tuberculosis*. The [kover learn](doc_learning.html#learning-models) command is used to learn models, both Set Covering Machines and Classficication and Regression Trees.
+Now that we have created and splitted the dataset, we are ready to learn predictive model of Azithromcycin resistance in *Neisseria gonorrhoeae*. The [kover learn](doc_learning.html#learning-models) command is used to learn models for Set Covering Machines and Classficication and Regression Trees.
 
 ### Set Covering Machines
 
-Let's first learn a Set Covering Machine model containing at most 10 rules, to try both
-conjunction (logical-AND) and disjunction (logical-OR) models and the values 0.1, 1.0 and 10.0 for the *p*
-hyperparameter (see [hyperparameters](doc_learning.html#understanding-the-hyperparameters)).
+Let start by training the Set Covering Machine algorithm on this dataset. We will try the following values for the hyperparameters:
+* Maximum number of rules in the model: 10
+* Type of model: conjunction (logical-AND) or disjunction (logical-OR)
+* p (see [documentation](https://aldro61.github.io/kover/doc_learning.html#understanding-the-hyperparameters)):  0.1, 1.0 and 10.0
+
 
 #### Cross-Validation
 
-The following command tells Kover to learn a scm model while using cross-validation as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies).
+The following command tells Kover to use the SCM algorithm and cross-validation as the [model selection strategy](doc_learning.html#hyperparameter-selection-strategies).
 Moreover, it distributes the cross-validation on 4 CPUs and outputs the results files into the *results/scm_cv* directory.
 
 ```
@@ -118,12 +123,13 @@ False Negatives: 0.0
 
 #### Bound selection
 
-Let's now use the risk bound derived from Sample Compression Theory as as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies) and compare it to cross-validation. We only have to modify the previous command to specify *bound* as the *hp-choice* and output the results files in another directory, *results/scm_b*.
+Let's now use bound selection as the [model selection strategy](doc_learning.html#hyperparameter-selection-strategies) and compare it to cross-validation. We only have to modify the previous command to specify `--hp-choice bound` and output the results files in another directory, *results/scm_b*.
 
 ```
 kover learn scm --dataset example.kover --split example_split --model-type conjunction disjunction --p 0.1 1.0 10.0 --max-rules 10 --hp-choice bound  --output-dir results/scm_b --progress
 ```
-Using the bound selection, the computation time drop to just under **20 seconds**! The resulting model has the same number of rules but different ones.
+
+Using the bound selection, the computation time drop to just under **20 seconds**! The resulting model has the same number of rules, but relies on different k-mers.
 
 ```
 Model (Conjunction - 3 rules):
@@ -149,28 +155,27 @@ False Positives: 2.0
 False Negatives: 0.0
 ```
 
-As we can see for this example, using the risk bound instead of cross-validation takes less time to compute and gives us a model with better accuracy.
+As we can see, for this example, using bound selection instead of cross-validation requires less computation time and produces a more accurate model.
 
 ### Classification and Regression Trees
-** Dont forget to mention multiclass can be done and how **
 
-Let's now learn a Decision Tree model using the Classification and Regression Tree algorithm.
+Let's now learn a decision tree model using the Classification and Regression Tree algorithm.
 
 #### Cross-Validation
 
-The following command tells Kover to learn a tree model while using cross-validation as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies).
+The following command tells Kover to learn a tree model, using cross-validation as the [model selection strategy](doc_learning.html#hyperparameter-selection-strategies).
 Moreover, it distributes the cross-validation on 4 CPUs and outputs the results files into the *results/cart_cv* directory.
 
 ```
 kover learn tree --dataset example.kover --split example_split --criterion gini --max-depth 20 --min-samples-split 2 --hp-choice cv --n-cpu 4 --output-dir results/cart_cv --progress
 ```
 
-The computation time is little under **5 minutes** and the resulting tree model with 12 rules and a depth of 6 is textually represented in the report (*results/cart_cv/report.txt*). For a better visual representation, we can use the *plot_model.py* script already in the tutorial directory:
+The computation time is slightly under **5 minutes** and the resulting tree model, which contains 12 rules and has a depth of 6, is textually represented in the report (*results/cart_cv/report.txt*). For a better visual representation, we can use the *plot_model.py* script already in the tutorial directory:
 
 ```
 python plot_model.py results/cart_cv/model.fasta
 ```
-to obtain the following representation showing the complexity of this decision tree model:
+to obtain the following representation showing the decision tree model:
 
 <a><img src="./model_cv.png" /></a>
 
@@ -189,7 +194,7 @@ False Positives: 3.0
 False Negatives: 0.0
 ```
 #### Bound selection
-Again, let's now use the risk bound derived from Sample Compression Theory as as the [hyperparameter selection strategy](doc_learning.html#hyperparameter-selection-strategies) and see how it affect the learning for CART. We only have to modify the previous command to specify *bound* as the *hp-choice* and output the results files in another directory, *results/cart_b*.
+Again, let's now use the risk bound derived from Sample Compression Theory as as the [model selection strategy](doc_learning.html#hyperparameter-selection-strategies) and see how it affect the learning for CART. We only have to modify the previous command to specify *bound* as the *hp-choice* and output the results files in another directory, *results/cart_b*.
 
 ```
 kover learn tree --dataset example.kover --split example_split --criterion gini --max-depth 20 --min-samples-split 2 --hp-choice bound --n-cpu 4 --output-dir results/cart_b --progress
