@@ -1,10 +1,10 @@
 # Interpreting Kover models
 
 - [Interpreting Kover models](#interpreting-kover-models)
-        - [Accessing the model](#accessing-the-model)
-        - [Visualizing the model](#visualizing-the-model)
-        - [Annotating k-mers](#annotating-k-mers)
-        - [Analyzing equivalent rules](#analyzing-equivalent-rules)
+                - [Accessing the model](#accessing-the-model)
+                - [Visualizing the model](#visualizing-the-model)
+                - [Annotating k-mers](#annotating-k-mers)
+                - [Analyzing equivalent rules](#analyzing-equivalent-rules)
 
 
 One particularity of models learned with Kover is that they are highly interpretable. The models make predictions based on rules that capture the presence/absence of k-mers. Below, we show how simple it is to go from a learned model to biological interpretation with these models.
@@ -29,12 +29,25 @@ ACAGTCACAGAATCCGACTGTGGCATATGCC
 GGCCAAGCCATTGCGTACCGCGTCCTCGGCC
 ```
 
-Interestingly, this file completely specifies the structure of the model and experts users could use it to integrate the model in external software. However, this goes beyond the scope of this tutorial.
+Interestingly, this file completely specifies the structure of the model and expert users could use it to integrate the model in external software. However, this goes beyond the scope of this tutorial.
 
 Below, we will see how we can refine this FASTA file to get deeper insight into the model.
 
 
 ### Visualizing the model
+
+Let's start by visualizing the model. For models learned with the Set Covering Machine algorithm, simply open the `report.txt` file in the output directory to visualize the model's logic. There is no need for fancy visualizations in this case, since the structure of the model is very simple (logical-AND or logical-OR).
+However, decision tree models can be more complex and thus, it is interesting to plot the model.
+
+You can plot any decision tree model using the `plot_model.py` script (see [here](../../models/plot_model.py)) as follows:
+```
+python plot_model.py model.fasta
+```
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** The script assumes that [LaTeX](https://www.latex-project.org/get/) is installed on your computer.
+
+Using this script on our model yields the following visualization:
+<a href="./model.pdf"><img src="model.png" width="400" height="400" /></a>
+
 
 ### Annotating k-mers
 

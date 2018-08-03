@@ -175,7 +175,7 @@ kover learn tree --dataset example.kover --split example_split --criterion gini 
 
 The computation time is slightly under **5 minutes** and the resulting tree model, which contains 12 rules and has a depth of 6, is textually represented in the report (*results/cart_cv/report.txt*). For a better visual representation, we can use the [plot_model.py](../models/plot_model.py) script, which should be present alongside the data:
 
-![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** The script assumes that LaTeX is installed on your computer.
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** The script assumes that [LaTeX](https://www.latex-project.org/get/) is installed on your computer.
 
 ```
 python plot_model.py results/cart_cv/model.fasta
