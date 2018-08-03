@@ -170,7 +170,7 @@ Moreover, it distributes the cross-validation on 4 CPUs and outputs the result f
 kover learn tree --dataset example.kover --split example_split --criterion gini --max-depth 20 --min-samples-split 2 --hp-choice cv --n-cpu 4 --output-dir results/cart_cv --progress
 ```
 
-The computation time is slightly under **5 minutes** and the resulting tree model, which contains 12 rules and has a depth of 6, is textually represented in the report (*results/cart_cv/report.txt*). For a better visual representation, we can use the *plot_model.py* script already in the tutorial directory:
+The computation time is slightly under **5 minutes** and the resulting tree model, which contains 12 rules and has a depth of 6, is textually represented in the report (*results/cart_cv/report.txt*). For a better visual representation, we can use the [*plot_model.py* script](../models#visualization):
 
 ```
 python plot_model.py results/cart_cv/model.fasta
@@ -201,7 +201,7 @@ Let's now use bound selection as the [model selection strategy](doc_learning.htm
 kover learn tree --dataset example.kover --split example_split --criterion gini --max-depth 20 --min-samples-split 2 --hp-choice bound --n-cpu 4 --output-dir results/cart_b --progress
 ```
 
-Using bound selection, the computation time drop to just under **25 seconds**! The resulting model is a lot simpler with only 4 rules and a depth of 3. Using the same script to plot the model:
+Using bound selection, the computation time drop to just under **25 seconds**! The resulting model is a lot simpler with only 4 rules and a depth of 3. Using the same script to [*plot_model.py* script](../models#visualization):
 
 ```
 python plot_model.py results/cart_b/model.fasta
