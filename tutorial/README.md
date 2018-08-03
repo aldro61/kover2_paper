@@ -159,7 +159,10 @@ As we can see, for this example, using bound selection instead of cross-validati
 
 ### Classification and Regression Trees
 
-Let's now learn a decision tree model using the Classification and Regression Tree algorithm.
+Let's now learn a decision tree model using the Classification and Regression Tree algorithm. We will try the following values for the hyperparameters:
+* Max depth: 20
+* Minimum number of examples to split a leaf: 2
+* Criterion: gini
 
 #### Cross-Validation
 
