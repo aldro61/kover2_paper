@@ -1,6 +1,6 @@
 # Tutorial: genotype-to-phenotype models with Kover
 
-This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own. Specifically, we will learn a model that predicts Azithromycin resistance in *Neisseria gonorrhoeae*.
+This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own. Specifically, we will use the CART and SCM algorithms to learn models that predict Azithromycin resistance in *Neisseria gonorrhoeae*.
 
 For an introduction to machine learning , please refer to [this tutorial](https://aldro61.github.io/microbiome-summer-school-2017/sections/basics/).
 
@@ -21,13 +21,14 @@ For an introduction to machine learning , please refer to [this tutorial](https:
 
 In this first step, we will acquire the data required for the tutorial and package it into a format usable by Kover.
 
-![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example.zip) (~100 Mb) and skip to [here](#exploring-the-dataset).
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb) and skip to [here](#exploring-the-dataset).
 
-First, download the [example data](https://graal.ift.ulaval.ca/public/kover_example_data.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
+First, download the [example data](https://graal.ift.ulaval.ca/public/kover2_example_raw.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
+
 
 ## Creating a Kover dataset
 
-Before using Kover to learn a model, we must package the genomic and phenotypic data into a [Kover dataset](doc_dataset.html#creating-a-dataset), which relies on the HDF5 library to store a compressed representation of the data ([details here](https://github.com/aldro61/kover/wiki/Kover-Dataset-Format)).
+Before using Kover to learn a model, we must package the genomic and phenotypic data into a [Kover dataset](https://aldro61.github.io/kover/doc_dataset.html#creating-a-dataset), which is a compressed and optimized representation of the data ([details here](https://github.com/aldro61/kover/wiki/Kover-Dataset-Format)).
 
 To create a dataset, use the following command:
 
@@ -37,11 +38,10 @@ kover dataset create from-contigs --genomic-data genome_contigs.tsv --phenotype-
 
 This produces a dataset file called "example.kover". From now on, you no longer need the original data files.
 
+
 ### Exploring the dataset
 
-![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Note:** If you skipped the dataset creation step, download the [example dataset](https://graal.ift.ulaval.ca/public/kover_example.zip) (~100 Mb).
-
-You can use the [kover dataset info](doc_dataset.html#listing-information-about-a-dataset) command to print information about the dataset. For example, t print the number of genomes and k-mers in the dataset, use:
+You can use the [kover dataset info](https://aldro61.github.io/kover/doc_dataset.html#listing-information-about-a-dataset) command to print information about the dataset. For example, to print the number of genomes and k-mers in the dataset, use:
 
 ```
 kover dataset info --dataset example.kover --genome-count --kmer-count
