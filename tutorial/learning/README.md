@@ -1,4 +1,4 @@
-# Tutorial: genotype-to-phenotype models with Kover
+# Learning genotype-to-phenotype models with Kover
 
 This tutorial will walk you through an application of Kover to a set of genomes labelled according to their phenotypes. We use data from the paper (see [data](../data/)), but you could use your own. Specifically, we will use the CART and SCM algorithms to learn models that predict Azithromycin resistance in *Neisseria gonorrhoeae*.
 
