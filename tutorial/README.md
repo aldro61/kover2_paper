@@ -56,7 +56,8 @@ validation set. The training set will be used to learn models and the validation
 A Kover dataset can contain multiple splits of the data, which are created using the [kover dataset split](https://aldro61.github.io/kover/doc_dataset.html#splitting-a-dataset) command.
 
 Furthermore, the algorithms implemented in Kover have [hyperparameters](https://aldro61.github.io/kover/doc_learning.html#understanding-the-hyperparameters), which are parameters that control the behavior of the algorithm and must be manually set by the user.
-Kover implements two strategies for selecting the value of hyperparameters: [k-fold cross-validation](https://aldro61.github.io/kover/doc_learning.html#k-fold-cross-validation) and [bound selection](https://aldro61.github.io/kover/doc_learning.html#risk-bound-selection).
+Selecting the value of such parameters is known as [model selection](https://en.wikipedia.org/wiki/Hyperparameter_optimization).
+Kover implements two model selection strategies: [k-fold cross-validation](https://aldro61.github.io/kover/doc_learning.html#k-fold-cross-validation) and [bound selection](https://aldro61.github.io/kover/doc_learning.html#risk-bound-selection).
 k-fold cross-validation is the most expensive and it requires that small partitions of the data, called *folds* be created.
 Bound selection is considerably faster and does not require the creation of such folds.
 
