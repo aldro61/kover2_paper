@@ -21,9 +21,9 @@ For an introduction to machine learning , please refer to [this tutorial](https:
 
 In this first step, we will acquire the data required for the tutorial and package it into a format usable by Kover.
 
-![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb, MD5: 4484e7b3f3f1a5d14a5401b46f145fcb) and skip to [here](#exploring-the-dataset).
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb) and skip to [here](#exploring-the-dataset).
 
-First, download the [example data](https://graal.ift.ulaval.ca/public/kover2_example_raw.zip) (~250 Mb, MD5: 532e2ab93dae843adbbb27e3fb796e0e), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
+First, download the [example data](https://graal.ift.ulaval.ca/public/kover2_example_raw.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
 
 
 ## Creating a Kover dataset
@@ -227,8 +227,13 @@ False Negatives: 0.0
 
 ## Interpreting the learned models
 
+One particularity of the models learned with Kover is that they are highly interpretable. The models make predictions based on rules that capture the presence/absence of k-mers. Below, we show how simple it is to go from model to biological interpretation with these models.
+
 ### Annotating k-mers
-Show a simple example using nucleotide BLAST
+
+After learning a model, the results directory contains a file called `model.fasta`, which contains each k-mer in the model, along with an informative header. Conveniently, these FASTA files can be directly inputted into tools such as [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch).
+
+In this example, we will use the model 
 
 ### Analyzing equivalent rules
 Show a simple example using UGENE
