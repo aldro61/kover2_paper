@@ -47,18 +47,18 @@ You can use the [kover dataset info](https://aldro61.github.io/kover/doc_dataset
 kover dataset info --dataset example.kover --genome-count --kmer-count
 ```
 
-Your dataset contains **392 genomes vs 4 766 702 k-mers**! This is know as the *fat data* setting, which is very different from the *big data* setting in which the number of examples (genomes) is greater than the number of features (k-mers).
+Your dataset contains **392 genomes vs. 4 766 702 k-mers**! Notice that the number of genomes is significantly smaller than the number of k-mers. In machine learning, this is known as *fat data* and is particularly challenging for learning algorithms. Fortunately, Kover is very efficient at learning from this kind of data.
 
 ## Splitting the data into training and testing sets
 
-In order to measure the accuracy of the model obtained using Kover, we must split the dataset into a training set and a 
-validation set. The training set will be used to learn a model and the validation set will be used to estimate its accuracy.
-A Kover dataset can contain multiple splits of the data. The command used for splitting a dataset is [kover dataset split](doc_dataset.html#splitting-a-dataset).
+In order to measure the accuracy of models obtained using Kover, we must split the data into a training set and a 
+validation set. The training set will be used to learn models and the validation set will be used to measure their accuracy.
+A Kover dataset can contain multiple splits of the data, which are created using the [kover dataset split](https://aldro61.github.io/kover/doc_dataset.html#splitting-a-dataset) command.
 
-Kover implements a machine learning algorithm and thus has [hyperparameters](doc_learning.html#understanding-the-hyperparameters),
-which are free parameters that must be tuned to the data at hand. The most widely used method for setting hyperparameter values
-is [k-fold cross-validation](doc_learning.html#k-fold-cross-validation).
-In this example, we will use 10-fold cross-validation.
+Furthermore, the algorithms implemented in Kover have [hyperparameters](https://aldro61.github.io/kover/doc_learning.html#understanding-the-hyperparameters), which are parameters that control the behavior of the algorithm and must be manually set by the user.
+Kover implements two strategies to select the value of hyperparameters: [k-fold cross-validation](https://aldro61.github.io/kover/doc_learning.html#k-fold-cross-validation) and [bound selection](https://aldro61.github.io/kover/doc_learning.html#risk-bound-selection).
+k-fold cross-validation is the most expensive and it requires that small partitions of the data, called *folds* be created.
+Bound selection is considerably faster and does not require the creation of such folds.
 
 The following command creates a split of the data called "example_split", which uses 80% of the genomes for training and
 20% for testing. It also creates 10 cross-validation folds. The data are partitioned randomly, using 2 as the random seed.
