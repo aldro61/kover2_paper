@@ -82,7 +82,7 @@ You are then shown more information on the hit. You see the GenBank entry in whi
 
 #### Step 5:
 
-You are taken to a [GenBank page](https://www.ncbi.nlm.nih.gov/nucleotide/CP030093.1?report=genbank&log$=nuclalign&blast_rank=5&RID=P9S5S8EC014&from=1252214&to=1252244) where more information is available regarding the region in which the k-mer was found:
+You are taken to a [GenBank page](https://www.ncbi.nlm.nih.gov/nucleotide/MG995565.1?report=genbank&log$=nuclalign&blast_rank=8&RID=P9Z2SGYN015&from=1383&to=1413) where more information is available regarding the region in which the k-mer was found:
 
 <img src="blast5.png" />
 
@@ -99,7 +99,7 @@ In this part of the tutorial, we go further in our interpretation of the first r
 
 #### Step 1:
 
-Go back to the GenBank entry where the k-mer was found ([here](https://www.ncbi.nlm.nih.gov/nucleotide/CP030093.1?report=genbank&log$=nuclalign&blast_rank=5&RID=P9S5S8EC014&from=1252214&to=1252244)).
+Go back to the GenBank entry where the k-mer was found ([here](https://www.ncbi.nlm.nih.gov/nucleotide/MG995565.1?report=genbank&log$=nuclalign&blast_rank=8&RID=P9Z2SGYN015&from=1383&to=1413)).
 
 In the upper right corner, you will find a form called "Change region shown". Tick the "Whole sequence" box and click on the "Update View" button. This will update the page to shown the entire sequence instead of only the region in which your k-mer was found.
 
@@ -108,7 +108,7 @@ In the upper right corner, you will find a form called "Change region shown". Ti
 
 #### Step 2:
 
-Click on the "Send to" button, tick "Complete Record" and "File", and select the "Genbank (full)" format. Then click on the "Create File" button. This will download the GenBank entry onto your computer.
+Click on the "Send to" button, tick "File" and select the "Genbank (full)" format. Then click on the "Create File" button. This will download the GenBank entry onto your computer.
 
 <img src="ugene2.png" />
 
@@ -137,7 +137,7 @@ Look at where the equivalent k-mers are located in the genome. We see that they 
 
 <img src="ugene6.png" />
 
-Zoom in. You will obtain the following:
+Zoom in and observe that there is only a single base pair at which all the k-mers overlap:
 
 <img src="ugene7.png" />
 
