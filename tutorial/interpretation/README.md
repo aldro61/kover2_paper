@@ -133,7 +133,7 @@ The following menu will appear. Select "Load patterns from file" and select the 
 
 #### Step 5:
 
-Look at where the equivalent k-mers are located in the genome. We see that they all overlap one concise region annotated as "16S Ribosomal RNA".
+Look at where the equivalent k-mers are located in the gene's sequence. We see that they all overlap one concise region.
 
 <img src="ugene6.png" />
 
