@@ -141,3 +141,8 @@ Zoom in and observe that there is only a single base pair at which all the k-mer
 
 <img src="ugene7.png" />
 
+This is base pair 1401 of the gene and the sequence contains a guanine at this locus. Interestingly, other studies have found that the mutation A1401G is associated with kanamycin resistance in M. tuberculosis.
+
+Success! We have been able to 1) detect the gene targetted by a rule in the model, 2) pinpoint the exact location of a confirmed resistance mechanism. 
+
+Now go try this on your data and see if you can elucidate the biological mechanisms that underlie your favorite phenotype.
