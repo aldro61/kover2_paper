@@ -95,7 +95,7 @@ We see that the k-mer is located in the 16S ribosomal RNA, which is the target o
 
 ### Analyzing equivalent rules
 
-In this part of the tutorial, we go further in our interpretation of the first rule of the model. We will use the equivalent rules (see paper) to determine the nature of the genomic variation identified by the learning algorithm. The equivalent rules are given in several files in the output directory that are labelled according to the rule to which they are equivalent. Here, we will use the [model_rule_0_equiv.fasta](../../models/cart_b/mycobacterium%20tuberculosis/kanamycin/repeat_1/model_rule_0_equiv.fasta) file, which contains the sequence of 31 k-mers who's presence was found to be equally predictive of the phenotype.
+In this part of the tutorial, we will go further in our interpretation of the first rule of the model. We will use the equivalent rules (see paper) to determine the nature of the genomic variation identified by the learning algorithm. The equivalent rules are given in several files in the output directory that are labelled according to the rule to which they are equivalent. Here, we will use the [model_rule_0_equiv.fasta](../../models/cart_b/mycobacterium%20tuberculosis/kanamycin/repeat_1/model_rule_0_equiv.fasta) file, which contains the sequence of 31 k-mers who's presence was found to be equally predictive of the phenotype.
 
 #### Step 1:
 
