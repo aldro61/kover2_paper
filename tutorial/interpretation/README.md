@@ -1,12 +1,5 @@
 # Interpreting Kover models
 
-- [Interpreting Kover models](#interpreting-kover-models)
-                - [Accessing the model](#accessing-the-model)
-                - [Visualizing the model](#visualizing-the-model)
-                - [Annotating k-mers](#annotating-k-mers)
-                - [Analyzing equivalent rules](#analyzing-equivalent-rules)
-
-
 One particularity of models learned with Kover is that they are highly interpretable. The models make predictions based on rules that capture the presence/absence of k-mers. Below, we show how simple it is to go from a learned model to biological interpretation with these models.
 
 ![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Disclaimer:** It is always possible to visualize Kover models and access the sequences of k-mers that are used for prediction. However, going further and annotating the sequences is highly dependent on the quality of available genome annotations. Below, we provide an example where well-annotated genomes were available, enabling a detailed interpretation of the model.
@@ -46,14 +39,59 @@ python plot_model.py model.fasta
 ![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** The script assumes that [LaTeX](https://www.latex-project.org/get/) is installed on your computer.
 
 Using this script on our model yields the following visualization:
+
 <a href="./model.pdf"><img src="model.png" width="400" height="400" /></a>
+
+Where the components can be interpreted as follows:
+
+<a href="../models/legend.pdf"><img src="../../models/legend.png" height="180" /></a>
+
+This already gives a good overview of the decision logic of the model.
 
 
 ### Annotating k-mers
 
-After learning a model, the results directory contains a file called `model.fasta`, which contains each k-mer in the model, along with an informative header. Conveniently, these FASTA files can be directly inputted into tools such as [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch).
+Now, we want to go beyond the k-mer sequences and determine in which regions of the genome they are located. Conveniently, the `model.fasta` files can be directly inputted into tools such as [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch).
 
-In this example, we will use the model 
+#### Step 1: Input the model into BLAST
+
+Go the [Nucleotide BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastSearch) web interface. Then, either copy/paste the content of the FASTA file into the textbox or select the file by clicking on "Choose File".
+<img src="blast1.png" />
+
+Press the `BLAST` button at the bottom of the page to launch the query.
+
+
+#### Step 2: 
+
+Once you have the results, you can use the "Results for" dropdown at the top to select one of the rules in the model. Select the first one and carry on.
+
+<img src="blast2.png" />
+
+#### Step 3: 
+
+Scroll down and look at the hits for the k-mer in the model. We see that not all hits are for *M. tuberculosis*. Click on the first hit for *M. tuberculosis*: `Mycobacterium tuberculosis strain RUS_B0 chromosome, complete genome`
+
+<img src="blast3.png" />
+
+#### Step 4:
+
+You are then shown more information on the hit. You see the GenBank entry in which it was found and the start and end position in the sequence. Click on the lower GenBank button.
+
+<img src="blast4.png" />
+
+
+#### Step 5:
+
+You are taken to a [GenBank page](https://www.ncbi.nlm.nih.gov/nucleotide/CP030093.1?report=genbank&log$=nuclalign&blast_rank=5&RID=P9S5S8EC014&from=1252214&to=1252244) where more information is available regarding the region in which the k-mer was found:
+
+<img src="blast5.png" />
+
+Scroll down to the bottom of the page:
+
+<img src="blast6.png" />
+
+We see that the k-mer is found in the 16S ribosomal RNA, which is the target of kanamycin.
+
 
 ### Analyzing equivalent rules
 Show a simple example using UGENE
