@@ -90,8 +90,39 @@ Scroll down to the bottom of the page:
 
 <img src="blast6.png" />
 
-We see that the k-mer is found in the 16S ribosomal RNA, which is the target of kanamycin.
+We see that the k-mer is located in the 16S ribosomal RNA, which is the target of [kanamycin](https://www.drugbank.ca/drugs/DB01172#targets). Hence, we have reason to believe that the algorithm has correctly recovered a confirmed mechanism of antibiotic resistance. Nonetheless, we still don't know what in the 16S rRNA is being detected by the model.
 
 
 ### Analyzing equivalent rules
-Show a simple example using UGENE
+
+In this part of the tutorial, we go further in our interpretation of the first rule of the model. We will use the equivalent rules (see paper) to determine the nature of the genomic variation identified by the learning algorithm. The equivalent rules are given in several files in the output directory that are labelled according to the rule to which they are equivalent. Here, we will use the [model_rule_0_equiv.fasta](../../models/cart_b/mycobacterium%20tuberculosis/kanamycin/repeat_1/model_rule_0_equiv.fasta) file, which contains the sequence of 31 k-mers.
+
+#### Step 1:
+
+Go back to the GenBank entry where the k-mer was found ([here](https://www.ncbi.nlm.nih.gov/nucleotide/CP030093.1?report=genbank&log$=nuclalign&blast_rank=5&RID=P9S5S8EC014&from=1252214&to=1252244)).
+
+In the upper right corner, you will find a form called "Change region shown". Tick the "Whole sequence" box and click on the "Update View" button. This will update the page to shown the entire sequence instead of only the region in which your k-mer was found.
+
+<img src="ugene1.png" />
+
+
+#### Step 2:
+
+Click on the "Send to" button, tick "Complete Record" and "File", and select the "Genbank (full)" format. Then click on the "Create File" button. This will download the GenBank entry onto your computer.
+
+<img src="ugene2.png" />
+
+
+#### Step 3:
+
+Open the downloaded file using the [Unipro UGENE](http://ugene.net/) software.
+
+<img src="ugene3.png" />
+
+
+#### Step 4:
+
+Click on the "Find pattern" button in the toolbar:
+
+<img src="ugene4.png" />
+
