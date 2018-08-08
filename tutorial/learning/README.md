@@ -6,38 +6,22 @@ For an introduction to machine learning , please refer to [this tutorial](https:
 
 ## Outline
 
-* [Getting the example data](#getting-the-example-data)
-* [Creating a Kover dataset](#creating-a-kover-dataset)
+* [Getting the example Kover dataset](#getting-the-example-kover-dataset)
+* [Exploring the dataset](#exploring-the-dataset)
 * [Splitting the data into training and testing sets](#splitting-the-data-into-training-and-testing-sets)
 * [Learning models with:](#learning-models)
   * [Set Covering Machines](#set-covering-machines)
   * [Classification and Regression Trees](#classification-and-regression-trees)
-* [Interpreting the learned models](#interpreting-the-learned-models)
-  * [Annotating k-mers](#annotating-k-mers)
-  * [Analyzing equivalent rules](#analyzing-equivalent-rules)
 
+## Getting the example Kover dataset
 
-## Getting the example data
-
-In this first step, we will acquire the data required for the tutorial and package it into a format usable by Kover.
-
-![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb) and skip to [here](#exploring-the-dataset). **In both cases, unzip the file and then change into the resulting directory**.
-
-First, download the [example data](https://graal.ift.ulaval.ca/public/kover2_example_raw.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
-
-
-## Creating a Kover dataset
-
-Before using Kover to learn a model, we must package the genomic and phenotypic data into a [Kover dataset](https://aldro61.github.io/kover/doc_dataset.html#creating-a-dataset), which is a compressed and optimized representation of the data ([details here](https://github.com/aldro61/kover/wiki/Kover-Dataset-Format)).
-
-To create a dataset, use the following command:
+First download the [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb) which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin. Next, unzip the file and then change into the resulting directory.
 
 ```
-kover dataset create from-contigs --genomic-data genome_contigs.tsv --phenotype-description "Azithromycin resistance" --phenotype-metadata metadata.tsv --output example.kover --temp-dir contigs/tmp --progress
+cd kover-example
 ```
 
-This produces a dataset file called "example.kover". From now on, you no longer need the original data files.
-
+The file "example.kover" is the Kover dataset which use a compressed and optimized representation of the data ([details here](https://github.com/aldro61/kover/wiki/Kover-Dataset-Format)).
 
 ### Exploring the dataset
 
