@@ -13,4 +13,4 @@ This repository contains supporting information for the paper. It is organized a
 * [Models](./models): antimicrobial resistance prediction models for CART and SCM
 * [Data](./data): scripts to reproduce the datasets used in the paper
 * [Results](./results): results of all algorithms across all datasets
-* [Tutorials](./tutorial): tutorials on using Kover to learn genotype-to-phenotype models
+* [Tutorials](https://aldro61.github.io/kover/doc_tutorials.html): tutorials on using Kover to learn genotype-to-phenotype models
