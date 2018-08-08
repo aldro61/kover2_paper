@@ -21,7 +21,7 @@ For an introduction to machine learning , please refer to [this tutorial](https:
 
 In this first step, we will acquire the data required for the tutorial and package it into a format usable by Kover.
 
-![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb) and skip to [here](#exploring-the-dataset).
+![#1589F0](https://placehold.it/10/1589F0/000000?text=+) **Warning:** Creating the dataset from scratch takes about **20 minutes** on a laptop. Alternatively, you can download a [pre-created dataset](https://graal.ift.ulaval.ca/public/kover2_example_created.zip) (~100 Mb) and skip to [here](#exploring-the-dataset). **In both cases, unzip the file and then change into the resulting directory**.
 
 First, download the [example data](https://graal.ift.ulaval.ca/public/kover2_example_raw.zip) (~250 Mb), which contains the genome of 392 *Neisseria gonorrhoeae* isolates, along with their susceptibility to Azithromycin.
 
