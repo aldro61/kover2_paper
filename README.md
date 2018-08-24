@@ -19,5 +19,6 @@ This repository contains supporting information for the paper. It is organized a
 ## KBase - The U.S. Department of Energy Systems Biology Knowledgebase
 <a href="https://kbase.us/"><img src="https://kbase.us/wp-content/uploads/2016/09/Kbase_Logo_newWeb.png" height="50" /></a>
 
-* The models provided in this repository are being integrated to KBase. 
+* The models provided in this repository are being integrated to KBase.
+* An AMR phenotype prediction application is currently being created
 * Follow progress [here](https://github.com/aldro61/kb_kover_amr)
