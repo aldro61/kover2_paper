@@ -16,6 +16,8 @@ This repository contains supporting information for the paper. It is organized a
 * [Tutorials](https://aldro61.github.io/kover/doc_tutorials.html): tutorials on using Kover to learn genotype-to-phenotype models
 
 
-## KBase
+## KBase - The U.S. Department of Energy Systems Biology Knowledgebase
+<a href="https://kbase.us/"><img src="https://kbase.us/wp-content/uploads/2016/09/Kbase_Logo_newWeb.png" height="50" /></a>
 
-* The models provided in this repository are being integrated to the KBase. See [here](https://github.com/aldro61/kb_kover_amr) to follow the progress. We expect that the app will be integrated within a few weeks.
+* The models provided in this repository are being integrated to KBase. 
+* Follow progress [here](https://github.com/aldro61/kb_kover_amr)
