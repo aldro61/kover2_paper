@@ -14,3 +14,8 @@ This repository contains supporting information for the paper. It is organized a
 * [Data](./data): scripts to reproduce the datasets used in the paper
 * [Results](./results): results of all algorithms across all datasets
 * [Tutorials](https://aldro61.github.io/kover/doc_tutorials.html): tutorials on using Kover to learn genotype-to-phenotype models
+
+
+## KBase
+
+* The models provided in this repository are being integrated to the KBase. See [here](https://github.com/aldro61/kb_kover_amr) to follow the progress. We expect that the app will be integrated within a few weeks.
