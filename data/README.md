@@ -19,7 +19,7 @@ Now `genomes_dir` contains the genomes and a summary file called `genome_paths.t
 
 ### Step 3: Create a Kover dataset
 
-Follow this [tutorial](../tutorial/learning), but replace the label file by the `metadata.tsv` that you just used and the genome file by the corresponding `genome_paths.tsv`.
+Follow this [tutorial](https://aldro61.github.io/kover/doc_tut_data.html), but replace the label file by the `metadata.tsv` that you just used and the genome file by the corresponding `genome_paths.tsv`.
 
 **To obtain the exact same datasets as in the paper, create 10 splits with 80% of the data for training, 10 folds, and random seeds 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.**
 
