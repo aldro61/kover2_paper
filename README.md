@@ -1,4 +1,4 @@
-# Interpretable genotype-to-phenotype models with performance guarantees
+# Interpretable genotype-to-phenotype classifiers with performance guarantees
 By: Alexandre Drouin, Gaël Letarte, Frédéric Raymond, Mario Marchand, Jacques Corbeil, François Laviolette
 
 **Powered by**
